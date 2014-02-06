@@ -54,7 +54,7 @@ eqs-within-sections
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
-\defskip smallskip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -269,7 +269,7 @@ reference "eq:1.5 p02 Ec.Schrödinger (coord.esféricas, independiente t)"
 \begin_inset Formula 
 \begin{multline}
 \frac{1}{R}\frac{d}{dr}\left(r^{2}\frac{dR}{dr}\right)+\frac{2m_{e}}{\hbar^{2}}r^{2}\left(E+K\frac{Ze^{2}}{r}\right)=\\
-=-\frac{1}{\Theta\sin\theta}\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)-\frac{1}{\Phi\sin^{2}\theta}\frac{d^{2}\Phi}{d\varphi^{2}}\label{eq:1.6 p03 Ec.Schrödinger (coord.esféricas, independiente t)}
+=-\frac{1}{\Theta\sin\theta}\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)-\frac{1}{\Phi\sin^{2}\theta}\frac{d^{2}\Phi}{d\varphi^{2}}\label{eq:1.7 p03 Ec.Schrödinger (coord.esféricas, independiente t)}
 \end{multline}
 
 \end_inset
@@ -602,6 +602,13 @@ Resolución de la ecuación para
 \begin_inset Formula $\Phi$
 \end_inset
 
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:1.1.1 p06 Resolución de la ecuación para Phi"
+
+\end_inset
+
 
 \end_layout
 
@@ -862,10 +869,3699 @@ Por lo tanto:
 \end_inset
 
 Y la ecuación diferencial se transforma en:
+\begin_inset Formula 
+\[
+\left(1-\mu^{2}\right)\frac{d^{2}\Theta}{d\mu^{2}}-2\mu\frac{d\Theta}{d\mu}+\frac{C\left(1-\mu^{2}\right)-m^{2}}{1-\mu^{2}}\Theta=0
+\]
+
+\end_inset
+
+Esta ecuación es muy conocida en la teoría de ecuaciones diferenciales (ver
+ Apéndice II ##REF) y no tiene soluciones finitas más que cuando se verifican
+ las siguientes condiciones entre los parámetros 
+\begin_inset Formula $C$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+C=l\left(l+1\right)\quad l=0,1,2,3,\ldots\label{eq:1.13 p09 Relación C y l}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+-l\leq m\leq l\label{eq:1.14 p09 relación l y m}
+\end{equation}
+
+\end_inset
+
+Estas soluciones finitas 
+\begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
+\end_inset
+
+ se escriben (ver Apéndice II ##REF):
+\begin_inset Formula 
+\[
+\Theta_{l,m}\left(\mu\right)=\frac{\left(-1\right)^{l-m}}{2^{l}\, l!}\left(\frac{2l+1}{2}\frac{\left(l+m\right)!}{\left(l-m\right)!}\right)^{1/2}\left(1-\mu^{2}\right)^{-m/2}\frac{d^{l-m}}{d\mu^{l-m}}\left(1-\mu^{2}\right)^{l}
+\]
+
+\end_inset
+
+En el cuadro 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:1, p09 Polinomios de Legendre"
+
+\end_inset
+
+ se indican algunas funciones 
+\begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
+\end_inset
+
+ y su correspondiente expresión en función de 
+\begin_inset Formula $\theta$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-PAG10PDF
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0pt">
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{l,m}\left(\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{0,0}=\frac{1}{2}\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{0,0}=\frac{1}{2}\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{1,0}=\frac{1}{2}\sqrt{6}\mu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{1,0}=\frac{1}{2}\sqrt{6}\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{1,\pm1}=\frac{1}{2}\sqrt{3}\left(1-\mu^{2}\right)^{1/2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{1,\pm1}=\frac{1}{2}\sqrt{3}\sin\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{2,0}=\frac{1}{4}\sqrt{10}\left(3\mu^{2}-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{2,0}=\frac{1}{4}\sqrt{10}\left(3\cos^{2}\theta-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{2,\pm1}=\frac{1}{2}\sqrt{15}\left(1-\mu^{2}\right)^{1/2}\mu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{2,\pm1}=\frac{1}{2}\sqrt{15}\sin\theta\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{2,\pm2}=\frac{1}{4}\sqrt{15}\left(1-\mu^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Theta_{2,\pm2}=\frac{1}{4}\sqrt{15}\sin^{2}\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Funciones 
+\begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\Theta_{l,m}\left(\theta\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:1, p09 Polinomios de Legendre"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El producto de las funciones 
+\begin_inset Formula $\Theta\left(\theta\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\Phi\left(\varphi\right)$
+\end_inset
+
+ constituye la 
+\emph on
+parte angular de la función de onda
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Parte angular de la función de onda 
+\begin_inset Formula $Y_{l,m}\left(\theta,\varphi\right)=\Theta_{l,m}\left(\theta\right)\Phi_{m}\left(\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\emph default
+:
+\begin_inset Formula 
+\begin{equation}
+Y_{lm}\left(\theta,\varphi\right)=\Theta_{l,m}\left(\theta\right)\Phi_{m}\left(\varphi\right)\label{eq:1.15 p10 Parte angular de la función de onda}
+\end{equation}
+
+\end_inset
+
+ Las funciones 
+\begin_inset Formula $Y_{l,m}$
+\end_inset
+
+ se denominan 
+\emph on
+funciones o 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Armónicos esféricos 
+\begin_inset Formula $Y_{l,m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+armónicos esféricos
+\emph default
+ y sustituyendo 
+\begin_inset Formula $\Phi\left(\varphi\right)$
+\end_inset
+
+ en 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.15 p10 Parte angular de la función de onda"
+
+\end_inset
+
+ por su expresión normalizada, se escriben como sigue:
+\begin_inset Formula 
+\begin{equation}
+Y_{l,m}\left(\theta,\varphi\right)=\frac{1}{\sqrt{2\pi}}\Theta_{l,m}\left(\theta\right)e^{im\varphi}\label{eq:1.16 p10 Armónicos esféricos}
+\end{equation}
+
+\end_inset
+
+donde
+\begin_inset Formula 
+\begin{eqnarray*}
+l & = & 0,1,2,3,\ldots\\
+m & = & -l,-l+1,\ldots,-2,-1,0,1,2,\ldots,l-1,l
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Resolución de la ecuación para 
+\begin_inset Formula $R\left(r\right)$
+\end_inset
+
+.
+ Polinomios de Laguerre
+\end_layout
+
+\begin_layout Standard
+Reescribamos la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.8 p03 Ec.diferencial para R(r)"
+
+\end_inset
+
+ de otra forma, reemplazando 
+\begin_inset Formula $C$
+\end_inset
+
+ por 
+\begin_inset Formula $l\left(l+1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+R^{\prime\prime}+\frac{2}{r}R^{\prime}+\left(\frac{2E}{aKe^{2}}+\frac{2Z}{ar}-\frac{l\left(l+1\right)}{r^{2}}\right)R=0\label{eq:1.17 p10 Ec.diferencial para R(r) (usando l(l+1) en vez de C)}
+\end{equation}
+
+\end_inset
+
+en la que 
+\begin_inset Formula 
+\begin{equation}
+a=\frac{\hbar^{2}}{Km_{e}e^{2}}\label{eq:1.18 p10 constante a}
+\end{equation}
+
+\end_inset
+
+Esta ecuación ha sido objeto de numerosos estudios matemáticos (ver Apéndice
+ II ##REF) y sus soluciones finitas y normalizadas son de la forma:
+\begin_inset Formula 
+\[
+R_{n,l}\left(r\right)=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\left(\frac{2}{n}\frac{Z}{a}\right)^{l+\frac{3}{2}}r^{l}\exp\left(-\frac{Z}{an}r\right)L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula 
+\begin{multline*}
+L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)=\frac{1}{\left(n-l-1\right)!}\left(\frac{2}{a}\frac{Z}{n}r\right)^{-\left(2l+1\right)}\exp\left(2\frac{Z}{an}r\right)\times\\
+\times\frac{d^{n-l-1}}{d\left(2\frac{Z}{an}r\right)^{n-l-1}}\left(\left(2\frac{Z}{an}r\right)^{n+l}\exp\left(-2\frac{Z}{an}r\right)\right)
+\end{multline*}
+
+\end_inset
+
+verificando los números naturales 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $l$
+\end_inset
+
+ las siguientes relaciones:
+\begin_inset Formula 
+\[
+n=1,2,3,\ldots\qquad l=0,1,2,3,\ldots,n-1
+\]
+
+\end_inset
+
+y donde la energía total 
+\begin_inset Formula $E$
+\end_inset
+
+ del átomo ha de ser negativa y estar cuantificada:
+\begin_inset Formula 
+\begin{equation}
+E=-\frac{1}{n^{2}}\frac{Z^{2}e^{4}m_{e}}{2\left(4\pi\epsilon_{0}\right)^{2}\hbar^{2}}\label{eq:1.19 p11 Energía total del átomo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $Z=1$
+\end_inset
+
+ se obtiene la fórmula de Bohr para el átomo de hidrógeno.
+\end_layout
+
+\begin_layout Standard
+A las funciones
+\begin_inset Formula 
+\[
+L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)
+\]
+
+\end_inset
+
+se les denomina 
+\emph on
+polinomios de Laguerre
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Polinomios de Laguerre 
+\begin_inset Formula $L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\emph default
+ y son soluciones de una ecuación diferencial hipergeométrica.
+\end_layout
+
+\begin_layout Remark
+Hemos dicho más arriba que la energía total 
+\begin_inset Formula $E$
+\end_inset
+
+ corresponde a las soluciones acotadas de la ecuación de Schrödinger para
+ los átomos hidrogenoides es negativa (cuando el origen del potencial de
+ Coulomb se toma en el infinito).
+ Esto tiene una interpretación mecanicista, intuitiva y sencilla, en el
+ caso del átomo de Bohr: para que el electrón esté ligado al protón, es
+ necesario que su energía cinética sea, en valor absoluto, inferior a su
+ energía potencial electrostática.
+ En una situación análoga a la que se obtiene en el caso del sistema planetario:
+ si la energía mecánica total del planeta es nula o positiva, su órbita
+ es abierta (hipérbola o parábola).
+ Si, por el contrario, es negativa, su órbita es cerrada (elipse).
+\end_layout
+
+\begin_layout Standard
+En el cuadro 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:2 p12 Funciones R(r) normalizadas"
+
+\end_inset
+
+ se indican algunas de las funciones 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+ normalizadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2\left(\frac{Z}{a}\right)^{3/2}\exp\left(-\frac{Zr}{a}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{2}}\left(\frac{Z}{a}\right)^{3/2}\left(1-\frac{Zr}{2a}\right)\exp\left(-\frac{Zr}{2a}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2\sqrt{6}}\left(\frac{Z}{a}\right)^{5/2}r\exp\left(-\frac{Zr}{2a}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3\sqrt{3}}\left(\frac{Z}{a}\right)^{3/2}\left(1-2\frac{Zr}{3a}+2\frac{Z^{2}r^{2}}{27a^{2}}\right)\exp\left(-\frac{Zr}{3a}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{8}{27\sqrt{6}}\left(\frac{Z}{a}\right)^{3/2}\left(\frac{Zr}{a}-\frac{Z^{2}r^{2}}{6a^{2}}\right)\exp\left(-\frac{Zr}{3a}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{4}{81\sqrt{30}}\left(\frac{Z}{a}\right)^{7/2}r^{2}\exp\left(-\frac{Zr}{3a}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Funciones 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+ normalizadas
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:2 p12 Funciones R(r) normalizadas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Orbitales atómicos
+\end_layout
+
+\begin_layout Standard
+La función de onda total de un átomo hidrogenoide depende de tres números
+ cuánticos, 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+, cuya interdependencia y cuyos valores enteros provienen de las condiciones
+ de finitud y continuidad de la función de onda:
+\begin_inset Formula 
+\begin{equation}
+\psi_{nlm}=R_{n,l}\left(r\right)\Theta_{l,m}\left(\theta\right)\Phi_{m}\left(\varphi\right)=R_{n,l}\left(r\right)Y_{l,m}\left(\theta,\varphi\right)\label{eq:1.20 p12 Función de onda}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La existencia de números cuánticos discontinuos es, por tanto, una consecuencia
+ de las condiciones matemáticas impuestas a la función de onda.
+ Este resultado de la Teoría Cuántica rigurosa representa un avance extraordinar
+io respecto a la teoría de Bohr, en la que es 
+\emph on
+necesario
+\emph default
+ postular la idea de cuantificación.
+\end_layout
+
+\begin_layout Standard
+A propuesta de Mulliken, a la función de onda 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.20 p12 Función de onda"
+
+\end_inset
+
+, que corresponde a una cierta combinación de los tres números cuánticos
+ 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+, se le denomina 
+\series bold
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+Orbital atómico
+\end_layout
+
+\end_inset
+
+orbital atómico
+\series default
+ (OA).
+ Este nombre trata de señalar la existencia de una analogía con las órbitas
+ de Bohr (trayectorias que los electrones seguirían en torno al núcleo),
+ permite al mismo tiempo diferenciar la noción clásica de 
+\emph on
+órbita
+\emph default
+ de la noción cuántica de 
+\emph on
+orbital
+\emph default
+, que tiene un sentido estocástico.
+\end_layout
+
+\begin_layout Standard
+La significación física del número cuántico principal 
+\begin_inset Formula $n$
+\end_inset
+
+ aparece clara en el apartado anterior, sobre todo si nos fijamos en la
+ fórmula que proporciona la energía del sistema.
+ El sentido físico de los números cuánticos 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+ lo explicaremos más adelante.
+ En la clasificación de los estados electrónicos de los átomos, cada valor
+ del número cuántico 
+\begin_inset Formula $l$
+\end_inset
+
+ viene designado por una letra (ver cuadro 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab: p13 Letras asignadas a los números cuánticos l"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Origen espectroscópico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+sharp
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+principal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+d
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+diffuse
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+fundamental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+g
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+h
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Letras asignadas a los números cuánticos 
+\begin_inset Formula $l$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: p13 Letras asignadas a los números cuánticos l"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A la función para 
+\begin_inset Formula $l=0$
+\end_inset
+
+, se le denomina función 
+\emph on
+s
+\emph default
+, a la correspondiente a 
+\begin_inset Formula $l=1$
+\end_inset
+
+, función 
+\emph on
+p
+\emph default
+, etc.
+ Las cuatro primeras notaciones provienen de los nombres dados a las líneas
+ espectrales atómicas de las diversas series del átomo de Hidrógeno.
+\end_layout
+
+\begin_layout Standard
+Vamos a estudiar a continuación algunas particularidades de los orbitales
+ atómicos.
+\end_layout
+
+\begin_layout Standard
+Veamos cuál es la probabilidad de presencia del electrón en el espacio comprendi
+do entre dos esferas de radios 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r+dr$
+\end_inset
+
+.
+ La probabilidad de presencia en el volumen elemental 
+\begin_inset Formula $d\tau$
+\end_inset
+
+ es:
+\begin_inset Formula 
+\[
+\text{Probabilidad de presencia en }d\tau=\left|\psi_{nlm}\right|^{2}d\tau
+\]
+
+\end_inset
+
+En el volumen elemental comprendido entre las dos esferas será, por lo tanto:
+\begin_inset Formula 
+\[
+\text{Probabilidad}\left(r,r+dr\right)=\int_{0}^{\pi}\int_{0}^{2\pi}\left|\psi_{nlm}\left(r,\theta,\varphi\right)\right|^{2}r^{2}\sin\theta\, dr\, d\theta\, d\varphi
+\]
+
+\end_inset
+
+Sacando fuera de la integral la funoción que sólo depende de la variable
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ queda:
+\begin_inset Formula 
+\[
+\text{Probabilidad}\left(r,r+dr\right)=\left|R_{nl}\left(r\right)\right|^{2}r^{2}dr\int_{0}^{\pi}\int_{0}^{2\pi}\left|Y_{lm}\left(\theta,\varphi\right)\right|^{2}\sin\theta\, d\theta\, d\varphi
+\]
+
+\end_inset
+
+Pero:
+\begin_inset Formula 
+\[
+Y_{lm}=\Theta_{l,m}\left(\theta\right)\Phi_{m}\left(\varphi\right)=\Theta_{l,m}\left(\cos\theta\right)\Phi_{m}\left(\varphi\right)
+\]
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+\int_{0}^{\pi}\int_{0}^{2\pi}\left|Y_{lm}\right|^{2}\sin\theta d\theta d\varphi=\int_{0}^{\pi}\left|\Theta_{l,m}\left(\cos\theta\right)\right|^{2}\sin\theta d\theta\int_{0}^{2\pi}\left|\Phi_{m}\left(\varphi\right)\right|^{2}d\varphi
+\]
+
+\end_inset
+
+La primera integral se puede escribir también como:
+\begin_inset Formula 
+\[
+\int_{0}^{\pi}\left|\Theta_{l,m}\left(\cos\theta\right)\right|^{2}\sin\theta d\theta=-\int_{0}^{\pi}\left|\Theta_{l,m}\left(\cos\theta\right)\right|^{2}d\left(\cos\theta\right)=\int_{-1}^{+1}\left|\Theta_{l,m}\left(\mu\right)\right|^{2}d\mu
+\]
+
+\end_inset
+
+donde hemos hecho el cambio de variable 
+\begin_inset Formula $\cos\theta=\mu$
+\end_inset
+
+.
+ En el Apéndice II (##REF) se demuestra que la última integral es igual
+ a la unidad, porque hemos escogido los polinomios 
+\begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
+\end_inset
+
+ normalizados en el intervalor 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, en el apartado 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sub:1.1.1 p06 Resolución de la ecuación para Phi"
+
+\end_inset
+
+ hemos tomado también las funciones 
+\begin_inset Formula $\Phi_{m}\left(\varphi\right)$
+\end_inset
+
+ normalizadas, con lo que queda:
+\begin_inset Formula 
+\[
+\int_{0}^{\pi}\int_{0}^{2\pi}\left|Y_{lm}\right|^{2}\sin\theta d\theta d\varphi=1
+\]
+
+\end_inset
+
+y, consecuentemente:
+\begin_inset Formula 
+\begin{equation}
+\text{Probabilidad}\left(r,r+dr\right)=\left|R_{nl}\left(r\right)\right|^{2}r^{2}dr=P_{nl}\left(r\right)dr\label{eq:1.21 p14 Función de distribución radial}
+\end{equation}
+
+\end_inset
+
+donde la función 
+\begin_inset Formula $P_{nl}\left(r\right)=\left|R_{nl}\left(r\right)\right|^{2}r^{2}$
+\end_inset
+
+ se le denomina 
+\emph on
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Función de distribución radial 
+\begin_inset Formula $P_{nl}\left(r\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+función de distribución radial
+\emph default
+.
+ En las figuras 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:1-Forma de las funciones radiales para el átomo de hidrógeno"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:2 p16 Funciones de distribución radial del átom de Hidrógeno"
+
+\end_inset
+
+ se pueden ver las formas de la función radial 
+\begin_inset Formula $R_{nl}\left(r\right)$
+\end_inset
+
+ y de la función de distribución radial 
+\begin_inset Formula $P_{nl}\mbox{\left(r\right)}$
+\end_inset
+
+ para algunas combinaciones de los números 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ Los puntos en los que la parte radial se anula se denominan 
+\emph on
+puntos nodales
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Puntos nodales
+\end_layout
+
+\end_inset
+
+
+\emph default
+ o simplemente 
+\emph on
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Nodos
+\end_layout
+
+\end_inset
+
+nodos
+\emph default
+.
+ Una superficie en que la parte radial se anula en todos sus puntos se denomina,
+ por analogía, 
+\emph on
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Superficie nodal
+\end_layout
+
+\end_inset
+
+superficie nodal
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/figura-1-p15-func.dist.radial.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Forma de las funciones radiales para el átomo de Hidrógeno
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1-Forma de las funciones radiales para el átomo de hidrógeno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:1-Forma de las funciones radiales para el átomo de hidrógeno"
+
+\end_inset
+
+ que las funciones 
+\begin_inset Formula $1s$
+\end_inset
+
+, 
+\begin_inset Formula $2p$
+\end_inset
+
+ y 
+\begin_inset Formula $3d$
+\end_inset
+
+ no tienen nodos, puesto que no atraviesan el eje 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Las funciones 
+\begin_inset Formula $2s$
+\end_inset
+
+ y 
+\begin_inset Formula $3p$
+\end_inset
+
+ tiene cada una un nodo y la función 
+\begin_inset Formula $3s$
+\end_inset
+
+ posee dos.
+ Se deduce fácilmente que el número de nodos de la parte radial siempre
+ es igual a 
+\begin_inset Formula $n-l-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/figura-2-p16.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Funciones de distribución radial del átomo de Hidrógeno
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2 p16 Funciones de distribución radial del átom de Hidrógeno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La probabilidad de presencia del electrón en un punto cualquiera del espacio
+ es función no sólo de la variable 
+\begin_inset Formula $r$
+\end_inset
+
+, sino también de los valores de los ángulos 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Depende, por lo tanto, de la parte angular 
+\begin_inset Formula $Y_{lm}$
+\end_inset
+
+.
+ Examinemos más detalladamente dicha parte angular de la función de onda.
+ Estas funciones son complejas debido a la contribución de 
+\begin_inset Formula $\Phi\left(\varphi\right)$
+\end_inset
+
+ y en la mayoría de los casos es más cómodo utilizar funciones reales.
+ Como las funciones 
+\begin_inset Formula $Y_{lm}$
+\end_inset
+
+ e 
+\begin_inset Formula $Y_{l,-m}$
+\end_inset
+
+ son degeneradas, su combinación lineal es también solución de la ecuación
+ de Schrödinger 
+\emph on
+con el mismo valor propio
+\emph default
+ de la energía.
+ Podemos definir a partir de ellas unas nuevas funciones angulares 
+\begin_inset Formula $Y_{lm}^{\prime}$
+\end_inset
+
+ e 
+\begin_inset Formula $Y_{lm}^{\prime\prime}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{eqnarray}
+Y_{lm}^{\prime} & = & \frac{1}{\sqrt{2}}\left(Y_{l,m}+Y_{l,-m}\right)\nonumber \\
+Y_{lm}^{\prime\prime} & = & \frac{1}{i\sqrt{2}}\left(Y_{l,m}-Y_{l,-m}\right)\label{eq:1.22 p16 Nuevas funciones angulares}
+\end{eqnarray}
+
+\end_inset
+
+Con esta nueva definición, tenemos dos series de soluciones reales para
+ los armónicos esféricos:
+\begin_inset Formula 
+\begin{equation}
+Y_{lm}=\frac{1}{\sqrt{2\pi}}\Theta_{l,m}\left(\theta\right)\left\{ \begin{array}{c}
+\cos\left(m\varphi\right)\\
+\sin\left(m\varphi\right)
+\end{array}\right.\label{eq:1.23 p16}
+\end{equation}
+
+\end_inset
+
+donde ahora 
+\begin_inset Formula $l=0,1,2,3,\ldots,n-1$
+\end_inset
+
+ y 
+\begin_inset Formula $m=0,1,2,\ldots,l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se puede admitir, sin perder generalidad, que las funciones reales que contienen
+ 
+\begin_inset Formula $\sin\left(m\varphi\right)$
+\end_inset
+
+ corresponden a las que anteriormente asignábamos a los valores negativos
+ de 
+\begin_inset Formula $m$
+\end_inset
+
+, mientras que las que contienen 
+\begin_inset Formula $\cos\left(m\varphi\right)$
+\end_inset
+
+, corresponden a las que asignábamos a los valores positivos.
+\end_layout
+
+\begin_layout Standard
+En el cuadro 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:3 p17 Partes angulares de la función de onda para el átomo de Hidrógeno"
+
+\end_inset
+
+ se indican algunas funciones angulares correspondientes a diferentes combinacio
+nes de los números cuánticos 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ En ella se ordenan dichas funciones y sus combinaciones lineales atribuyéndoles
+ una orientación según los ejes cartesianos.
+ Esto se hace teniendo en cuenta las relaciones:
+\begin_inset Formula 
+\[
+\cos\theta=\frac{z}{r};\quad\sin\theta\sin\varphi=\frac{y}{r};\quad\sin\theta\cos\varphi=\frac{x}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y_{lm}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Combinación lineal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notación
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{4\pi}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{6}}{2\sqrt{2\pi}}\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{6}}{2\sqrt{2\pi}}\sin\theta\sin\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{i\sqrt{2}}\left(Y_{1,1}-Y_{1,-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{y}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{6}}{2\sqrt{2\pi}}\sin\theta\cos\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{2}}\left(Y_{1,1}-Y_{1,-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{15}}{4\sqrt{\pi}}\left(3\cos^{2}\theta-1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d_{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{15}}{4\sqrt{\pi}}\sin\left(2\theta\right)\cos\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{2}}\left(Y_{2,1}+Y_{2,-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d_{xz}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{15}}{4\sqrt{\pi}}\sin\left(2\theta\right)\sin\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{i\sqrt{2}}\left(Y_{2,1}-Y_{2,-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d_{yz}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{15}}{4\sqrt{\pi}}\sin^{2}\theta\cos\left(2\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{2}}\left(Y_{2,2}+Y_{2,-2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d_{x^{2}-y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{15}}{4\sqrt{\pi}}\sin^{2}\theta\sin\left(2\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{i\sqrt{2}}\left(Y_{2,2}-Y_{2,-2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d_{xy}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Partes angulares de la función de onda para el átomo de Hidrógeno 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:3 p17 Partes angulares de la función de onda para el átomo de Hidrógeno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:3 p18 Diagramas de las partes angulares de la función de onda del átomo de Hidrógeno"
+
+\end_inset
+
+ se representan los diagramas de las partes angulares del cuadro 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:3 p17 Partes angulares de la función de onda para el átomo de Hidrógeno"
+
+\end_inset
+
+.
+ Corresponden a superficies en cuyos puntos el valor numérico de un determinado
+ armónico esférico es siempre el mismo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/figura-3-partes_angulares.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagramas de las partes angulares de la función de onda del átomo de Hidrógeno
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3 p18 Diagramas de las partes angulares de la función de onda del átomo de Hidrógeno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si proyectamos las superficies de la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:3 p18 Diagramas de las partes angulares de la función de onda del átomo de Hidrógeno"
+
+\end_inset
+
+ sobre los planos coordenados, obtenemos los diagramas más simples indicados
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:4 p18 Diagrama de las partes angulares de la función de onda del átomo de Hidrógeno sobre los planos coordenados."
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/figura-4-partes_angulares.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de las partes angulares de la función de onda del átomo de Hidrógeno
+ sobre los planos coordenados.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4 p18 Diagrama de las partes angulares de la función de onda del átomo de Hidrógeno sobre los planos coordenados."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El armónico esférico del orbital 
+\begin_inset Formula $s$
+\end_inset
+
+ es independiente de las variables 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, por lo que la probabilidad de presencia del electrón es la misma en todos
+ los puntos que se encuentran a la misma distancia 
+\begin_inset Formula $r$
+\end_inset
+
+ del núcleo.
+ Viene representado por una esfera.
+\end_layout
+
+\begin_layout Standard
+El orbital 
+\begin_inset Formula $p_{z}$
+\end_inset
+
+ tiene la forma de una cosinusoide volúmica, alargada según el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Su signo viene determinado por el de la función 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+.
+ Además, es nulo en todo el plano 
+\begin_inset Formula $\{xy\}$
+\end_inset
+
+ al ser en este caso 
+\begin_inset Formula $\theta=\pi/2$
+\end_inset
+
+, por lo que dicho plano es nodal.
+ Las mismas propiedades tienen los arbitales 
+\begin_inset Formula $p_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $p_{y}$
+\end_inset
+
+, alargados según los ejes 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ y cuyos planos nodales son 
+\begin_inset Formula $\{yz\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\{xz\}$
+\end_inset
+
+ respectivamente.
+\end_layout
+
+\begin_layout Standard
+Los orbitales 
+\begin_inset Formula $d_{xy}$
+\end_inset
+
+, 
+\begin_inset Formula $d_{xz}$
+\end_inset
+
+, 
+\begin_inset Formula $d_{yz}$
+\end_inset
+
+ y 
+\begin_inset Formula $d_{x^{2}-y^{2}}$
+\end_inset
+
+ poseen cada uno dos planos nodales perpendiculares entre sí, mientras que
+ los orbitales 
+\begin_inset Formula $s$
+\end_inset
+
+ y 
+\begin_inset Formula $d_{z^{2}}$
+\end_inset
+
+ no tienen ninguno.
+ El número total de nodos y de planos nodales de todo orbital atómico es
+ igual a 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pasemos ahora a describir la función total del orbital atómico de un átomo
+ hidrogenoide.
+ En la tabla ##REF se indican dichas funciones en su versión real y normalizada
+ para algunos valores de 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0pt">
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Función
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{\pi}}A^{3/2}e^{-Ar}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{4\sqrt{2\pi}}A^{3/2}\left(2-Ar\right)e^{-\frac{A}{2}r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2p_{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{4\sqrt{2\pi}}A^{5/2}r\, e^{-\frac{A}{2}r}\cos\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2p_{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{4\sqrt{2\pi}}A^{5/2}r\, e^{-\frac{A}{2}r}\sin\theta\cos\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2p_{y}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{4\sqrt{2\pi}}A^{5/2}r\, e^{-\frac{A}{2}r}\sin\theta\sin\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3p_{z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3p_{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3p_{y}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3d_{z^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3d_{xz}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3d_{yz}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3d_{x^{2}-y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="2mm" bottomspace="2mm">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3d_{xy}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Funciones de onda de un átomo hidrogenoide 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:4 p20 Funciones de onda de un átomo hidrogenoide"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
