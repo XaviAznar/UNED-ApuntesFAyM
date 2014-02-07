@@ -3589,8 +3589,15 @@ Los orbitales
 \begin_layout Standard
 Pasemos ahora a describir la función total del orbital atómico de un átomo
  hidrogenoide.
- En la tabla ##REF se indican dichas funciones en su versión real y normalizada
- para algunos valores de 
+ En la tabla 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:4 p20 Funciones de onda de un átomo hidrogenoide"
+
+\end_inset
+
+ se indican dichas funciones en su versión real y normalizada para algunos
+ valores de 
 \begin_inset Formula $n$
 \end_inset
 
@@ -3609,7 +3616,7 @@ Pasemos ahora a describir la función total del orbital atómico de un átomo
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -4051,6 +4058,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{81\sqrt{3\pi}}A^{3/2}\left(27-18Ar+2A^{2}r^{2}\right)e^{-\frac{Ar}{3}}$
+\end_inset
+
 
 \end_layout
 
@@ -4110,6 +4120,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{2}}{81\sqrt{\pi}}A^{5/2}\left(6-Ar\right)re^{-\frac{Ar}{3}}\cos\theta$
+\end_inset
+
 
 \end_layout
 
@@ -4169,6 +4182,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{2}}{81\sqrt{\pi}}A^{5/2}\left(6-Ar\right)r\, e^{-\frac{Ar}{3}}\sin\theta\cos\varphi$
+\end_inset
+
 
 \end_layout
 
@@ -4228,6 +4244,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{2}}{81\sqrt{\pi}}A^{5/2}\left(6-Ar\right)r\, e^{-\frac{Ar}{3}}\sin\theta\sin\varphi$
+\end_inset
+
 
 \end_layout
 
@@ -4287,6 +4306,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{81\sqrt{6\pi}}A^{7/2}\, r^{2}\, e^{-\frac{Ar}{3}}\left(3\cos^{2}\theta-1\right)$
+\end_inset
+
 
 \end_layout
 
@@ -4346,6 +4368,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{2}}{81\sqrt{6\pi}}A^{7/2}\, r^{2}\, e^{-\frac{Ar}{3}}\sin\theta\cos\theta\cos\varphi$
+\end_inset
+
 
 \end_layout
 
@@ -4405,6 +4430,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{2}}{81\sqrt{6\pi}}A^{7/2}\, r^{2}\, e^{-\frac{Ar}{3}}\sin\theta\cos\theta\sin\varphi$
+\end_inset
+
 
 \end_layout
 
@@ -4464,6 +4492,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{81\sqrt{\pi}}A^{7/2}\, r^{2}\, e^{-\frac{Ar}{3}}\sin^{2}\theta\cos\left(2\varphi\right)$
+\end_inset
+
 
 \end_layout
 
@@ -4523,6 +4554,9 @@ Función
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{81\sqrt{\pi}}A^{7/2}\, r^{2}\, e^{-\frac{Ar}{3}}\sin^{2}\theta\sin\left(2\varphi\right)$
+\end_inset
+
 
 \end_layout
 
@@ -4555,12 +4589,155 @@ name "tab:4 p20 Funciones de onda de un átomo hidrogenoide"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La representación gráfica de una función de onda total es difícil de realizar
+ porque depende de tres variables 
+\begin_inset Formula $r$
+\end_inset
+
+, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Nos vemos obligados a servirnos de varias curvas para una sola función.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:5 p21 Diferentes representaciones de la función de onda total 2px"
+
+\end_inset
+
+ se indica un ejemplo de representación para el orbital 
+\begin_inset Formula $2p_{x}$
+\end_inset
+
+.
+ Aunque la imagen que proporciona sobre la función no sea lo suficientemente
+ clara, la representación contiene todo lo necesario para evaluar 
+\begin_inset Formula $\psi\left(r,\theta,\varphi\right)$
+\end_inset
+
+ en todo punto del espacio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/figura-5-pag21-representacion_orbital.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diferentes representaciones de la función de onda total 
+\begin_inset Formula $2p_{x}$
+\end_inset
+
+ a) Representación tridimensional b) Curvas de contorno en el plano 
+\begin_inset Formula $\{xy\}$
+\end_inset
+
+ (lugares geométricos de los puntos que corresponden a los mismos valores
+ de 
+\begin_inset Formula $\psi$
+\end_inset
+
+) c) Variación de la función de onda a lo largo del eje 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5 p21 Diferentes representaciones de la función de onda total 2px"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Las cruvas de contorno espaciales de 
+\begin_inset Formula $\psi$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi^{2}$
+\end_inset
+
+ en función de dos variables (dejando la tercera fija) constituyen el mejor
+ medio de representar la función de onda total.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:5 p21 Diferentes representaciones de la función de onda total 2px"
+
+\end_inset
+
+ son representados los valores de 
+\begin_inset Formula $\psi$
+\end_inset
+
+ en función de las coordenadas 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ para 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Estas curvas se establecen por ordenador y existen programas que permiten,
+ además de calcular la función, elegir la escala y la proyección adecuadas
+ y dibujar su superficie con ayuda de un 
+\emph on
+plotter
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
