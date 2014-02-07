@@ -4737,8 +4737,221 @@ plotter
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Estudio de las propiedades de un átomo hidrogenoide
+\end_layout
 
+\begin_layout Standard
+Conocida la función de onda de un sistema, se puede hacer el estudio de
+ toda la propiedad del mismo que tenga una representación cuántica.
+ Es decir, cuando a dicha propiedad le corresponde un determinado operador
+ 
+\begin_inset Formula $A$
+\end_inset
+
+, el valor esperado de la misma en el estado 
+\begin_inset Formula $\psi$
+\end_inset
+
+ es:
+\begin_inset Formula 
+\[
+\left\langle A\right\rangle =\int_{\tau}\psi^{*}A\psi\, d\tau
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\tau$
+\end_inset
+
+ representa todo el espacio en el que está definida la función de onda.
+ En este capítulo mostraremos algunos ejemplos de esto.
+\end_layout
+
+\begin_layout Subsection
+Cálculo de la distancia media del electrón al núcleo
+\end_layout
+
+\begin_layout Standard
+Veamos, a modo de ejemplo, cómo se determina la distancia media del electrón
+ al protón en el átomo de Hidrógeno, en el caso en que éste se encuentre
+ en su estado fundamental 
+\begin_inset Formula $1s$
+\end_inset
+
+.
+ La función de onda es:
+\begin_inset Formula 
+\[
+\psi_{1s}=\frac{1}{\sqrt{\pi}}\left(\frac{1}{a}\right)^{3/2}e^{-r/a}
+\]
+
+\end_inset
+
+Como el operador que corresponde a la distancia electrón-protón es simplemente
+ 
+\emph on
+multiplicar por 
+\begin_inset Formula $r$
+\end_inset
+
+
+\emph default
+, tendremos:
+\begin_inset Formula 
+\[
+\left\langle r\right\rangle =\int_{\tau}\psi_{1s}^{*}r\psi_{1s}d\tau=\frac{1}{\pi}a^{-3}\int_{0}^{\infty}r^{3}e^{-2r/a}dr\int_{0}^{\pi}\sin\theta d\theta\int_{0}^{2\pi}d\varphi
+\]
+
+\end_inset
+
+Las dos últimas integrales son inmediata y su producto vale 
+\begin_inset Formula $4\pi$
+\end_inset
+
+.
+ La primera integral aparece frecuentemente en cálculos de este tipo y se
+ integra por partes.
+ La fórmula general es:
+\begin_inset Formula 
+\[
+\int x^{n}e^{\alpha x}dx=\frac{e^{\alpha x}}{\alpha}\left(x^{n}-\frac{nx^{n-1}}{\alpha}+\frac{n\left(n-1\right)x^{n-2}}{\alpha^{2}}-\cdots+\frac{\left(-1\right)^{n}n!}{\alpha^{n}}\right)
+\]
+
+\end_inset
+
+Aplicándolo a nuestro caso obtenemos
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}r^{3}e^{-r/a}dr=\frac{3}{8}a^{4}
+\]
+
+\end_inset
+
+con lo que finalmente:
+\begin_inset Formula 
+\[
+\left\langle r\right\rangle =\frac{3}{2}a
+\]
+
+\end_inset
+
+Por consiguiente, la distancia media que separa el electrón del protón en
+ el estado fundamental del átomo de Hidrógeno es 
+\begin_inset Formula $1.5$
+\end_inset
+
+ veces mayor que el radio de la primera órbita de Bohr.
+ De una manera general, para otros estados y otros átomos (hidrogenoides)
+ la distancia media viene dada por la expresión:
+\begin_inset Formula 
+\begin{equation}
+\left\langle r\right\rangle =a\frac{n^{2}}{Z}\left[\frac{3}{2}-\frac{l\left(l+1\right)}{2n^{2}}\right]\label{eq:p23 Distancia media e-p en átomos hidrogenoides}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resulta interesante comparar la distancia media 
+\begin_inset Formula $\left\langle r\right\rangle $
+\end_inset
+
+ del electrón al protón, en el estado fundamental del átomo de Hidrógeno,
+ con su distancia más probable.
+ Esta última corresponde a la distancia para la cual la 
+\emph on
+función de distribución radial
+\emph default
+ es máxima.
+ En el estado 
+\begin_inset Formula $1s$
+\end_inset
+
+, dicha función es:
+\begin_inset Formula 
+\[
+P_{10}\left(r\right)=\frac{4}{a^{3}}r^{2}e^{-2\frac{r}{a}}
+\]
+
+\end_inset
+
+El valor de 
+\begin_inset Formula $r$
+\end_inset
+
+ para el cual 
+\begin_inset Formula $P_{10}$
+\end_inset
+
+ es máxima resulta ser:
+\begin_inset Formula 
+\[
+\frac{dP_{10}}{dr}=\frac{8}{a^{3}}\left(1-\frac{r}{a}\right)r\, e^{-2\frac{r}{a}}=0\Rightarrow\left\{ \begin{array}{c}
+r=0\\
+r=a\\
+r=\infty
+\end{array}\right.
+\]
+
+\end_inset
+
+Evidentemente, para 
+\begin_inset Formula $r=0$
+\end_inset
+
+ la función de distribución radial es siempre nula, ya que 
+\begin_inset Formula $R\left(r\right)$
+\end_inset
+
+ está acotada en todo el espacio.
+ A dicho punto le corresponde un mínimo de dicha función.
+ Lo mismo sucede cuando 
+\begin_inset Formula $r$
+\end_inset
+
+ tiene a infinito, al ser dominante el infinitésimo exponencial.
+ El máximo corresponde, finalmente, al radio de la primera órbita de Bohr.
+ Es decir, la distancia más probable del electrón al núcleo en el orbital
+ atómico 
+\begin_inset Formula $1s$
+\end_inset
+
+ coincide con el radio de Bohr, pero no coincide con la distancia media
+ 
+\begin_inset Formula $\left\langle r\right\rangle $
+\end_inset
+
+ del electrón en dicho estado.
+ La 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:2 p16 Funciones de distribución radial del átom de Hidrógeno"
+
+\end_inset
+
+ permite ver las razones de esta no coincidencia.
+ La densidad de probabilidad definida por la función 
+\begin_inset Formula $P\left(r\right)$
+\end_inset
+
+ no es simétrica con respecto a su máximo, que se produce para 
+\begin_inset Formula $r=a$
+\end_inset
+
+, y existe una probabilidad bastante elevada de encontrar el electrón a
+ distancias superiores a 
+\begin_inset Formula $2a$
+\end_inset
+
+, lo que hace que la distancia media 
+\begin_inset Formula $\left\langle r\right\rangle $
+\end_inset
+
+ sea siempre superior a la más probable.
 \end_layout
 
 \end_body
