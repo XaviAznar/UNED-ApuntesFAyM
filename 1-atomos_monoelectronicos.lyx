@@ -5727,6 +5727,456 @@ metaestables
 .
 \end_layout
 
+\begin_layout Section
+Momentos angulares atómicos
+\end_layout
+
+\begin_layout Standard
+La noción de momento angular tiene una gran importancia cuando se trata
+ de clasificar los diferentes estados de los sistemas atómicos y moleculares.
+ El momento angular permite esclarecer el sentido físico de los momentos
+ cuánticos 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Operadores 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De las relaciones de correspondencia entre las magnitudes mecánicas clásicas
+ y sus correspondientes operadores cuánticos se deducen los operadores 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{x} & = & -i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right)\\
+L_{x} & = & -i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right)\\
+L_{z} & = & -i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)
+\end{eqnarray*}
+
+\end_inset
+
+El cuadrado del momento angular es el operador:
+\begin_inset Formula 
+\[
+L^{2}=L_{x}^{2}+L_{y}^{2}+L_{z}^{2}
+\]
+
+\end_inset
+
+Puesto que la función de onda viene expresada en coordenadas esféricas,
+ conviene obtener la expresión de estos operadores en dichas coordenadas
+ para determinar más fácilmente sus valores propios.
+ Para ello procederemos de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+En el Apéndice I hemos obtenido las expresiones de los operadore 
+\begin_inset Formula $\partial/\partial x$
+\end_inset
+
+, 
+\begin_inset Formula $\partial/\partial y$
+\end_inset
+
+ y 
+\begin_inset Formula $\partial/\partial z$
+\end_inset
+
+ en función de las derivadas respecto a 
+\begin_inset Formula $r$
+\end_inset
+
+, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial}{\partial x} & = & \sin\theta\cos\varphi\frac{\partial}{\partial r}+\frac{1}{r}\cos\theta\cos\varphi\frac{\partial}{\partial\theta}-\frac{1}{r}\frac{\sin\varphi}{\sin\theta}\frac{\partial}{\partial\varphi}\\
+\frac{\partial}{\partial y} & = & \sin\theta\sin\varphi\frac{\partial}{\partial r}+\frac{1}{r}\cos\theta\sin\varphi\frac{\partial}{\partial\theta}+\frac{1}{r}\frac{\cos\varphi}{\sin\theta}\frac{\partial}{\partial\varphi}\\
+\frac{\partial}{\partial z} & = & \cos\theta\frac{\partial}{\partial r}-\frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}
+\end{eqnarray*}
+
+\end_inset
+
+Utilizando estas expresiones obtenemos fácilmente:
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{x} & = & -i\hbar\left(-\sin\varphi\frac{\partial}{\partial\theta}-\cot\theta\cos\varphi\frac{\partial}{\partial\varphi}\right)\\
+L_{x} & = & -i\hbar\left(\cos\varphi\frac{\partial}{\partial\theta}-\cot\theta\sin\varphi\frac{\partial}{\partial\varphi}\right)\\
+L_{z} & = & -i\hbar\frac{\partial}{\partial\varphi}
+\end{eqnarray*}
+
+\end_inset
+
+Aplicando dos veces el operador 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ obtenemos 
+\begin_inset Formula $L_{x}^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+L_{x}^{2}=-\hbar^{2}\left(-\sin\varphi\frac{\partial}{\partial\theta}-\cot\theta\cos\varphi\frac{\partial}{\partial\varphi}\right)\left(-\sin\varphi\frac{\partial}{\partial\theta}-\cot\theta\cos\varphi\frac{\partial}{\partial\varphi}\right)=\\
+=-\hbar^{2}\left(\sin^{2}\varphi\frac{\partial^{2}}{\partial\theta^{2}}-\frac{\sin\varphi\cos\varphi\left(1+\cos^{2}\theta\right)}{\sin^{2}\theta}\frac{\partial}{\partial\varphi}+\cot\theta\cos^{2}\varphi\frac{\partial}{\partial\theta}+\right.\\
+\left.+2\cot\theta\sin\varphi\cos\varphi\frac{\partial^{2}}{\partial\varphi\partial\theta}+\cot^{2}\theta\cos^{2}\varphi\frac{\partial^{2}}{\partial\varphi^{2}}\right)
+\end{multline*}
+
+\end_inset
+
+Análogamente
+\begin_inset Formula 
+\begin{multline*}
+L_{y}^{2}=-\hbar^{2}\left(\cos\varphi\frac{\partial}{\partial\theta}-\cot\theta\sin\varphi\frac{\partial}{\partial\varphi}\right)\left(\cos\varphi\frac{\partial}{\partial\theta}-\cot\theta\sin\varphi\frac{\partial}{\partial\varphi}\right)=\\
+=-\hbar^{2}\left(\cos^{2}\varphi\frac{\partial^{2}}{\partial\theta^{2}}+\frac{\sin\varphi\cos\varphi\left(1+\cos^{2}\theta\right)}{\sin^{2}\theta}\frac{\partial}{\partial\varphi}+\cot\theta\sin^{2}\varphi\frac{\partial}{\partial\theta}-\right.\\
+\left.-2\cot\theta\sin\varphi\cos\varphi\frac{\partial^{2}}{\partial\varphi\partial\theta}+\cot^{2}\theta\sin^{2}\varphi\frac{\partial^{2}}{\partial\varphi^{2}}\right)
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{z}^{2}=-\hbar^{2}\frac{\partial^{2}}{\partial\varphi^{2}}
+\]
+
+\end_inset
+
+Por lo tanto, el operador 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ puede escribirse como sigue:
+\begin_inset Formula 
+\[
+L^{2}=L_{x}^{2}+L_{y}^{2}+L_{z}^{2}=-\hbar^{2}\left(\frac{\partial^{2}}{\partial\theta^{2}}+\cot\theta\frac{\partial}{\partial\theta}+\left(1+\cot^{2}\theta\right)\frac{\partial^{2}}{\partial\varphi^{2}}\right)
+\]
+
+\end_inset
+
+Ahora bien, teniendo en cuenta que:
+\begin_inset Formula 
+\[
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)=\frac{1}{\sin\theta}\left(\cos\theta\frac{\partial}{\partial\theta}+\sin\theta\frac{\partial^{2}}{\partial\theta^{2}}\right)=\cot\theta\frac{\partial}{\partial\theta}+\frac{\partial^{2}}{\partial\theta^{2}}
+\]
+
+\end_inset
+
+ y que:
+\begin_inset Formula 
+\[
+1+\cot^{2}\theta=\frac{\sin^{2}\theta+\cos^{2}\theta}{\sin^{2}\theta}=\frac{1}{\sin^{2}\theta}
+\]
+
+\end_inset
+
+podemos escribir, finalmente:
+\begin_inset Formula 
+\[
+L^{2}=-\hbar^{2}\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial\varphi^{2}}\right)
+\]
+
+\end_inset
+
+Según nos enseña la Mecánica Cuántica, si dos operadores conmutan, se pueden
+ medir simultáneamente los observables que representan.
+ Por el contrario, si no conmutan es imposible determinar al mismo tiempo
+ dichos valores.
+ Veamos cuales son las reglas de conmutación de los operadores definidos
+ más arriba.
+\end_layout
+
+\begin_layout Standard
+Para determinar el conmutador de los operadores 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+ es conveniente operar con las coordenadas cartesianas:
+\begin_inset Formula 
+\begin{multline*}
+\left[L_{x},L_{y}\right]=L_{x}L_{y}-L_{y}L_{x}=\\
+=-\hbar^{2}\left\{ \left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right)\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right)-\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right)\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right)\right\} =\\
+=-\hbar^{2}\left(y\frac{\partial}{\partial x}+yz\frac{\partial^{2}}{\partial z\partial x}-yx\frac{\partial^{2}}{\partial z^{2}}-z^{2}\frac{\partial^{2}}{\partial y\partial x}+zx\frac{\partial^{2}}{\partial y\partial z}\right.-\\
+-\left.zy\frac{\partial^{2}}{\partial x\partial z}+z^{2}\frac{\partial^{2}}{\partial x\partial y}+xy\frac{\partial^{2}}{\partial z^{2}}-x\frac{\partial}{\partial y}-xz\frac{\partial^{2}}{\partial z\partial y}\right)=\\
+-\hbar^{2}\left(y\frac{\partial}{\partial x}-x\frac{\partial}{\partial y}\right)=-\hbar^{2}\frac{L_{z}}{i\hbar}=i\hbar L_{z}
+\end{multline*}
+
+\end_inset
+
+Por rotación circular de las coordenadas cartesianas se obtiene inmediatamente:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[L_{y},L_{z}\right] & = & i\hbar L_{x}\\
+\left[L_{z},L_{x}\right] & = & i\hbar L_{y}
+\end{eqnarray*}
+
+\end_inset
+
+De estas relaciones de conmutación se deduce que no se pueden medir simultáneame
+nte dos componentes del momento angular.
+ Es decir, no se puede determinar de una manera exacta la dirección espacial
+ del vector momento angular.
+\end_layout
+
+\begin_layout Standard
+Veamos ahora cuáles son las relaciones de conmutación entre 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y los operadores 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[L^{2},L_{z}\right]=\left[L_{x}^{2},L_{z}\right]+\left[L_{y}^{2},L_{z}\right]+\left[L_{z}^{2},L_{z}\right]
+\]
+
+\end_inset
+
+Calculemos los conmutadore del segundo término de la igualdad.
+ El último de ellos es inmediato:
+\begin_inset Formula 
+\[
+\left[L_{z}^{2},L_{z}\right]=\left(L_{z}L_{z}\right)L_{z}-L_{z}\left(L_{z}L_{z}\right)=0
+\]
+
+\end_inset
+
+Veamos ahora los otros dos conmutadores.
+ El primero de ellos:
+\begin_inset Formula 
+\[
+\left[L_{x}^{2},L_{z}\right]=L_{x}L_{x}L_{z}-L_{z}L_{x}L_{x}
+\]
+
+\end_inset
+
+Pero para cualquier pareja de operadores se verifica:
+\begin_inset Formula 
+\[
+AB=\left[A,B\right]+BA
+\]
+
+\end_inset
+
+Por lo tanto
+\begin_inset Formula 
+\begin{multline*}
+L_{x}L_{x}L_{z}=L_{x}\left(\left[L_{x},L_{z}\right]+L_{z}Lx\right)=-L_{x}\left[L_{z},L_{x}\right]+L_{x}L_{z}L_{x}=\\
+=-i\hbar L_{x}L_{y}+\left(\left[L_{x},L_{z}\right]+L_{z}L_{x}\right)L_{x}=\\
+=-i\hbar L_{x}L_{y}-i\hbar L_{y}L_{x}+L_{z}L_{x}L_{x}
+\end{multline*}
+
+\end_inset
+
+Sustituyendo en la expresión el conmutador, queda:
+\begin_inset Formula 
+\[
+\left[L_{x}^{2},L_{z}\right]=-i\hbar L_{x}L_{y}-i\hbar L_{y}L_{x}
+\]
+
+\end_inset
+
+Por otra parte:
+\begin_inset Formula 
+\[
+\left[L_{y}^{2},L_{z}\right]=L_{y}L_{y}L_{z}-L_{z}L_{y}L_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+L_{y}L_{y}L_{z}=L_{y}\left(\left[L_{y},L_{z}\right]+L_{z}L_{y}\right)=i\hbar L_{y}L_{x}+\left(\left[L_{y},L_{z}\right]+L_{z}L_{y}\right)L_{y}=\\
+=i\hbar L_{y}L_{x}+i\hbar L_{x}L_{y}+L_{z}L_{y}L_{y}
+\end{multline*}
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+\left[L_{y}^{2},L_{z}\right]=i\hbar L_{y}L_{x}+i\hbar L_{x}L_{y}
+\]
+
+\end_inset
+
+Finalmente el conmutador 
+\begin_inset Formula $\left[L^{2},L_{z}\right]$
+\end_inset
+
+ resulta ser:
+\begin_inset Formula 
+\[
+\left[L^{2},L_{z}\right]=0
+\]
+
+\end_inset
+
+Análogamente se obtienen los otros dos conmutadores:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[L^{2},L_{x}\right] & = & 0\\
+\left[L^{2},L_{y}\right] & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ Teniendo en cuenta estos resultados, se pueden medir simultáneamnete el
+ valor del módulo y el de una componente del momento angular.
+ Además, si dos operadores conmutan tienen las mismas funciones propias.
+ En efecto; sean los operadores 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ y supongamos que 
+\begin_inset Formula $\psi$
+\end_inset
+
+ sea una función propia de 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ para el autovalor 
+\begin_inset Formula $a$
+\end_inset
+
+ no degenerado:
+\begin_inset Formula 
+\[
+L^{2}\psi=a\psi
+\]
+
+\end_inset
+
+Aplicando el conmutador 
+\begin_inset Formula $\left[L^{2},L_{z}\right]$
+\end_inset
+
+ a la función 
+\begin_inset Formula $\psi$
+\end_inset
+
+ tenemos:
+\begin_inset Formula 
+\[
+\left[L^{2},L_{z}\right]\psi=0\Rightarrow L^{2}\left(L_{z}\psi\right)=L_{z}\left(L^{2}\psi\right)=aL_{z}\psi
+\]
+
+\end_inset
+
+Por lo tanto la función 
+\begin_inset Formula $L_{z}\psi$
+\end_inset
+
+ es función propia de 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ para el valor propio 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Esto quiere decir que 
+\begin_inset Formula $L_{z}\psi$
+\end_inset
+
+ coincide con 
+\begin_inset Formula $\psi$
+\end_inset
+
+, en cuyo caso el operador 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ sería el operador identidad, o bien es proporcional a dicha función:
+\begin_inset Formula 
+\[
+L_{z}\psi=b\psi
+\]
+
+\end_inset
+
+lo que quiere decir que 
+\begin_inset Formula $\psi$
+\end_inset
+
+ es también función propia del operador 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ para el autovalor 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Vamos a aprovechar esta propiedad para calcular las funciones propias y
+ los valores propios de los operadores 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 
 \end_layout
