@@ -96,7 +96,14 @@ iones hidrogenoides
 \end_layout
 
 \begin_layout Section
-Resolución de la ecuación de Schrödinger para el átomo de hidrógeno
+Resolución de la ecuación de Schrödinger para el átomo de hidrógeno 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:1.1 Resolución de la ecuación de Schrödinger para el átomo de hidrógeno"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6072,7 +6079,7 @@ Análogamente se obtienen los otros dos conmutadores:
 
 \end_inset
 
- Teniendo en cuenta estos resultados, se pueden medir simultáneamnete el
+ Teniendo en cuenta estos resultados, se pueden medir simultáneamente el
  valor del módulo y el de una componente del momento angular.
  Además, si dos operadores conmutan tienen las mismas funciones propias.
  En efecto; sean los operadores 
@@ -6175,6 +6182,616 @@ lo que quiere decir que
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Sentido físico de los números cuánticos 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los números cuánticos 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+ intervienen en los valores propios de los operadores 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ por lo que vamos a determinar cuales són las funciones propias de estos
+ operadores.
+ Para ello demostraremos que conmutan con el operador hamiltoniano 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[L^{2},\mathcal{H}\right]=0\quad;\quad\left[L_{z}\mathcal{H}\right]=0
+\]
+
+\end_inset
+
+Si esto es así, las funciones 
+\begin_inset Formula $\psi_{nlm}$
+\end_inset
+
+, que son funciones propias del operador 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ serán las funciones propias de 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para demostrar dichas relaciones de conmutación recordemos que el hamiltoniano
+ puede escribirse como sigue:
+\begin_inset Formula 
+\[
+\mathcal{H}=-\frac{\hbar^{2}}{2m_{e}}\nabla^{2}-K\frac{Ze^{2}}{r}=\frac{\mathbf{p}^{2}}{2m_{e}}-K\frac{Ze^{2}}{r}
+\]
+
+\end_inset
+
+donde el operador 
+\begin_inset Formula $\mathbf{p}^{2}\equiv\left(p_{x},p_{y},p_{z}\right)$
+\end_inset
+
+ viene definido como
+\begin_inset Formula 
+\[
+p_{k}=-i\hbar\frac{\partial}{\partial k}\quad;\quad k=x,y,z
+\]
+
+\end_inset
+
+Con estos convenios, los operadores 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ pueden expresarse de la siguiente manera:
+\begin_inset Formula 
+\[
+L=\mathbf{r}\times\mathbf{p}=\left(L_{x},L_{y},L_{z}\right)\Rightarrow\begin{cases}
+L_{x}= & yp_{z}-zp_{y}\\
+L_{y}= & zp_{x}-xp_{z}\\
+L_{z}= & xp_{y}-yp_{x}
+\end{cases}
+\]
+
+\end_inset
+
+Por otra parte, se pueden verificar fácilmente las siguientes relaciones
+ de conmutación:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[p_{k},p_{q}\right] & = & 0\quad;\quad\left[p_{k},p_{q}^{2}\right]=0\quad;\forall\,\left(k,q\right)\\
+\left[k,p_{q}\right] & = & 0\quad;\quad\left[k,p_{q}^{2}\right]=0\quad;k\neq q
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veamos ahora cual es el conmutador 
+\begin_inset Formula $\left[k,p_{k}\right]$
+\end_inset
+
+.
+ Para ello veamos su acción sobre una función 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\left[k,p_{k}\right]=k\left(p_{k}f\right)-p_{k}\left(kf\right)=-i\hbar\left(k\frac{\partial f}{\partial k}-\frac{\partial}{\partial k}\left(kf\right)\right)=\\
+=-i\hbar\left(k\frac{\partial f}{\partial k}-f-k\frac{\partial f}{\partial k}\right)=i\hbar f
+\end{multline*}
+
+\end_inset
+
+ Por lo tanto: 
+\begin_inset Formula $\left[k,p_{k}\right]=i\hbar$
+\end_inset
+
+ para 
+\begin_inset Formula $k=x,y,z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Calculemos, así mismo, el conmutador 
+\begin_inset Formula $\left[k,p^{2}\right]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\left[k,p^{2}\right]=\left[k,p_{k}^{2}\right]=kp_{k}p_{k}-p_{k}p_{k}=\left(p_{k}k+\left[k,p_{k}\right]\right)p_{k}-p_{k}p_{k}k=\\
+=p_{k}kp_{k}+i\hbar p_{k}-p_{k}p_{k}k=p_{k}\left(p_{k}k+\left[k,p_{k}\right]\right)+i\hbar p_{k}-p_{k}p_{k}k
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[k,p^{2}\right]=2i\hbar p_{k}
+\]
+
+\end_inset
+
+Apliquemos estos resultados al cálculo del conmutador 
+\begin_inset Formula $\left[L_{z},\mathcal{H}\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\left[L_{z},\mathcal{H}\right]=\left(xp_{y}-yp_{x}\right)\left(\frac{p^{2}}{2m_{e}}-K\frac{Ze^{2}}{r}\right)-\left(\frac{p^{2}}{2m_{e}}-K\frac{Ze^{2}}{r}\right)\left(xp_{y}-yp_{x}\right)=\\
+=\frac{1}{2m_{e}}\left(xp_{y}p^{2}-p^{2}xp_{y}-yp_{x}p^{2}+p^{2}yp_{x}\right)+\\
+KZe^{2}\left(yp_{x}\frac{1}{r}-xp_{y}\frac{1}{r}+\frac{1}{r}xp_{y}-\frac{1}{r}yp_{x}\right)
+\end{multline*}
+
+\end_inset
+
+Determinemos el primer paréntesis aplicando las relaciones de conmutación
+ anteriormente obtenidas:
+\begin_inset Formula 
+\begin{eqnarray*}
+xp_{y}p^{2}-p^{2}xp_{y} & = & xp^{2}p_{y}-\left(xp^{2}-\left[x,p^{2}\right]\right)p_{y}=2i\hbar p_{x}p_{y}\\
+p^{2}yp_{x}-yp_{x}p^{2} & = & \left(yp^{2}-\left[y,p^{2}\right]\right)p_{x}-yp^{2}p_{x}=-2i\hbar p_{y}p_{x}
+\end{eqnarray*}
+
+\end_inset
+
+Como 
+\begin_inset Formula $\left[p_{x},p_{y}\right]=0$
+\end_inset
+
+, este primer paréntesis se anula.
+ Calculemos ahora el segundo.
+ Para ello apliquémoslo a la función 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+yp_{x}\frac{f}{r} & = & -i\hbar y\frac{\partial}{\partial x}\left(\frac{f}{r}\right)=-i\hbar\left(\frac{y}{r}\frac{\partial f}{\partial x}-yx\frac{f}{r^{3}}\right)=\\
+ & = & \frac{1}{r}yp_{x}+i\hbar yx\frac{f}{r^{3}}\\
+-xp_{y}\frac{f}{r} & = & i\hbar x\frac{\partial}{\partial y}\left(\frac{f}{r}\right)=i\hbar\left(\frac{x}{r}\frac{\partial f}{\partial x}-xy\frac{f}{r^{3}}\right)=\\
+ & = & -\frac{1}{r}xp_{y}-i\hbar xy\frac{f}{r^{3}}
+\end{eqnarray*}
+
+\end_inset
+
+Utilizando estos resultados se ve claramente que la acción del segundo paréntesi
+s sobre la función 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+ es nula.
+ El operador 
+\begin_inset Formula $\left[L_{z},\mathcal{H}\right]$
+\end_inset
+
+ es, por lo tanto, nulo.
+\end_layout
+
+\begin_layout Standard
+Análogamente se demuestra que:
+\begin_inset Formula 
+\[
+\left[L_{x},\mathcal{H}\right]=0;\quad;\quad\left[L_{y},\mathcal{H}\right]=0
+\]
+
+\end_inset
+
+Utilizando estas reglas de conmutación se obtiene fácilmente el conmutador
+ 
+\begin_inset Formula $\left[L^{2},\mathcal{H}\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[L^{2},\mathcal{H}\right]=\left[L_{x}^{2},\mathcal{H}\right]+\left[L_{y}^{2},\mathcal{H}\right]+\left[L_{z}^{2},\mathcal{H}\right]
+\]
+
+\end_inset
+
+Pero:
+\begin_inset Formula 
+\[
+\left[L_{x}^{2},\mathcal{H}\right]=L_{x}L_{x}\mathcal{H}-\mathcal{H}L_{x}L_{x}=0
+\]
+
+\end_inset
+
+puesto que 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ conmutan.
+ Lo mismo sucede para los otros dos conmutadores, lo que conduce al resultado
+ anunciado: 
+\begin_inset Formula $\left[L^{2},\mathcal{H}\right]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hemos llegado, por lo tanto, a la conclusión de que las funciones propias
+ del hamiltoniano 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, determinadas al resolver la ecuación de Schrödinger son también las de
+ los operadores 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+ Por lo tanto, se han de verificar las siguientes ecuaciones diferenciales:
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{L}^{2}\psi & = & L^{2}\psi\\
+\mathbf{L_{z}}\psi & = & L_{z}\psi
+\end{eqnarray*}
+
+\end_inset
+
+donde 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ son, respectivamente, el cuadrado del módulo del momento angular del electrón
+ y su coordenada según el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Utilizando las expresiones de los operadores en coordenadas esféricas,
+ tenemos para la primera ecuación diferencial:
+\begin_inset Formula 
+\[
+-\hbar^{2}\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial\varphi^{2}}\right)\psi=L^{2}\psi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordando que 
+\begin_inset Formula $\psi=R\left(r\right)\Theta\left(\theta\right)\Phi\left(\varphi\right)$
+\end_inset
+
+, y teniendo en cuenta que en el paréntesis sólo existen derivadas respecto
+ a las variables 
+\begin_inset Formula $\left(\theta,\varphi\right)$
+\end_inset
+
+, se obtiene fácilmente la ecuación:
+\begin_inset Formula 
+\[
+\frac{\sin^{2}\theta}{\Theta}\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial\Theta}{\partial\theta}\right)+\frac{L^{2}\sin^{2}\theta}{\hbar^{2}}=-\frac{1}{\Phi}\frac{\partial^{2}\Phi}{\partial\varphi^{2}}
+\]
+
+\end_inset
+
+ Comparando esta ecuación con la 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.9 p03 Ec. diferencial para theta y phi"
+
+\end_inset
+
+ del Apartado 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sec:1.1 Resolución de la ecuación de Schrödinger para el átomo de hidrógeno"
+
+\end_inset
+
+, vemos inmediatamente que se ha de cumplir la siguiente relación entre
+ los parámetros que en ellas intervienen:
+\begin_inset Formula 
+\[
+C=\frac{L^{2}}{\hbar^{2}}
+\]
+
+\end_inset
+
+Como hemos visto que para que las funciones 
+\begin_inset Formula $\Theta\left(\varphi\right)$
+\end_inset
+
+ esté acotadas la constante 
+\begin_inset Formula $C$
+\end_inset
+
+ ha de tomar los valores naturales 
+\begin_inset Formula $l\left(l+1\right)$
+\end_inset
+
+, tenemos cuantificados los valores propios de 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+L^{2}=\hbar^{2}l\left(l+1\right)\iff L=\hbar\sqrt{l\left(l+1\right)}
+\]
+
+\end_inset
+
+Se ve por lo tanto que el número cuántico 
+\begin_inset Formula $l$
+\end_inset
+
+, llamado habitualmente 
+\emph on
+número cuántico orbital
+\emph default
+, determina el valor del módulo del momento angular que está cuantificado.
+ Para los estados 
+\begin_inset Formula $s$
+\end_inset
+
+, en que 
+\begin_inset Formula $l=0$
+\end_inset
+
+, el momento angular es nulo.
+ El orbital posee simetría esférica, no dependiendo de los ángulos 
+\begin_inset Formula $\theta$
+\end_inset
+
+, azimutal, ni 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, ecuatorial.
+\end_layout
+
+\begin_layout Standard
+Veamos ahora cuales son los autovalores de 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+ Puesto que dicho operador es, en coordenadas esféricas:
+\begin_inset Formula 
+\[
+L_{z}=-i\hbar\frac{\partial}{\partial\varphi}
+\]
+
+\end_inset
+
+sólo actúa sobre la función 
+\begin_inset Formula $\Phi\left(\varphi\right)$
+\end_inset
+
+, por lo que se ha de verificar:
+\begin_inset Formula 
+\[
+-i\hbar\frac{\partial\Phi}{\partial\varphi}=L_{z}\Phi
+\]
+
+\end_inset
+
+ Utilizando la expresión de las funciones 
+\begin_inset Formula $\Phi_{m}\left(\varphi\right)$
+\end_inset
+
+, que son las soluciones que corresponden a la ecuación de Schrödinger,
+ tenemos:
+\begin_inset Formula 
+\[
+\Phi_{m}\left(\varphi\right)=\frac{1}{\sqrt{2\pi}}e^{im\varphi}\Rightarrow\frac{\partial}{\partial\varphi}\left(\Phi_{m}\right)=\frac{im}{\sqrt{2\pi}}e^{im\varphi}\Rightarrow L_{z}=m\hbar
+\]
+
+\end_inset
+
+El número cuántico 
+\begin_inset Formula $m=0,\pm1,\pm2,\ldots$
+\end_inset
+
+caracteriza el valor de la proyección del momento angular sobre el eje 
+\begin_inset Formula $z$
+\end_inset
+
+ escogido.
+ En el caso del átomo libro el eje elegido puede tener cualquier dirección
+ en el espacio, pero en ciertas condiciones experimentales este eje puede
+ venir determinado por una ligadura externa (por ejemplo, por un campo eléctrico
+ exterior).
+\end_layout
+
+\begin_layout Standard
+Naturalmente, los operadores 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{z}^{2}$
+\end_inset
+
+ tienen las mismas funciones propias puesto que conmutan, y los valores
+ propios de 
+\begin_inset Formula $L_{z}^{2}$
+\end_inset
+
+ se obtienen fácilmente:
+\begin_inset Formula 
+\[
+L_{z}^{2}\psi=L_{z}\left(L_{z}\psi\right)=L_{z}L_{z}\psi=L_{z}^{2}\psi=\hbar^{2}m^{2}\psi
+\]
+
+\end_inset
+
+Es de notar que el valor del observable correspondiente a 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ es siempre mayor que el máximo valor del observable correspondiente a 
+\begin_inset Formula $L_{z}^{2}$
+\end_inset
+
+, que se obtiene para 
+\begin_inset Formula $m=l$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\hbar^{2}l\left(l+1\right)>\hbar^{2}l^{2}
+\]
+
+\end_inset
+
+Si así no fuera y hubiesa una dirección para la cual coincidieran ambos
+ valores, tendríamos
+\begin_inset Formula 
+\[
+L^{2}=L_{z}^{2}
+\]
+
+\end_inset
+
+Ahora bien:
+\begin_inset Formula 
+\[
+L^{2}=L_{z}^{2}+L_{y}^{2}+L_{z}^{2}\Rightarrow L^{2}=L_{x}^{2}+L_{y}^{2}+L_{z}^{2}\Rightarrow L_{x}^{2}+L_{y}^{2}=0
+\]
+
+\end_inset
+
+Pero como 
+\begin_inset Formula $L_{x}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}^{2}$
+\end_inset
+
+ son cantidades positivas, han de ser ambas nulas, de manera que, al menos
+ para esa dirección, se podrían determinar simultáneamente los valores de
+ los observables correspondientes a los operadores 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+, en contra de lo que nos indican sus relaciones de conmutación.
+ Por el contrario, si 
+\begin_inset Formula $L^{2}>L_{z}^{2}$
+\end_inset
+
+, la suma 
+\begin_inset Formula $L_{x}^{2}+L_{y}^{2}$
+\end_inset
+
+ es distinta de cero, pudiendo tomar una infinidad de valores las proyecciones
+ 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+ del momento angular sobre los ejes 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ La dirección del mismo está indeterminada, preservándose así el principio
+ de incertidumbre de Heisemberg, aunque sea siempre paralelo a una de las
+ generatrices de un cono de revolución en torno al eje 
+\begin_inset Formula $z$
+\end_inset
+
+, de manera que forme con éste siempre el mismo ángulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+, tal que
+\begin_inset Formula 
+\[
+\cos\theta=\frac{m}{\sqrt{l\left(l+1\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Momento orbital magnético atómico
 \end_layout
 
 \begin_layout Standard
