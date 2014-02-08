@@ -4954,5 +4954,782 @@ reference "fig:2 p16 Funciones de distribución radial del átom de Hidrógeno"
  sea siempre superior a la más probable.
 \end_layout
 
+\begin_layout Section
+Espectro de un átomo hidrogenoide.
+ Reglas de selección
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Con objeto de desarrollar algunos de los conceptos que intervienen en este
+ Apartado, estudiamos en el Apéndice III (##REF) la interacción entre una
+ onda electromagnética luminosa y un átomo sencillo, constituído por dos
+ niveles energéticos solamente.
+ En dicho estudio se justifica, en el marco de la aproximación semiclásica,
+ la existencia de las transiciones inducidas (emisión y absorción) que tanta
+ importancia han tenido en el desarrollo de la Ciencia.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+La absorción y emisión de un cuanto luminoso se rige por la condición de
+ Bohr:
+\begin_inset Formula 
+\begin{equation}
+h\nu=E_{k}-E_{l}\label{eq:p24 Condición de Borh para la emisión/absorción de un cuanto de luz}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ y 
+\begin_inset Formula $E_{l}$
+\end_inset
+
+ son los niveles de energía que corresponden a los estados caracterizados
+ por las funciones 
+\begin_inset Formula $\psi_{k}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hemos visto que la energía del átomo hidrogenoide viene dada por la fórmula
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1.19 p11 Energía total del átomo"
+
+\end_inset
+
+ y que depende sólo del número cuántico principal.
+ Si el átomo se encuentra en un estado al que corresponde el número cuántico
+ 
+\begin_inset Formula $n$
+\end_inset
+
+, su energía será:
+\begin_inset Formula 
+\[
+E_{n}=-\frac{1}{n^{2}}\frac{Z^{2}e^{4}m_{e}}{2\left(4\pi\epsilon_{0}\right)^{2}\hbar^{2}}
+\]
+
+\end_inset
+
+En estas condiciones puede intereaccionar una onda electromagnética (ver
+ Apéndice III ##REF) de frecuencia 
+\begin_inset Formula $\nu$
+\end_inset
+
+, 
+\emph on
+absorbiendo
+\emph default
+ un cuanto 
+\begin_inset Formula $h\nu$
+\end_inset
+
+ y pasando al estado caracterizado por el número cuántico 
+\begin_inset Formula $n'>n$
+\end_inset
+
+, siempre que se verifique la relación:
+\begin_inset Formula 
+\[
+h\nu=\frac{Z^{2}e^{4}m_{e}}{2\left(4\pi\epsilon_{0}\right)^{2}\hbar^{2}}\left(\frac{1}{n^{2}}-\frac{1}{n^{\prime2}}\right)
+\]
+
+\end_inset
+
+Análogamente, si se encuentra en el estado correspondiente al número cuántico
+ 
+\begin_inset Formula $n^{\prime}$
+\end_inset
+
+, puede pasar al estado 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\emph on
+emitiendo
+\emph default
+ un cuanto de luz 
+\begin_inset Formula $h\nu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:6 p25 Energía-potencial-y niveles del átomo de Hidrógeno"
+
+\end_inset
+
+ se indican los posibles niveles energéticos del átomo de Hidrógeno 
+\begin_inset Formula $\left(Z=1\right)$
+\end_inset
+
+ y la curva correspondiente a la energía potencial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/figura-6-p25-energia_potencial.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Energía potencial y niveles de energía del átomo de Hidrógeno.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6 p25 Energía-potencial-y niveles del átomo de Hidrógeno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las transiciones entre estos niveles son las responsables del espectro de
+ emisión del átomo, cuyas líneas más importantes, determinadas experimentalmente
+, indicamos en el cuadro 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "tab:5 p26 Líneas de emisión del átomo de Hidrógeno"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las longitudes de onda del cuadro #tablaV están relacionadas con las frecuencias
+ 
+\begin_inset Formula $\nu$
+\end_inset
+
+ de transición por la expresión 
+\begin_inset Formula $\nu=c/\lambda$
+\end_inset
+
+, donde 
+\begin_inset Formula $c$
+\end_inset
+
+ es la velocidad de la luz en el vacío.
+ Las intensidades de las líneas son relativas, habiendo tomado como referencia
+ la intensidad de la línea 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ de la serie de Lyman 
+\begin_inset Formula $\left(\lambda=121.5668\, nm\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imgs/tabla-5-p26.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Líneas de emisión del átomo de Hidrógeno 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:5 p26 Líneas de emisión del átomo de Hidrógeno"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los espectros atómico no vienen caracterizados solamente por la energía
+ de transición de los cuantos emitidos o absorbidos, sino además por las
+ probabilidades de que estos fenómenos se produzcan.
+ La intensidad de las líneas observadas depende de esta probabilidad, a
+ la que se denomina también 
+\emph on
+fuerza de oscilador
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+En la aproximación dipolar (ver ##Apéndice III), la probabilidad 
+\begin_inset Formula $f_{kl}$
+\end_inset
+
+ de que se produzca una transición espontánea entre el estado 
+\begin_inset Formula $\psi\equiv\psi_{nlm}$
+\end_inset
+
+ y el estado 
+\begin_inset Formula $\psi\equiv\psi_{n^{\prime}l^{\prime}m^{\prime}}$
+\end_inset
+
+ depende de la energía de transición, 
+\begin_inset Formula $\Delta E_{kl}$
+\end_inset
+
+, y del momento dipolar de transición 
+\begin_inset Formula $D_{kl^{\prime}}$
+\end_inset
+
+ (
+\emph on
+fórmula de Mulliken y Rieke
+\emph default
+):
+\begin_inset Formula 
+\[
+f_{kl}=K\Delta E_{kl}D_{kl}^{2}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $K$
+\end_inset
+
+ es una constante que depende del sistema de unidades utilizado, 
+\begin_inset Formula $\Delta E_{kl}=E_{k}-E_{l}$
+\end_inset
+
+, y el término dipolar viene definido como:
+\begin_inset Formula 
+\[
+D_{kl}=\sum_{0}^{p}\int_{\tau}\psi^{*}r_{j}\psi_{l}d\tau
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+ es el radio vector del electrón 
+\begin_inset Formula $j-ésimo$
+\end_inset
+
+ del átomo.
+\end_layout
+
+\begin_layout Standard
+Las transiciones para las cuales 
+\begin_inset Formula $D_{kl}=0$
+\end_inset
+
+ se llaman prohibidas en la aproximación dipolar.
+ Su intensidad es nula y las líneas correspondientes no aparecen en el espectro.
+ Es, por lo tanto, de gran importancia en espectroscopía el determinar las
+ 
+\emph on
+reglas de selección
+\emph default
+ que cada aproximación impone, puesto que ello nos permitirá asignar las
+ líneas observadas experimentalmente a transiciones entre niveles energéticos.
+\end_layout
+
+\begin_layout Standard
+Es necesario señalar que transiciones 
+\emph on
+prohibidas
+\emph default
+ en una determinada aproximación, la dipolar por ejemplo, pueden no serlo
+ en otra aproximación de orden mayor (cuadrupolar, octopolar, etc) y ser
+ responsable de líneas de emisión o absorción.
+ Su probabilidad de transición es, en general, mucho menor que la correspondient
+e a las transiciones inducidas por la integración dipolar, lo que exige
+ la utilización de técnicas muy sensibles para poder observarlas.
+\end_layout
+
+\begin_layout Standard
+Veamos cómo se establecen las reglas de selección en la aproximación dipolar.
+ Descomponiendo el vector 
+\begin_inset Formula $r_{j}$
+\end_inset
+
+ en sus componentes 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+, tenemos que calcular las integrales:
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{\tau}\psi_{k}^{*}x\psi_{l}d\tau & = & D_{n^{\prime}l^{\prime}m^{\prime},nlm}^{x}\\
+\int_{\tau}\psi_{k}^{*}y\psi_{l}d\tau & = & D_{n^{\prime}l^{\prime}m^{\prime},nlm}^{y}\\
+\int_{\tau}\psi_{k}^{*}z\psi_{l}d\tau & = & D_{n^{\prime}l^{\prime}m^{\prime},nlm}^{z}
+\end{eqnarray*}
+
+\end_inset
+
+Cada una de estas tres integrales representa la probabilidad de que se produzca
+ una absorción (o emisión) de luz polarizada según uno de los ejes coordenados.
+ Calculemos la última de las integrales descomponiendo las funciones de
+ onda en su parte radial y su parte angular y recordando que 
+\begin_inset Formula $z=r\cos\theta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\int_{\tau}\psi_{k}^{*}z\psi_{l}d\tau=\int_{0}^{\infty}R_{n^{\prime}l^{\prime}}R_{nl}r^{3}dr\int_{0}^{\pi}\Theta_{l^{\prime}m^{\prime}}\Theta_{lm}\cos\theta\sin\theta d\theta\int_{0}^{2\pi}\Phi_{m^{\prime}}^{*}\Phi_{m}d\varphi
+\]
+
+\end_inset
+
+Como hemos visto en el apartado 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sub:1.1.1 p06 Resolución de la ecuación para Phi"
+
+\end_inset
+
+, la última integral es igual a la unidad para 
+\begin_inset Formula $m=m^{\prime}$
+\end_inset
+
+ y se anula para 
+\begin_inset Formula $m\neq m^{\prime}$
+\end_inset
+
+.
+ Por lo tanto, 
+\emph on
+en la aproximación dipolar, la regla de selección para el número cuántico
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ es
+\emph default
+:
+\begin_inset Formula 
+\[
+m^{\prime}-m=\Delta m=0
+\]
+
+\end_inset
+
+Poniendo ahora 
+\begin_inset Formula $m=m^{\prime}$
+\end_inset
+
+ para las transiciones 
+\emph on
+permitidas
+\emph default
+ tenemos:
+\begin_inset Formula 
+\[
+\int_{\tau}\psi_{k}^{*}z\psi_{l}d\tau=\int_{0}^{\infty}R_{n^{\prime}l^{\prime}}R_{nl}r^{3}\int_{0}^{\pi}\Theta_{l^{\prime}m}\Theta_{lm}\cos\theta\sin\theta d\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculemos ahora la integral en 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Haciendo el cambio de variables 
+\begin_inset Formula $\cos\theta=\mu$
+\end_inset
+
+, dicha integral se transforma en:
+\begin_inset Formula 
+\[
+\int_{0}^{\pi}\Theta_{l^{\prime}m}\Theta_{lm}\cos\theta\sin\theta d\theta=\int_{-1}^{1}\Theta_{l^{\prime}m}\Theta_{lm}\mu d\mu
+\]
+
+\end_inset
+
+Ahora bien, en el Apéndice II (##ref) se indica la siguiente relación de
+ recurrencia entre las funciones 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mu\Theta_{lm}=\left(\frac{\left(l+1\right)^{2}-m^{2}}{4\left(l+1\right)^{2}-1}\right)^{1/2}\Theta_{l+1,m}+\left(\frac{l^{2}-m^{2}}{4l^{2}-1}\right)^{1/2}\Theta_{l-1,m}
+\]
+
+\end_inset
+
+Sustituyendo en la integral, queda:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\Theta_{l^{\prime}m}\Theta_{lm}\mu d\mu=\int_{-1}^{1}\Theta_{l^{\prime}m}\left(A\Theta_{l+1,m}+B\Theta_{l-1,m}\right)d\mu
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ son constantes.
+\end_layout
+
+\begin_layout Standard
+Puesto que las funciones 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+ son ortogonales (ver Apéndice II, ##REF), la integral será distinta de
+ cero sólo cuando se verifique una de las siguientes relaciones:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+l^{\prime}=l-1\\
+l^{\prime}=l+1
+\end{array}\right.
+\]
+
+\end_inset
+
+lo que permite enunciar de la siguiente manera la 
+\emph on
+regla de selección en la aproximación dipolar para el número cuántica 
+\begin_inset Formula $l$
+\end_inset
+
+
+\emph default
+:
+\begin_inset Formula 
+\[
+\Delta l=\pm1
+\]
+
+\end_inset
+
+Es más fácil evaluar la integral en la variable 
+\begin_inset Formula $r$
+\end_inset
+
+, pero se puede indicar que, para las transiciones dipolares, no existe
+ ninguna restricción concerniente al número cuántico principal 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las reglas de selección 
+\begin_inset Formula $\Delta m=0$
+\end_inset
+
+; 
+\begin_inset Formula $\Delta l=\pm1$
+\end_inset
+
+ se refieren a las transiciones en las que se absorbe o emite luz linealmente
+ polarizada según el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Si sobre el átomo no actúa ningún campo externo que introduzca una dirección
+ privilegiada (com por ejemplo un campo magnético, en el caso del efecto
+ Zeeman, o un campo eléctrico, en el caso del efecto Stark) no cabe distinguir
+ entre los ejes 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ o 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Se dice que el átomo es 
+\emph on
+libre
+\emph default
+ y se observa experimentalmente que, en un gas constituido por este tipo
+ de átomos, la emisión 
+\emph on
+espontánea
+\emph default
+ no está polarizada y la absorción de la luz linealmente polarizada es la
+ misma en cualquier dirección del espacio.
+ Cualquiera de éstas puede ser, por lo tanto, el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ En el átomo libre no se puede deshacer esta ambigüedad, por lo que se admite
+ como dirección 
+\begin_inset Formula $z$
+\end_inset
+
+ la del campo eléctrico inductor de la transición o la del campo eléctrico
+ emitido por el átomo.
+\end_layout
+
+\begin_layout Standard
+Si exteriormente se fija una dirección privilegiada se escoge ésta como
+ el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ En este caso veamos a qué reglas de selección conduce a la inducción debida
+ a un campo eléctrico luminoso polarizado circularmente y propagándose según
+ el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Es decir, un campo eléctrico que se puede descomponer en dos componentes
+ egún los ejes del eje 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, desfasadas entre ellas un ángulo 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+.
+ Las integrales de momento dipolar de transición que es necesario calcular
+ son ahora:
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{\tau}\psi_{k}^{*}x\psi_{l}d\tau & = & D_{n^{\prime}l^{\prime}m^{\prime},nlm}^{x}\\
+\int_{\tau}\psi_{k}^{*}y\psi_{l}d\tau & = & D_{n^{\prime}l^{\prime}m^{\prime},nlm}^{y}
+\end{eqnarray*}
+
+\end_inset
+
+Calculemos la primera:
+\begin_inset Formula 
+\[
+\int_{\tau}\psi_{k}^{*}x\psi_{l}d\tau=\int_{0}^{\infty}R_{n^{\prime}l^{\prime}}R_{nl}r^{3}dr\int_{0}^{\pi}\Theta_{l^{\prime}m^{\prime}}\Theta_{lm}\sin^{2}\theta d\theta\int_{0}^{2\pi}\Phi_{m^{\prime}}^{*}\Phi_{m}\cos\varphi d\varphi
+\]
+
+\end_inset
+
+La última de las integrales resulta ser:
+\begin_inset Formula 
+\begin{multline*}
+\int_{0}^{2\pi}\Phi_{m^{\prime}}\Phi_{m}\cos\varphi d\varphi=\frac{1}{2\pi}\int_{0}^{2\pi}e^{-im^{\prime}\varphi}e^{im\varphi}\left(\frac{e^{i\varphi}+e^{-i\varphi}}{2}\right)d\varphi=\\
+=\frac{1}{4\pi}\left(\int_{0}^{2\pi}e^{-im^{\prime}\varphi}e^{i\left(m+1\right)\varphi}d\varphi+\int_{0}^{2\pi}e^{-im^{\prime}\varphi}e^{i\left(m-1\right)\varphi}d\varphi\right)
+\end{multline*}
+
+\end_inset
+
+La cantidad encerrada entre paréntesis es distinta de cero sólo cuando se
+ cumple una de estas dos condiciones:
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+m^{\prime}=m+1\\
+m^{\prime}=m-1
+\end{array}\right.
+\]
+
+\end_inset
+
+Por lo tanto, 
+\emph on
+en la aproximación dipolar la regla de selección para la luz circularmente
+ polarizada para el número cuántico 
+\begin_inset Formula $m$
+\end_inset
+
+ es
+\emph default
+:
+\begin_inset Formula 
+\[
+\Delta m=\pm1
+\]
+
+\end_inset
+
+Análogamente se demuestra que la regla de selección para 
+\begin_inset Formula $l$
+\end_inset
+
+ es la misma que en el caso anterior.
+\end_layout
+
+\begin_layout Standard
+Generalmente todas las direcciones del espacio son equivalentes y la única
+ regla de selección aplicada se refiere al número cuántico 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ Es decir:
+\begin_inset Formula 
+\[
+\Delta l=\pm1
+\]
+
+\end_inset
+
+Así, los espectros de los átomos con un sólo electrón pueden interpretarse
+ como transiciones del estado 
+\begin_inset Formula $s$
+\end_inset
+
+ al estado 
+\begin_inset Formula $p$
+\end_inset
+
+; del estado 
+\begin_inset Formula $p$
+\end_inset
+
+ a los estados 
+\begin_inset Formula $s$
+\end_inset
+
+ y 
+\begin_inset Formula $d$
+\end_inset
+
+; del estado 
+\begin_inset Formula $d$
+\end_inset
+
+ a los estados 
+\begin_inset Formula $p$
+\end_inset
+
+ y 
+\begin_inset Formula $f$
+\end_inset
+
+; etc.
+ Las demás transiciones son 
+\emph on
+prohibidas
+\emph default
+ y no se observan experimentalmente.
+\end_layout
+
+\begin_layout Standard
+Una consecuencia importante de las reglas de selección es que los átomos
+ hidrogenoides son a veces incapaces de volver rápidamente al estado fundamental
+ una vez excitados.
+ Por ejemplo, la transición del estado 
+\begin_inset Formula $\psi_{200}$
+\end_inset
+
+ al estado 
+\begin_inset Formula $\psi_{100}$
+\end_inset
+
+ no es posible más que por una intevención exterior o por colisiones con
+ otros átomos.
+ Tales estados de excitación de larga vida se denominan 
+\emph on
+metaestables
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
