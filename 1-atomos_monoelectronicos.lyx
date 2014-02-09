@@ -81,7 +81,7 @@ Aunque entre los átomos de la clasificación periódica el Hidrógeno y sus
  isótopos son los únicos que poseen un solo electrón, el estudio de estos
  sistemas tiene una importancia capital para la Física Cuántica.
  Ello es debido a que la ecuación de Schrödinger no puede ser resuelta de
- manera exacta más que para los átmos o 
+ manera exacta más que para los átomos o 
 \emph on
 iones hidrogenoides
 \emph default
@@ -281,7 +281,8 @@ reference "eq:1.5 p02 Ec.Schrödinger (coord.esféricas, independiente t)"
 
 \end_inset
 
-El primer término de esta igualda es únicamente función de la variable 
+El primer término de esta igualdad es únicamente función de la variable
+ 
 \begin_inset Formula $r$
 \end_inset
 
@@ -444,7 +445,7 @@ Poniendo
 \begin_inset Formula $\Phi\left(\varphi\right)$
 \end_inset
 
- se escribe com sigue:
+ se escribe como sigue:
 \begin_inset Formula 
 \[
 \Phi\left(\varphi\right)=Ae^{\omega\varphi}+Be^{-\omega\varphi}
@@ -705,7 +706,7 @@ Supongamos, primeramente, que
 \end_inset
 
  no es entero.
- En estas condiciones obtneemos:
+ En estas condiciones obtnemos:
 \begin_inset Formula 
 \[
 A=B=0\quad\text{(solución trivial)}
@@ -2298,7 +2299,7 @@ En el volumen elemental comprendido entre las dos esferas será, por lo tanto:
 
 \end_inset
 
-Sacando fuera de la integral la funoción que sólo depende de la variable
+Sacando fuera de la integral la función que sólo depende de la variable
  
 \begin_inset Formula $r$
 \end_inset
@@ -2345,7 +2346,7 @@ donde hemos hecho el cambio de variable
 \begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
 \end_inset
 
- normalizados en el intervalor 
+ normalizados en el intervalo 
 \begin_inset Formula $\left(-1,1\right)$
 \end_inset
 
@@ -3531,7 +3532,7 @@ El orbital
 \end_inset
 
 , por lo que dicho plano es nodal.
- Las mismas propiedades tienen los arbitales 
+ Las mismas propiedades tienen los orbitales 
 \begin_inset Formula $p_{x}$
 \end_inset
 
@@ -4701,7 +4702,7 @@ name "fig:5 p21 Diferentes representaciones de la función de onda total 2px"
 \end_layout
 
 \begin_layout Standard
-Las cruvas de contorno espaciales de 
+Las curvas de contorno espaciales de 
 \begin_inset Formula $\psi$
 \end_inset
 
@@ -7562,10 +7563,6 @@ Dirac ha demostrado que el factor
 \end_inset
 
 , e incluso presentando una cierta anisotropía.
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body
