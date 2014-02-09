@@ -7224,7 +7224,7 @@ reference "fig:7 p45 Esquema de niveles de energía"
 
 \end_inset
 
-)
+).
 \end_layout
 
 \begin_layout Standard
@@ -7277,6 +7277,295 @@ name "fig:7 p45 Esquema de niveles de energía"
 
 \begin_layout Subsection
 Spin del electrón
+\end_layout
+
+\begin_layout Standard
+Ciertos resultados experimentales (experimentos de Stern y Gerlach, estructura
+ fina de los metales alcalinos, etc) condujeron a pensar que el movimiento
+ del electrón no podía ser descrito con las coordenadas clásicas 
+\begin_inset Formula $(x,y,z)$
+\end_inset
+
+ y la cantidad de movimiento 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+, como si se tratara de un punto material.
+ Se hizo necesario recurrir a la introducción de un momento angular y un
+ momento magnético intrínsecos.
+ En 1925, Goudsmit y Uehlenbeck hicieron la hipótesis de que el electrón
+ poseía un movimiento orbital intrínseco 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+, independiente de su movimiento orbital, que se denomina 
+\emph on
+spin
+\emph default
+.
+ El nombre proviene de que se trató de hacer una analogía con el movimiento
+ de rotación de un planeta en torno a su eje.
+ La analogía no puede ser llevada muy lejos y el operador 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ de spin es exclusivamente una contribución cuántica.
+\end_layout
+
+\begin_layout Standard
+El operador momento angular total 
+\begin_inset Formula $\mathbf{J}$
+\end_inset
+
+ del electrón se escribe como sigue:
+\begin_inset Formula 
+\[
+\mathbf{J}=\mathbf{L}+\mathbf{S}
+\]
+
+\end_inset
+
+pero el operador 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ no actúa sobre funciones que dependar de las coordenadas cartesianas o
+ de sus derivadas, sino sobre nuevas funciones del espacio de Hilbert.
+\end_layout
+
+\begin_layout Standard
+Por analogía con los operadores 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ se supone la existencia de los operadores 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{z}$
+\end_inset
+
+ a los que se les atribuye las relaciones de conmutación:
+\begin_inset Formula 
+\[
+S^{2}=S_{x}^{2}+S_{y}^{2}+S_{z}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[S_{x},S_{y}\right]=i\hbar S_{z}\quad\left[S_{y},S_{z}\right]=i\hbar S_{x}\quad\left[S_{z},S_{x}\right]=i\hbar S_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[S_{x}^{2},S^{2}\right]=\left[S_{y}^{2},S^{2}\right]=\left[S_{z}^{2},S^{2}\right]=0
+\]
+
+\end_inset
+
+Según los datos experimentales, sólo existen dos orientaciones posibles
+ para el spin del electrón en el seno de un campo magnético 
+\begin_inset Formula $B$
+\end_inset
+
+: orientación 
+\emph on
+paralela
+\emph default
+ y la 
+\emph on
+antiparalela
+\emph default
+.
+ Al operador 
+\begin_inset Formula $S_{z}$
+\end_inset
+
+ le corresponden dos funciones propias, que se denominan 
+\begin_inset Formula $\left|\alpha\right\rangle $
+\end_inset
+
+ y 
+\begin_inset Formula $\left|\beta\right\rangle $
+\end_inset
+
+, cuyos valores propios son:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{z}\left|\alpha\right\rangle  & = & \frac{1}{2}\hbar\left|\alpha\right\rangle \\
+S_{z}\left|\beta\right\rangle  & = & -\frac{1}{2}\hbar\left|\beta\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+Análogamente, los valores propios de 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+, que tiene las mismas funciones propias que 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ son:
+\begin_inset Formula 
+\begin{eqnarray*}
+S^{2}\left|\alpha\right\rangle  & = & \frac{1}{2}\left(\frac{1}{2}+1\right)\hbar^{2}\left|\alpha\right\rangle \\
+S^{2}\left|\beta\right\rangle  & = & \frac{1}{2}\left(\frac{1}{2}+1\right)\hbar^{2}\left|\beta\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+Como en el caso del momento angular, el 
+\begin_inset Quotes eld
+\end_inset
+
+módulo
+\begin_inset Quotes erd
+\end_inset
+
+ de 
+\begin_inset Formula $S$
+\end_inset
+
+ es mayor que el valor absoluto de la proyección de 
+\begin_inset Formula $S$
+\end_inset
+
+ sobre el eje 
+\begin_inset Formula $z$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+S=\frac{\sqrt{3}}{2}\hbar>\left|S_{z}\right|=\frac{1}{2}\hbar
+\]
+
+\end_inset
+
+Por analogía con el momento magnético orbital se introduce el momento magnético
+ 
+\begin_inset Formula $\vec{\mu}_{s}$
+\end_inset
+
+ de spin electrónico:
+\begin_inset Formula 
+\[
+\vec{\mu}_{s}=g\gamma S
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\gamma=\frac{e}{2m_{e}}$
+\end_inset
+
+ es el factor giromagnético definido precedentemente mientras que 
+\begin_inset Formula $g$
+\end_inset
+
+ es un factor ajustable con el experimento.
+ La proyección del momento magnético de spin sobre el eje 
+\begin_inset Formula $z$
+\end_inset
+
+ se puede escribir:
+\begin_inset Formula 
+\[
+\vec{\mu}_{sz}=g\gamma S_{z}
+\]
+
+\end_inset
+
+Para dar cuenta de los resultados experimentales es preciso suponer que
+ 
+\begin_inset Formula $g=2$
+\end_inset
+
+, con lo que los valores propios 
+\begin_inset Formula $\mu_{sz}$
+\end_inset
+
+ de la proyección del momento magnético de spin sobre el eje 
+\begin_inset Formula $z$
+\end_inset
+
+, serán:
+\begin_inset Formula 
+\[
+\mu_{sz}=g\gamma\left(\pm\frac{1}{2}\right)\hbar=2m_{s}\gamma\hbar=\pm\beta_{M}
+\]
+
+\end_inset
+
+donde hemos puesto 
+\begin_inset Formula $m_{s}=\pm1/2$
+\end_inset
+
+, al que llamamos número cuántico magnético de spin.
+\end_layout
+
+\begin_layout Standard
+Dirac ha demostrado que el factor 
+\begin_inset Formula $g=2$
+\end_inset
+
+ se deduce del tratamiento relativista del electrón.
+ Recientes investigaciones teóricas y experimentales muestran que, en realidad,
+ es ligeramente superior a 
+\begin_inset Formula $2$
+\end_inset
+
+ en el caso del electrón libre 
+\begin_inset Formula $\left(g=2.0023\right)$
+\end_inset
+
+.
+ Por otra parte, en electrones ligados a campos cristalinos, tales como
+ los centros de color 
+\begin_inset Formula $F$
+\end_inset
+
+, se observan factores 
+\begin_inset Formula $g$
+\end_inset
+
+ ligeramente inferiores a 
+\begin_inset Formula $2$
+\end_inset
+
+, e incluso presentando una cierta anisotropía.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
