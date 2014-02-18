@@ -1,0 +1,889 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsbook
+\use_default_options true
+\begin_removed_modules
+figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman bookman
+\font_sans helvet
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Apéndice II 
+\begin_inset Newline newline
+\end_inset
+
+Soluciones de la ecuación de Schröginger con un potencial central: Armónicos
+ esféricos
+\end_layout
+
+\begin_layout Section
+Ecuación diferencial de tipo hipergeométrico
+\end_layout
+
+\begin_layout Standard
+El problema que nos ocupa es el de encontrar las soluciones 
+\begin_inset Formula $\psi\left(\vec{r}\right)$
+\end_inset
+
+ de la ecuación diferencial:
+\begin_inset Formula 
+\begin{equation}
+-\frac{\hbar}{2m_{e}}\nabla^{2}\psi\left(\vec{r}\right)+V\left(\vec{r}\right)\psi\left(\vec{r}\right)=E\psi\left(\vec{r}\right)\label{II-01 ecuación diferencial a resolver}
+\end{equation}
+
+\end_inset
+
+ que estén acotadas en todo el espacio (para todo valor finito de 
+\begin_inset Formula $\left|\vec{r}\right|$
+\end_inset
+
+) y que verifiquen la condición de normalización:
+\begin_inset Formula 
+\begin{equation}
+\int_{\tau}\left|\psi\left(\vec{r}\right)\right|d\tau=1\label{II-01 condición de normalización}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vamos a demostrar que dichas soluciones sólo existen para valores cuantificados
+ de la energía 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hemos visto en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:1.1 Resolución de la ecuación de Schrödinger para el átomo de hidrógeno"
+
+\end_inset
+
+ que utilizando las coordenadas esféricas 
+\begin_inset Formula $\left(r,\theta,\varphi\right)$
+\end_inset
+
+ la función de onda puede factorizarse:
+\begin_inset Formula 
+\[
+\psi\left(\vec{r}\right)=R\left(r\right)\Theta\left(\theta\right)\Phi\left(\varphi\right)
+\]
+
+\end_inset
+
+donde las funciones de una variable 
+\begin_inset Formula $R\left(r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\Theta\left(\theta\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\Phi\left(\varphi\right)$
+\end_inset
+
+ verifican las ecuaciones diferenciales:
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{d}{dr}\left(r^{2}\right)\frac{dR}{dr}+\frac{2m_{e}r^{2}}{\hbar^{2}}\left(E+K\frac{Ze^{2}}{r}\right)R-CR & = & 0\label{II-2 eq:1 ec.diferencial para R(r)}\\
+\frac{1}{\sin\theta}\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)+\left(C-\frac{m^{2}}{\sin^{2}\theta}\right)\Theta & = & 0\label{II-2 eq:2 ec.diferencial para Theta(theta)}\\
+\frac{d^{2}\Phi}{d\varphi^{2}}+m^{2}\Phi & = & 0\label{II-2 eq:3 ec.diferencial para Fi(fi)}
+\end{eqnarray}
+
+\end_inset
+
+Ya hemos resuelto en el apartado 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:1.1.1 p06 Resolución de la ecuación para Phi"
+
+\end_inset
+
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-2 eq:3 ec.diferencial para Fi(fi)"
+
+\end_inset
+
+ en 
+\begin_inset Formula $\Phi\left(\varphi\right)$
+\end_inset
+
+ y hemos encontrado que sus soluciones unívocas, acotadas y normalizadas
+ son:
+\begin_inset Formula 
+\[
+\Phi_{m}\left(\varphi\right)=\frac{1}{\sqrt{2\pi}}e^{im\varphi}\quad\left(m=0,\pm1,\pm2,\ldots\right)
+\]
+
+\end_inset
+
+Vamos a buscar ahora las soluciones acotadas y normalizadas de la ecuación
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-2 eq:2 ec.diferencial para Theta(theta)"
+
+\end_inset
+
+ para 
+\begin_inset Formula $\Theta\left(\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Haciendo el cambio de variable 
+\begin_inset Formula $\cos\theta=\mu$
+\end_inset
+
+, esta ecuación se transforma fácilmente en:
+\begin_inset Formula 
+\[
+\left(1-\mu^{2}\right)\frac{d^{2}\Theta}{d\mu}-2\mu\frac{d\Theta}{d\mu}+\frac{-C\mu^{2}+C-m^{2}}{1-\mu^{2}}\Theta=0
+\]
+
+\end_inset
+
+que en el intervalo abierto 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+ en que está definida puede escribirse de la siguiente manera:
+\begin_inset Formula 
+\begin{equation}
+\Theta^{\prime\prime}-\frac{2\mu}{1-\mu^{2}}\Theta^{\prime}\left(\mu\right)+\frac{-C\mu^{2}+C-m^{2}}{1-\mu^{2}}\Theta=0\label{II-02 ec:4}
+\end{equation}
+
+\end_inset
+
+Esta ecuación es del tipo de las denominadas 
+\emph on
+ecuaciones diferenciales especiales 
+\emph default
+de la Física Matemática, que se escriben genéricamente como sigue:
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(\mu\right)\Theta^{\prime\prime}+\eta\left(\mu\right)\Theta^{\prime}+\frac{\omega\left(\mu\right)}{\sigma\left(\mu\right)}\Theta=0\label{II-02 eq:5 ecuaciones especial de la física matemática}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\sigma\left(\mu\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\omega\left(\mu\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\eta\left(\mu\right)$
+\end_inset
+
+ son polinomios en 
+\begin_inset Formula $\mu$
+\end_inset
+
+, los dos primeros de grado igual o inferior a 2 y el último de grado igual
+ o inferior a uno.
+ En nuestro caso, 
+\begin_inset Formula $\sigma\left(\mu\right)=1-\mu^{2}$
+\end_inset
+
+ es positivo en todo el intervalo y se anula en los extremos, que son las
+ únicas singularidades de la ecuación.
+\end_layout
+
+\begin_layout Standard
+Con objeto de simplificar la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-02 eq:5 ecuaciones especial de la física matemática"
+
+\end_inset
+
+, vamos a efectuar una transformación de la forma:
+\begin_inset Formula 
+\[
+\Theta\left(\mu\right)=g\left(\mu\right)y\left(\mu\right)
+\]
+
+\end_inset
+
+ que nos proporcione una ecuación para 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ más sencilla que la de 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+.
+ Sustituyendo en la ecuación diferencial 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-02 eq:5 ecuaciones especial de la física matemática"
+
+\end_inset
+
+, queda:
+\begin_inset Formula 
+\[
+\sigma\left(gy\right)^{\prime\prime}+\eta\left(gy\right)^{\prime}+\frac{\omega}{\sigma}\left(gy\right)=0
+\]
+
+\end_inset
+
+Realizando las derivadas
+\begin_inset Formula 
+\[
+\left(gy\right)^{\prime}=g^{\prime}y+gy^{\prime}\Rightarrow\left(gy\right)^{\prime\prime}=g^{\prime\prime}y+2g^{\prime}y^{\prime}+gy^{\prime\prime}
+\]
+
+\end_inset
+
+Por lo tanto, sustituyendo en la ecuación diferencial y dividiendo por 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+, que hemos de escoger sin singularidades en el intervalo abierto 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+, tenemos:
+\begin_inset Formula 
+\[
+\sigma y^{\prime\prime}+\left(2\sigma\frac{g^{\prime}}{g}+\eta\right)y^{\prime}+\left(\sigma\frac{g^{\prime\prime}}{g}+\eta\frac{g^{\prime}}{g}+\frac{\omega}{\sigma}\right)y=0
+\]
+
+\end_inset
+
+El coeficiente de la derivada segunda de 
+\begin_inset Formula $y$
+\end_inset
+
+ es un polinomio de grado igual o inferior a 2.
+ Si hacemos que el coeficiente de la derivada primera sea un polinomio de
+ grado igual o inferior a 1, y que el coeficiente de la función sea una
+ constante, habremos simplificado la ecuación.
+ Es decir:
+\begin_inset Formula 
+\[
+\left(2\sigma\frac{g^{\prime}}{g}+\eta\right)=\tau\left(\mu\right)\quad\left(\text{polinomio de grado}\leq1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sigma\frac{g^{\prime\prime}}{g}+\eta\frac{g^{\prime}}{g}+\frac{\omega}{\sigma}\right)=\lambda\quad\left(\text{constante}\right)
+\]
+
+\end_inset
+
+En estas condiciones la ecuación diferencial se transforma en
+\begin_inset Formula 
+\begin{equation}
+\sigma y^{\prime\prime}+\tau y^{\prime}+\lambda y=0\label{II-04 eq:6 Ecuación hipergeométrica}
+\end{equation}
+
+\end_inset
+
+A esta ecuación se le denomina 
+\emph on
+hipergeométrica
+\emph default
+.
+ Determinadas sus soluciones acotadas 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ en 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+, la función 
+\begin_inset Formula 
+\[
+\Theta\left(\mu\right)=g\left(\mu\right)y\left(\mu\right)
+\]
+
+\end_inset
+
+será solución acotada de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-02 eq:5 ecuaciones especial de la física matemática"
+
+\end_inset
+
+ en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+ siempre que 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+esté acotada en dicho intervalo.
+\end_layout
+
+\begin_layout Standard
+Antes de determinar las soluciones 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ vamos a demostrar que el cambio funcional 
+\begin_inset Formula $\Theta\left(\mu\right)\to y\left(\mu\right)$
+\end_inset
+
+ es siempre posible.
+\end_layout
+
+\begin_layout Standard
+De la relación:
+\begin_inset Formula 
+\[
+\left(2\sigma\frac{g^{\prime}}{g}+\eta\right)=\tau\left(\mu\right)
+\]
+
+\end_inset
+
+ se obtiene la ecuación diferencial que debe verificar 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{g^{\prime}}{g}=\frac{\tau-\eta}{2\sigma}=\frac{\chi\left(\mu\right)}{\sigma\left(\mu\right)}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\chi\left(\mu\right)=\frac{\tau-\eta}{2}$
+\end_inset
+
+ ha de ser un polinomio de grado igual o inferior a 1.
+ Como, por otra parte, 
+\begin_inset Formula $\sigma\left(\mu\right)$
+\end_inset
+
+ es un polinomio de grado igual o inferior a 2, la integral
+\begin_inset Formula 
+\[
+\int\frac{\chi}{\sigma}d\mu
+\]
+
+\end_inset
+
+existe siempre.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+\log g\left(\mu\right)=\int\frac{\chi\left(\mu\right)}{\sigma\left(\mu\right)}d\mu
+\]
+
+\end_inset
+
+ Veamos ahora qué condiciones ha de cumplir 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+ para que el coeficiente de la función 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ en la ecuación diferencial 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-04 eq:6 Ecuación hipergeométrica"
+
+\end_inset
+
+ sea una constante:
+\begin_inset Formula 
+\[
+\lambda=\sigma\frac{g^{\prime\prime}}{g}+\sigma\frac{g^{\prime}}{g}+\frac{\omega}{\sigma}
+\]
+
+\end_inset
+
+ Como se verifica la relación:
+\begin_inset Formula 
+\[
+\left(\frac{g^{\prime}}{g}\right)^{\prime}=\frac{g^{\prime\prime}}{g}-\left(\frac{g^{\prime}}{g}\right)^{2}\Rightarrow\frac{g^{\prime\prime}}{g}=\left(\frac{g^{\prime}}{g}\right)^{\prime}+\left(\frac{g^{\prime}}{g}\right)^{2}
+\]
+
+\end_inset
+
+y por otra parte:
+\begin_inset Formula 
+\[
+\left(\frac{g^{\prime}}{g}\right)=\frac{\chi}{\sigma}\Rightarrow\left(\frac{g^{\prime}}{g}\right)^{\prime}=\frac{\chi^{\prime}\sigma-\chi\sigma^{\prime}}{\sigma^{2}}
+\]
+
+\end_inset
+
+sustituyendo en la expresión de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, tenemos:
+\begin_inset Formula 
+\[
+\lambda=\sigma\left(\frac{\chi^{\prime}\sigma-\chi\sigma^{\prime}}{\sigma^{2}}+\frac{\chi^{2}}{\sigma^{2}}\right)+\eta\frac{\chi}{\sigma}+\frac{\omega}{\sigma}
+\]
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+\lambda\sigma=\chi^{2}+\left(\eta-\sigma^{\prime}\right)\chi+\omega+\chi^{\prime}\sigma
+\]
+
+\end_inset
+
+ En esta ecuación desconocemos las dos constantes que definen el polinomio
+ 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+ y el parámetro 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Identificando los coeficientes de los dos polinomios a izquierda y derecha
+ del signo igual, que son, a lo sumo, de grado 2, tendremos un número de
+ ecuaciones suficientes para determinar estas tres constantes.
+\end_layout
+
+\begin_layout Standard
+Podemos despejar el polinomio 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+ como si se tratase de una ecuación de segundo grado en 
+\begin_inset Formula $\chi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\chi^{"}+\left(\eta-\sigma^{\prime}\right)\chi+\left(\omega-h\sigma\right)=0
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $h=\lambda-\chi^{\prime}$
+\end_inset
+
+ es una constante, por ser 
+\begin_inset Formula $\chi$
+\end_inset
+
+ un polinomio de grado igual o inferior a 1.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+\chi=\frac{\sigma^{\prime}-\eta}{2}\pm\sqrt{\left(\frac{\sigma^{\prime}-\eta}{2}\right)^{2}-\omega+h\sigma}
+\]
+
+\end_inset
+
+Ahora bien, como 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+ es un polinomio de grado igual o inferior a 1, el radicando debe ser el
+ cuadrado de un polinomio de grado uno o una constante.
+ Esto nos permite determinar 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Tendremos, en genearl, más de una solución, pero escogida una de ellas,
+ determinamos 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+y, a partir de éste, 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+, con lo que tenemos asegurada la transformación de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-02 eq:5 ecuaciones especial de la física matemática"
+
+\end_inset
+
+ en 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+ en una 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-04 eq:6 Ecuación hipergeométrica"
+
+\end_inset
+
+ de tipo hipergeométrico en 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para fijar ideas, vamos a aplicar esto a nuestro caso particular.
+ De la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-02 eq:5 ecuaciones especial de la física matemática"
+
+\end_inset
+
+, obtenemos:
+\begin_inset Formula 
+\[
+\sigma=1-\mu^{2}\qquad\eta=-2\mu\qquad\omega=-C\mu^{2}+C-m^{2}
+\]
+
+\end_inset
+
+ Por lo tanto, el radicando de la ecuación en 
+\begin_inset Formula $\chi$
+\end_inset
+
+ será:
+\begin_inset Formula 
+\begin{multline*}
+\left(\frac{\sigma^{\prime}-\eta}{2}\right)-\omega+h\sigma=\left(\frac{-2\mu+2\mu}{2}\right)^{2}+C\mu^{2}-C+m^{2}+h-h\mu^{2}=\\
+=\left(C-h\right)\mu^{2}-C+m^{2}+h
+\end{multline*}
+
+\end_inset
+
+Si escogemos la solución de que el radicando sea una constante, se ha de
+ anular el coeficiente de 
+\begin_inset Formula $\mu^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+C=h
+\]
+
+\end_inset
+
+Obtenemos así dos soluciones para 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\chi\left(\mu\right)=\pm m
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+El polinomio 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ será:
+\begin_inset Formula 
+\[
+\tau\left(\mu\right)=\eta\left(\mu\right)+2\chi\left(\mu\right)=-2\mu\pm2m
+\]
+
+\end_inset
+
+Si por el contrario adoptamos la solución de que el radicando sea el cuadrado
+ de un polinomio de grado 1, 
+\begin_inset Formula $C$
+\end_inset
+
+ ha de ser distinto de 
+\begin_inset Formula $h$
+\end_inset
+
+ y el discriminante de dicho radicando ha de ser nulo:
+\begin_inset Formula 
+\[
+-4\left(C-h\right)\left(-C+m^{2}+h\right)=0
+\]
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+h=C-m^{2}
+\]
+
+\end_inset
+
+ de donde se obtiene:
+\begin_inset Formula 
+\[
+\chi\left(\mu\right)=\pm m\mu
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+El polinomio 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ es en este caso:
+\begin_inset Formula 
+\[
+\tau\left(\mu\right)=-2\mu\pm2m\mu
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Cualquiera de las cuatro soluciones para 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ conducen a una ecuación hipergeométrica, pero, por razones que aclararemos
+ más adelante, elegiremos aquellas soluciones que cumplan las siguientes
+ condiciones:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ admite al menos un cero en el intervalo abierto 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\tau^{\prime}\left(\mu\right)$
+\end_inset
+
+ es negativa en dicho intervalo.
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $m\geq0$
+\end_inset
+
+, sólo la solución
+\begin_inset Formula 
+\[
+\tau\left(\mu\right)=-2\left(m+1\right)\mu
+\]
+
+\end_inset
+
+ verifica dichas condiciones, ya que las soluciones 
+\begin_inset Formula $\tau\left(\mu\right)=-2\left(\mu\pm m\right)$
+\end_inset
+
+ no poseen ceros para 
+\begin_inset Formula $m>1$
+\end_inset
+
+, y la solución 
+\begin_inset Formula $\tau\left(\mu\right)=-2\left(1-m\right)\mu$
+\end_inset
+
+ tiene derivada positiva para 
+\begin_inset Formula $m>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $m<0$
+\end_inset
+
+ sólo la solución:
+\begin_inset Formula 
+\[
+\tau\left(\mu\right)=-2\left(1-m\right)\mu
+\]
+
+\end_inset
+
+ verifica las dos condiciones.
+\end_layout
+
+\begin_layout Standard
+Si expresamos las soluciones en función del valor absoluto de 
+\begin_inset Formula $m$
+\end_inset
+
+, los dos polinomios 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ escogidos resultan ser el mismo.
+ Por lo tanto, estudiaremos el caso en el que 
+\begin_inset Formula $m\geq0$
+\end_inset
+
+, con la primera solución:
+\begin_inset Formula 
+\[
+\tau\left(\mu\right)=-2\left(m+1\right)\mu
+\]
+
+\end_inset
+
+ y el estudio será válido para el caso en que 
+\begin_inset Formula $m<0$
+\end_inset
+
+, sin más que utilizar en lugar de 
+\begin_inset Formula $m$
+\end_inset
+
+ su valor absoluto.
+\end_layout
+
+\begin_layout Standard
+Con estas hipótesis nuestra ecuación hipergeométrica resulta ser:
+\begin_inset Formula 
+\begin{eqnarray}
+\left(1-\mu^{2}\right)y^{\prime\prime}-2\left(m+1\right)\mu y^{\prime}+\left(C+m\left(m+1\right)\right)y & = & 0\nonumber \\
+\lambda=h+\chi^{\prime}=h-m=C-m^{2}-m & = & C-m\left(m+1\right)\label{II-8 eq:7}
+\end{eqnarray}
+
+\end_inset
+
+siendo la función 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+ de transformación:
+\begin_inset Formula 
+\[
+\log g\left(\mu\right)=\int\frac{-m\mu}{1-\mu^{2}}d\mu=\frac{m}{2}\log\left(1-\mu^{2}\right)\Rightarrow g\left(\mu\right)=\left(1-\mu^{2}\right)^{m/2}
+\]
+
+\end_inset
+
+Por lo tanto, la función 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+ resulta ser:
+\begin_inset Formula 
+\[
+\Theta\left(\mu\right)=\left(1-\mu^{2}\right)^{m/2}y\left(\mu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
