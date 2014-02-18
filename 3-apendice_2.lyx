@@ -78,7 +78,14 @@ Soluciones de la ecuación de Schröginger con un potencial central: Armónicos
 \end_layout
 
 \begin_layout Section
-Ecuación diferencial de tipo hipergeométrico
+Ecuación diferencial de tipo hipergeométrico 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-1 Ecuación diferencial de tipo hipergeométrico"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -883,6 +890,241 @@ Por lo tanto, la función
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Polinomios hipergeométricos 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-2 Polinomios-hipergeométricos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vamos a buscar ahora unas soluciones particulares de la ecuación hipergeométrica
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-04 eq:6 Ecuación hipergeométrica"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sigma y^{\prime\prime}+\tau y^{\prime}+\lambda y=0
+\]
+
+\end_inset
+
+ que tienen la importante propiedad de ser las únicas soluciones acotadas
+ y de cuadrado sumable en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Demostremos primeramente que las derivadas de cualquier orden de una solución
+ 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ de la ecuación hipergeométrica verifican también una ecuación del mismo
+ tipo.
+\end_layout
+
+\begin_layout Standard
+Derivando la ecuación diferencial obtenemos:
+\begin_inset Formula 
+\[
+\sigma^{\prime}y^{\prime\prime}+\sigma y^{\prime\prime\prime}+\tau^{\prime}y^{\prime}+\tau y^{\prime\prime}+\lambda y^{\prime}=0
+\]
+
+\end_inset
+
+Poniendo 
+\begin_inset Formula $v_{1}=y^{\prime}$
+\end_inset
+
+ resulta
+\begin_inset Formula 
+\[
+\sigma v_{1}^{\prime\prime}+\left(\tau+\sigma^{\prime}\right)v_{1}^{\prime}+\left(\lambda+\tau^{\prime}\right)v_{1}=0
+\]
+
+\end_inset
+
+Puesto que 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son polinomios de grado igual o inferior a 2 e igual o inferior a 1, respectiva
+mente, el coeficiente 
+\begin_inset Formula $\left(\tau+\sigma^{\prime}\right)$
+\end_inset
+
+ es un polinomio a lo sumo de grado 1, y 
+\begin_inset Formula $\left(\lambda+\tau^{\prime}\right)$
+\end_inset
+
+ es una constante.
+ La función 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, derivada primera de 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ verifica por tanto una ecuación de tipo hipergeométrico:
+\begin_inset Formula 
+\[
+\sigma v_{1}^{\prime\prime}+\tau_{1}v_{1}^{\prime}+\varepsilon_{1}v=0
+\]
+
+\end_inset
+
+con
+\begin_inset Formula 
+\[
+\tau_{1}=\tau+\sigma^{\prime}\quad;\quad\varepsilon_{1}=\lambda+\tau^{\prime}
+\]
+
+\end_inset
+
+Por recurrencia demostramos que las derivadas de cualquier orden 
+\begin_inset Formula $v_{2}=v_{1}^{\prime}$
+\end_inset
+
+, 
+\begin_inset Formula $\ldots$
+\end_inset
+
+, 
+\begin_inset Formula $v_{j}=y^{\left(j\right)}$
+\end_inset
+
+ verifican una ecuación de tipo hipergeométrico:
+\begin_inset Formula 
+\[
+\sigma v_{j}^{\prime\prime}+\tau_{j}v_{j}^{\prime}+\varepsilon_{j}v_{j}=0
+\]
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\[
+v_{j}=y^{(j)}=\frac{d^{j}y\left(\mu\right)}{d\mu^{j}}
+\]
+
+\end_inset
+
+ Determinemos los coeficientes 
+\begin_inset Formula $\tau_{j}\left(\mu\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+v_{2}=v_{1}^{\prime}=y^{\prime\prime} & \Rightarrow & \sigma v_{2}^{\prime\prime}+\tau_{2}v_{2}^{\prime}+\varepsilon_{2}v_{2}=0\Rightarrow\nonumber \\
+ &  & \tau_{2}=\tau_{1}+\sigma^{\prime}=\tau+2\sigma^{\prime}\nonumber \\
+ &  & \varepsilon_{2}=\varepsilon_{1}+\tau_{1}^{\prime}=\lambda+2\tau^{\prime}+\sigma^{\prime\prime}\nonumber \\
+v_{3}=v_{2}^{\prime}=y^{\prime\prime\prime} & \Rightarrow & \sigma v_{3}^{\prime\prime}+\tau_{3}v_{3}^{\prime}+\varepsilon_{3}v_{3}=0\Rightarrow\nonumber \\
+ &  & \tau_{3}=\tau_{2}+\sigma^{\prime}=\tau+3\sigma^{\prime}\nonumber \\
+ &  & \varepsilon_{3}=\varepsilon_{2}+\tau_{2}^{\prime}=\lambda+3\tau^{\prime}+3\sigma^{\prime\prime}\nonumber \\
+ & \vdots\nonumber \\
+v_{j}=v_{j-1}^{\prime}=y^{(j)} & \Rightarrow & \sigma v_{j}^{\prime\prime}+\tau_{j}v_{j}^{\prime}+\varepsilon_{j}v_{j}=0\Rightarrow\nonumber \\
+ &  & \tau_{j}=\tau_{j-1}+\sigma^{\prime}=\tau+j\sigma^{\prime}\nonumber \\
+ &  & \varepsilon_{j}=\varepsilon_{j-1}+\tau_{j-1}^{\prime}=\lambda+j\tau^{\prime}+\frac{j\left(j-1\right)}{2}\sigma^{\prime\prime}\label{II-9 eq:8}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otra parte, siempre que 
+\begin_inset Formula $\varepsilon_{1}\neq0$
+\end_inset
+
+, para 
+\begin_inset Formula $i=0,1,2,\ldots,j-1$
+\end_inset
+
+, es fácil ver que si 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ verifica la ecuación diferencial hipergeométrica, es la derivada 
+\begin_inset Formula $j-sima$
+\end_inset
+
+ de una función 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+, solución de la ecuación hipergeométrica de tipo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-04 eq:6 Ecuación hipergeométrica"
+
+\end_inset
+
+ para el valor 
+\begin_inset Formula $\lambda=\varepsilon_{0}$
+\end_inset
+
+ del parámetro, y donde el polinomio 
+\begin_inset Formula $\tau_{j}$
+\end_inset
+
+ y la constante 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+ vienen dados por las relaciones expresadas en 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-9 eq:8"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En efecto, supongamos que se verifica la ecuación:
+\begin_inset Formula 
+\[
+\sigma v_{j}^{\prime\prime}+\tau_{j}v_{j}^{\prime}+\varepsilon_{j}v_{j}=0
+\]
+
+\end_inset
+
+ y construyamos el polinomio 
+\begin_inset Formula $\tau_{j-1}$
+\end_inset
+
+, de grado igual o inferior a 1 y la constante 
+\begin_inset Formula $\varepsilon_{j-1}$
+\end_inset
+
+ de la siguiente forma:
 \end_layout
 
 \end_body
