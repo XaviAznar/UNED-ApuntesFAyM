@@ -2368,8 +2368,446 @@ Si
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Determinación de las soluciones acotadas de la ecuación hipergeométrica
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-4 Determinación de las soluciones acotadas de la ecuación hipergeométrica"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es evidente que los polinomios hipegeométricos 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ son soluciones acotadas, en el intervalo cerrado 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+ de la ecuación hipergeométrica.
+\end_layout
+
+\begin_layout Standard
+Supongamos que existe una solución 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ de la ecuación hipergeométrica, acotada y no trivial, para un valor de
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ distinto de todos los valores 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ que proporcionan los polinomios hipergeométricos.
+ Haciendo el mismo razonamiento que en el apartado anterior llegamos a la
+ siguiente expresión:
+\begin_inset Formula 
+\[
+\left(\lambda_{k}-\lambda\right)y\, y_{k}\rho=\frac{d}{d\mu}\left[\sigma\rho\left(y_{k}y^{\prime}-yy_{k}^{\prime}\right)\right]
+\]
+
+\end_inset
+
+ Integremos ahora entre los valores 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mu_{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\mu_{1}<\mu_{2}\right)$
+\end_inset
+
+ del intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(\lambda_{k}-\lambda\right)\int_{\mu_{1}}^{\mu_{2}}y\, y_{k}\rho d\mu=\left[\sigma\rho\left(y_{k}y^{\prime}-yy_{k}^{\prime}\right)\right]_{\mu_{1}}^{\mu_{2}}
+\]
+
+\end_inset
+
+ Si hacemos tender 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mu_{2}$
+\end_inset
+
+ hacia 
+\begin_inset Formula $-1$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ respectivamente, tendremos:
+\begin_inset Formula 
+\[
+\left(\lambda_{k}-\lambda\right)\int_{-1}^{1}y\, y_{k}\rho d\mu=C_{2}-C_{1}
+\]
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\begin{eqnarray*}
+C_{2} & = & \lim_{\mu\to1}\sigma\rho\left(y_{k}y^{\prime}-y\, y_{k}^{\prime}\right)\\
+C_{1} & = & \lim_{\mu\to-1}\sigma\rho\left(y_{k}y^{\prime}-y\, y_{k}^{\prime}\right)
+\end{eqnarray*}
+
+\end_inset
+
+Demostraremos ahora que las constantes 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ son, forzosamente, nulas, si 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ es acotada.
+ Para ello escribiremos la relación:
+\begin_inset Formula 
+\[
+\frac{d}{d\mu}\left(\frac{y}{y_{k}}\right)=\frac{y_{k}y^{\prime}-y\, y_{k}^{\prime}}{y_{k}^{2}}
+\]
+
+\end_inset
+
+ Integremos esta ecuación entre 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mu$
+\end_inset
+
+ de manera que 
+\begin_inset Formula $\mu_{0}<\mu<1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\left[\frac{y}{y_{k}}\right]_{\mu_{0}}^{\mu}=\int_{\mu_{0}}^{\mu}\frac{y_{k}y^{\prime}-y\, y_{k}^{\prime}}{y_{k}^{2}}d\mu\Rightarrow\\
+\Rightarrow y\left(\mu\right)=y_{k}\left(\mu\right)\left\{ \frac{y\left(\mu_{0}\right)}{y_{k}\left(\mu_{0}\right)}+\int_{\mu_{0}}^{\mu}\frac{y_{k}y^{\prime}-y\, y_{k}^{\prime}}{y_{k}^{2}}d\mu\right\} 
+\end{multline*}
+
+\end_inset
+
+ Elijamos 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ de manera que entre su valor y el extremo 
+\begin_inset Formula $1$
+\end_inset
+
+ del intervalo no exista ningún cero del polinomio 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+.
+ Esto siempre es posible puesto que el número de ceros de dicho polinimio
+ está, forzosamente, limitado.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+\lim_{\mu\to1}y\left(\mu\right)=y_{k}\left(1\right)\frac{y\left(\mu_{0}\right)}{y_{k}\left(\mu_{0}\right)}+y_{k}\left(1\right)\left\{ \lim_{\mu\to1}\int_{\mu_{0}}^{\mu}\frac{y_{k}y^{\prime}-y\, y_{k}^{\prime}}{y_{k}^{2}}d\mu\right\} 
+\]
+
+\end_inset
+
+ Ahora bien, si 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ es continua y está acotada en todo el intervalo, se debe cumplir:
+\begin_inset Formula 
+\[
+\lim_{\mu\to1}\int_{\mu_{0}}^{\mu}\frac{y_{k}y^{\prime}-y\, y_{k}^{\prime}}{y_{k}^{2}}d\mu<\infty
+\]
+
+\end_inset
+
+y al estar 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ acotada, el integrando varía como 
+\begin_inset Formula $\left(y_{k}y^{\prime}-y\, y_{k}^{\prime}\right)$
+\end_inset
+
+.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+\lim_{\mu\to1}\left(y_{k}y^{\prime}-y\, y_{k}^{\prime}\right)<\infty
+\]
+
+\end_inset
+
+ De la expresión de 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ deducimos:
+\begin_inset Formula 
+\[
+\lim_{\mu\to1}\left(y_{k}y^{\prime}-y\, y_{k}^{\prime}\right)=\lim_{\mu\to1}\frac{C_{2}}{\sigma\rho}
+\]
+
+\end_inset
+
+Pero al tender 
+\begin_inset Formula $\mu$
+\end_inset
+
+ hacia 
+\begin_inset Formula $1$
+\end_inset
+
+, el producto 
+\begin_inset Formula $\sigma\rho$
+\end_inset
+
+ tiende a cero, por lo que si el límite del paréntesis ha de ser finito,
+ forzosamente ha de ser nula la constante 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De idéntica manera se demuestra que 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ ha de ser nula.
+ Consecuentemente, si 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ es una solución acotada y no trivial de la ecuación hipergeométrica, ha
+ de ser también ortogonal a todos los polinomios hipergeométricos que genera
+ dicha ecuación diferencial:
+\begin_inset Formula 
+\[
+\left(\lambda_{k}-\lambda\right)\int_{-1}^{1}y\, y_{k}\rho d\mu=0\qquad\left(\lambda\neq\lambda_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora bien, puesto que 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ es una función continua y acotada, podemos desarrollarla como combinación
+ lineal de los polinomios 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y\left(\mu\right)=\sum_{0}^{\infty}c_{k}y_{k}
+\]
+
+\end_inset
+
+ En efecto, multipliquemos por 
+\begin_inset Formula $y_{k}\rho$
+\end_inset
+
+ dicho desarrollo e integremos en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y\, y_{k}\rho d\mu=\sum_{0}^{\infty}\int_{-1}^{1}y_{j}c_{k}y_{k}\rho d\mu=c_{k}\int_{-1}^{1}y_{k}^{2}\rho d\mu
+\]
+
+\end_inset
+
+ya que 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ son ortogonales.
+ Puesto que 
+\begin_inset Formula $y$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ también lo son y el integrando de la última integral es positivo en todo
+ el intervalo, la única posibilidad de que se verifique la igualdad es que
+ el coeficiente 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ del desarrollo de 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ sea nulo.
+ Esto es válido para todos los coeficientes 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ del desarrollo, lo que quiere decir que la función 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ es idénticamente nula.
+ Esto se expresa diciendo que el sistema constituido por los polinomios
+ hipergeométricos es completo, en el sentido de que si una función continua
+ y acotada es ortogonal a todos ellos, dicha función es idénticamente nula.
+\end_layout
+
+\begin_layout Standard
+Hemos llegado por tanto a la importante conclusión de que 
+\series bold
+las únicas soluciones continuas y acotadas, no triviales, de la ecuación
+ hipergeométrica son los polinomios hipergeométricos definidos por la fórmula
+ de Rodrigues
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Esto tiene una importante implicación en nuestra diferencial particular:
+\begin_inset Formula 
+\[
+\left(1-\mu^{2}\right)y^{\prime\prime}-2\left(m+1\right)\mu y^{\prime}+\left(C-m\left(m+1\right)\right)y=0
+\]
+
+\end_inset
+
+ en lo que se refiere a los valores que puede tomar el parámetro 
+\begin_inset Formula $C$
+\end_inset
+
+ para que las soluciones sean continuas y acotadas.
+ Los valores posibles de 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ son:
+\begin_inset Formula 
+\[
+\lambda_{k}=-k\tau^{\prime}-\frac{k\left(k-1\right)}{2}\sigma^{\prime\prime}
+\]
+
+\end_inset
+
+ Como en nuestro caso:
+\begin_inset Formula 
+\[
+\tau^{\prime}=-2\left(m+1\right)\qquad\sigma^{\prime\prime}=-2
+\]
+
+\end_inset
+
+los valores de 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ que proporcionan las soluciones acotadas son:
+\begin_inset Formula 
+\[
+\lambda_{k}=2\left(m+1\right)k+k\left(k-1\right)
+\]
+
+\end_inset
+
+ Por otra parte:
+\begin_inset Formula 
+\[
+\lambda_{k}=C-m\left(m+1\right)
+\]
+
+\end_inset
+
+Consecuentemente:
+\begin_inset Formula 
+\begin{eqnarray*}
+C & = & 2\left(m+1\right)k+k\left(k-1\right)+m\left(m+1\right)=\\
+ & = & \left(m+1\right)\left(k+m\right)+k\left(m+k\right)=\\
+ & = & \left(k+m\right)\left(k+m+1\right)
+\end{eqnarray*}
+
+\end_inset
+
+Poniendo 
+\begin_inset Formula $l=k+m$
+\end_inset
+
+, resulta:
+\begin_inset Formula 
+\[
+C=l\left(l+1\right)\qquad l=0,1,2,\ldots\quad;\quad m\leq l
+\]
+
+\end_inset
+
+Como veremos más adelante, el parámetro 
+\begin_inset Formula $C$
+\end_inset
+
+ está relacionado con la energía 
+\begin_inset Formula $E$
+\end_inset
+
+ del sistema atómico en el estado 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Por lo tanto, la cuantificación de la energía proviene de las condiciones
+ matemáticas impuestas a la función de onda: estar unívocamente definida
+ (número 
+\begin_inset Formula $m$
+\end_inset
+
+) y ser continua y acotada en todo el espacio (número 
+\begin_inset Formula $l$
+\end_inset
+
+).
 \end_layout
 
 \end_body
