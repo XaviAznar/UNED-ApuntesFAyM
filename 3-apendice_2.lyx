@@ -1125,6 +1125,1251 @@ En efecto, supongamos que se verifica la ecuación:
 \end_inset
 
  de la siguiente forma:
+\begin_inset Formula 
+\[
+\tau_{j-1}=\tau_{j}-\sigma^{\prime}\qquad\varepsilon_{j-1}=\varepsilon_{j}-\tau_{j-1}^{\prime}
+\]
+
+\end_inset
+
+Esto siempre es posible, puesto que conocemos 
+\begin_inset Formula $\sigma^{\prime}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau_{j}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varepsilon_{j}$
+\end_inset
+
+.
+ Sustituyamos en la ecuación diferencial que verifica 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sigma v_{j}^{\prime\prime}+\left(\tau_{j-1}+\sigma^{\prime}\right)v_{j}^{\prime}+\left(\varepsilon_{j-1}+\tau_{j-1}^{\prime}\right)v_{j}=0
+\]
+
+\end_inset
+
+Reagrupando los términos en la ecuación obtenemos fácilmente:
+\begin_inset Formula 
+\[
+\left(\sigma v_{j}\right)^{\prime}+\left(\tau_{j-1}v_{j}\right)^{\prime}=-\varepsilon_{j-1}v_{j}
+\]
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varepsilon_{j-1}$
+\end_inset
+
+ es distinto de cero, la integral del segundo miembro nos proporciona la
+ primitiva de 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ que llamamos 
+\begin_inset Formula $v_{j-1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+-\varepsilon_{j-1}\int v_{j}d\mu=-\varepsilon_{j-1}v_{j-1}=\sigma v_{j}^{\prime}+\tau_{j-1}v_{j}\Rightarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{j-1}=-\frac{1}{\varepsilon_{j-1}}\left(\sigma v_{j}^{\prime}+\tau_{j-1}v_{j}\right)
+\]
+
+\end_inset
+
+Por lo tanto, siempre que 
+\begin_inset Formula $\varepsilon_{j-1}$
+\end_inset
+
+ sea distinto de cero, existe 
+\begin_inset Formula $v_{j-1}$
+\end_inset
+
+ tal que su derivada es la función 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+.
+ Consecuentemente, sustituyendo 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ y su derivada por 
+\begin_inset Formula $v_{j-1}^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $v_{j-1}^{\prime\prime}$
+\end_inset
+
+ respectivamente, en la última ecuación, tenemos:
+\begin_inset Formula 
+\[
+\sigma v_{j-1}^{\prime\prime}+\tau_{j-1}v_{j-1}^{\prime}+\varepsilon_{j-1}v_{j-1}=0
+\]
+
+\end_inset
+
+ que es la ecuación hipergeométrica que verifica la primitiva de 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+, siempre que 
+\begin_inset Formula $\varepsilon_{j-1}$
+\end_inset
+
+ sea distinto de cero.
+\end_layout
+
+\begin_layout Standard
+Por recurrencia, demostramos que si 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ verifica las relaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-9 eq:8"
+
+\end_inset
+
+ y todos los 
+\begin_inset Formula $\varepsilon_{i}\neq0$
+\end_inset
+
+ para 
+\begin_inset Formula $i=0,1,2,\ldots,j-1$
+\end_inset
+
+, es que se trata de la derivada 
+\begin_inset Formula $j-sima$
+\end_inset
+
+ de una función 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ que verifica la ecuación hipergeométrica.
+ Esta propiedad permite construir una familia de soluciones particulares
+ de dicha ecuación.
+\end_layout
+
+\begin_layout Standard
+En efecto.
+ Sea 
+\begin_inset Formula $k$
+\end_inset
+
+ un valor particular del índice 
+\begin_inset Formula $j$
+\end_inset
+
+ para el que se verifica la ecuación:
+\begin_inset Formula 
+\[
+\sigma v_{k}^{\prime\prime}+\tau_{k}v_{k}^{\prime}+\varepsilon_{k}v_{k}=0
+\]
+
+\end_inset
+
+donde las expresiones:
+\begin_inset Formula 
+\[
+\left\{ \begin{aligned}\tau_{k}= & \tau+k\sigma^{\prime}\\
+\varepsilon_{k}= & \lambda_{k}+k\tau^{\prime}+\frac{k\left(k-1\right)}{2}\sigma^{\prime\prime}
+\end{aligned}
+\right.
+\]
+
+\end_inset
+
+la relacionan con la ecuación hipergeométrica que verifica la función 
+\begin_inset Formula $y_{k}\left(\mu\right)$
+\end_inset
+
+, para un valor dado 
+\begin_inset Formula $\lambda_{k}\neq0$
+\end_inset
+
+ del parámetro 
+\begin_inset Formula $\lambda$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sigma y_{k}^{\prime\prime}+\tau y_{k}^{\prime}+\lambda_{k}y_{k}=0
+\]
+
+\end_inset
+
+y siendo 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ la derivada 
+\begin_inset Formula $k-sima$
+\end_inset
+
+ de 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Elijamos el valor de 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ de manera que haga nulo el valor del coeficiente 
+\begin_inset Formula $\varepsilon_{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\lambda_{k}=-k\tau^{\prime}-\frac{k\left(k-1\right)}{2}\sigma^{\prime\prime}\label{II-11 eq:9}
+\end{equation}
+
+\end_inset
+
+Es decir, estamos interesados en las soluciones particulares que corresponden
+ a los valores 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ del parámetro 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, dados por la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-11 eq:9"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Demostraremos que bajo ciertas condiciones que han de cumplir las constantes
+ 
+\begin_inset Formula $\sigma^{\prime\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+, con esta elección de 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ todos los coeficientes 
+\begin_inset Formula $\varepsilon_{i}$
+\end_inset
+
+ para 
+\begin_inset Formula $i=0,1,2,\ldots,k-1$
+\end_inset
+
+ son distintos de cero.
+ Supongamos que 
+\begin_inset Formula $\varepsilon_{i}=0$
+\end_inset
+
+ para un valor 
+\begin_inset Formula $i<k$
+\end_inset
+
+.
+ Esto quiere decir que se verifican simultáneamente las ecuaciones:
+\begin_inset Formula 
+\begin{eqnarray*}
+\lambda_{k}+i\tau^{\prime}+\frac{i\left(i-1\right)}{2}\sigma^{\prime\prime} & = & 0\\
+\lambda_{k}+k\tau^{\prime}+\frac{k\left(k-1\right)}{2}\sigma^{\prime\prime} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Por lo tanto, los dos números naturales 
+\begin_inset Formula $k$
+\end_inset
+
+ e 
+\begin_inset Formula $i$
+\end_inset
+
+ verifican la misma ecuación de segundo grado:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma^{\prime\prime}k^{2}+\left(2\tau^{\prime}-\sigma^{\prime\prime}\right)k+2\lambda_{k} & = & 0\\
+\sigma^{\prime\prime}i^{2}+\left(2\tau^{\prime}-\sigma^{\prime\prime}\right)i+2\lambda_{k} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Es decir, se trata de las dos posibles raíces postivias de dicha ecuación.
+ Estudiemos estas raíces.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\sigma^{\prime\prime}=0=\tau^{\prime}$
+\end_inset
+
+, esto quiere decir que 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ es igual a cero.
+ Este valor no lo incluimos en el estudio, pero la integración de la ecuación
+ hipergeométrica es este caso es fácil de hacer teniendo en cuenta que 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ es, a lo sumo, un polinomio de primer grado y 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es una constante.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\sigma^{\prime\prime}=0$
+\end_inset
+
+ pero 
+\begin_inset Formula $\tau^{\prime}\neq0$
+\end_inset
+
+, resulta:
+\begin_inset Formula 
+\[
+k=-\frac{\lambda_{k}}{\tau^{\prime}}=i
+\]
+
+\end_inset
+
+ lo que quiere decir que existe solución única para 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Estudiamos ahora el caso en que 
+\begin_inset Formula $\sigma^{\prime\prime}\neq0$
+\end_inset
+
+ (en nuestro problema, tanto 
+\begin_inset Formula $\sigma^{\prime\prime}$
+\end_inset
+
+ como 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ son distintas de cero).
+ Podemos, por lo tanto, reescribir las ecuaciones de segundo grado como
+ sigue:
+\begin_inset Formula 
+\[
+\left\{ \begin{aligned}k^{2}+\left(\frac{2\tau^{\prime}}{\sigma^{\prime\prime}}-1\right)k+2\frac{\lambda_{k}}{\sigma^{\prime\prime}} & =0\\
+i^{2}+\left(\frac{2\tau^{\prime}}{\sigma^{\prime\prime}}-1\right)i+2\frac{\lambda_{k}}{\sigma^{\prime\prime}} & =0
+\end{aligned}
+\right.
+\]
+
+\end_inset
+
+Restando ambas ecuaciones resulta:
+\begin_inset Formula 
+\[
+k^{2}-i^{2}+\left(\frac{2\tau\prime}{\sigma^{\prime\prime}}-1\right)\left(k-i\right)=0
+\]
+
+\end_inset
+
+ Poniendo ahora 
+\begin_inset Formula $k=p+1$
+\end_inset
+
+, donde 
+\begin_inset Formula $p$
+\end_inset
+
+ es un número natural, obtenemos:
+\begin_inset Formula 
+\[
+p\left(2i+p-1+\frac{2\tau^{\prime}}{\sigma^{\prime\prime}}\right)=0
+\]
+
+\end_inset
+
+Esta ecuación se verifica para 
+\begin_inset Formula $p=0$
+\end_inset
+
+, que corresponde al caso en que 
+\begin_inset Formula $i=k$
+\end_inset
+
+ o bien cuando:
+\begin_inset Formula 
+\[
+\left(2i+p-1+\frac{2\tau^{\prime}}{\sigma^{\prime\prime}}\right)=0
+\]
+
+\end_inset
+
+En este último caso, entre 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $\sigma^{\prime\prime}$
+\end_inset
+
+ tiene que existir la relación:
+\begin_inset Formula 
+\[
+\frac{2\tau^{\prime}}{\sigma^{\prime\prime}}=-\left(2i-p-1\right)
+\]
+
+\end_inset
+
+Es decir, 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $\sigma^{\prime\prime}$
+\end_inset
+
+ han de tener signo contrario y su cociente ha de ser semientero.
+ En nuestro caso particular ambas constantes tienen signo negativo, por
+ lo que existe una sola raíz.
+ 
+\emph on
+Para un valor del parámetro 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ dado por la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-11 eq:9"
+
+\end_inset
+
+ todos los coeficientes 
+\begin_inset Formula $\varepsilon_{i}$
+\end_inset
+
+ para 
+\begin_inset Formula $i<k$
+\end_inset
+
+ son distintos de cero
+\emph default
+.
+\end_layout
+
+\begin_layout Remark*
+No oqueremos decir que si no se verifican las condiciones anteriores para
+ 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+y 
+\begin_inset Formula $\sigma^{\prime\prime}$
+\end_inset
+
+ existan dos raíces, sino que nosotros no hemos sido capaces de demostrar
+ lo contrario.
+\end_layout
+
+\begin_layout Standard
+Puesto que todos los 
+\begin_inset Formula $\epsilon_{i}$
+\end_inset
+
+ son distintos de cero para 
+\begin_inset Formula $i<k$
+\end_inset
+
+, existe la función 
+\begin_inset Formula $y_{k}\left(\mu\right)$
+\end_inset
+
+ cuya derivada 
+\begin_inset Formula $k-sima$
+\end_inset
+
+ verifica la ecuación diferencial:
+\begin_inset Formula 
+\[
+\sigma v_{k}^{\prime\prime}+\tau_{k}v_{k}^{\prime}=0
+\]
+
+\end_inset
+
+Esta ecuación admite como solución particular que 
+\begin_inset Formula $v_{k}=constante$
+\end_inset
+
+, pero como se trata de la derivada 
+\begin_inset Formula $k-sima$
+\end_inset
+
+ de la función 
+\begin_inset Formula $y_{k}\left(\mu\right)$
+\end_inset
+
+, esta última es un polinomio en 
+\begin_inset Formula $\mu$
+\end_inset
+
+ de grado 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Vamos a determinar dicho polinomio.
+ Sea 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+la derivada 
+\begin_inset Formula $i-sima$
+\end_inset
+
+ del mismo, para 
+\begin_inset Formula $i<k$
+\end_inset
+
+.
+ Por lo demostrado anteriormente se han de verificar las dos ecuaciones
+ diferenciales:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma y^{\prime\prime}+\tau y^{\prime}+\lambda_{k}y & = & 0\\
+\sigma v_{i}^{\prime\prime}+\tau_{i}v_{i}^{\prime}+\varepsilon_{i}v_{i} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Multipliquemos la primera ecuación por la función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+, definida positiva en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\sigma\rho y^{\prime\prime}+\tau\rho y^{\prime}+\lambda_{k}\rho y=0
+\]
+
+\end_inset
+
+ y hagamos que se verifique la siguiente relación:
+\begin_inset Formula 
+\[
+\sigma\rho y^{\prime\prime}+\tau\rho y^{\prime}=\left(\sigma\rho y^{\prime}\right)^{\prime}
+\]
+
+\end_inset
+
+es decir, que la función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ cumpla la siguiente ecuación diferencial:
+\begin_inset Formula 
+\[
+\sigma\rho y^{\prime\prime}+\tau\rho y^{\prime}=\sigma^{\prime}\rho y^{\prime}+\sigma\rho^{\prime}y^{\prime}+\sigma\rho y^{\prime\prime}\Rightarrow\left(\sigma\rho\right)^{\prime}=\tau\rho
+\]
+
+\end_inset
+
+Multiplicando la segunda ecuación por la función 
+\begin_inset Formula $\rho_{i}\left(\mu\right)$
+\end_inset
+
+ con las mismas condiciones, obtenemos
+\begin_inset Formula 
+\[
+\left(\sigma\rho_{i}\right)^{\prime}=\tau_{i}\rho_{i}
+\]
+
+\end_inset
+
+ Por lo tanto, nuestras ecuaciones diferenciales se transforman en estas
+ otras:
+\begin_inset Formula 
+\[
+\left\{ \begin{aligned}\left(\sigma\rho y^{\prime}\right)^{\prime}+\lambda_{k}\rho y & =0\\
+\left(\sigma\rho_{i}v_{i}^{\prime}\right)^{\prime}+\varepsilon_{i}\rho_{i}v_{i} & =0
+\end{aligned}
+\right.
+\]
+
+\end_inset
+
+Busquemos ahora la relación que deben guardar las funciones 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\rho_{i}\left(\mu\right)$
+\end_inset
+
+.
+ Como 
+\begin_inset Formula $\tau_{i}=\tau+i\sigma^{\prime}$
+\end_inset
+
+, tenemos:
+\begin_inset Formula 
+\[
+\frac{\left(\sigma\rho_{i}\right)^{\prime}}{\rho_{i}}=\tau_{i}=\tau+i\sigma^{\prime}=\frac{\left(\sigma\rho\right)^{\prime}}{\rho}+i\sigma^{\prime}
+\]
+
+\end_inset
+
+Efectuando las derivadas de los numeradores y dividiendo por 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, queda:
+\begin_inset Formula 
+\[
+\frac{\rho_{i}^{\prime}}{\rho_{i}}=\frac{\rho^{\prime}}{\rho}+i\frac{\sigma^{\prime}}{\sigma}
+\]
+
+\end_inset
+
+Integrando esta ecuación, resulta:
+\begin_inset Formula 
+\[
+\rho_{1}\left(\mu\right)=\sigma^{\prime}\rho\left(\mu\right)\Rightarrow\rho_{i+1}\left(\mu\right)=\sigma\rho_{i}\left(\mu\right)
+\]
+
+\end_inset
+
+Aplicando este resultado a la ecuación diferencial:
+\begin_inset Formula 
+\[
+\left(\sigma\rho_{i}v_{i}^{\prime}\right)^{\prime}+\varepsilon_{i}\rho_{i}v_{i}=0\qquad i<k
+\]
+
+\end_inset
+
+ obtenemos, puesto que 
+\begin_inset Formula $\varepsilon_{i}\neq0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\rho_{i}v_{i}=-\frac{1}{\varepsilon_{i}}\left(\sigma\rho_{i}v_{i}^{\prime}\right)^{\prime}=-\frac{1}{\varepsilon_{i}}\left(\rho_{i+1}v_{i+1}\right)^{\prime}
+\]
+
+\end_inset
+
+ Desarrollemos esta fórmula, de tipo recurrente, desde un valor del índice
+ 
+\begin_inset Formula $i=j<k$
+\end_inset
+
+ hasta 
+\begin_inset Formula $i=k-1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\rho_{i}v_{i}=\underbrace{\left(-\frac{1}{\varepsilon_{j}}\right)\left(-\frac{1}{\varepsilon_{j+1}}\right)\left(-\frac{1}{\varepsilon_{j+2}}\right)\cdots\left(-\frac{1}{\varepsilon_{k-1}}\right)}_{\left(k-j\right)\text{ factores}}\left(\rho_{k}v_{k}\right)^{\left(k-j\right)}=\\
+=\frac{\overbrace{\left(-\varepsilon_{0}\right)\left(-\varepsilon_{1}\right)\left(-\varepsilon_{2}\right)\cdots\left(-\varepsilon_{j-1}\right)}^{j\text{ factores}}}{\underbrace{\left(-\varepsilon_{0}\right)\left(-\varepsilon_{1}\right)\left(-\varepsilon_{2}\right)\cdots\left(-\varepsilon_{j-1}\right)\left(-\varepsilon_{j}\right)\cdots\left(-\varepsilon_{k-1}\right)}_{k\text{ factores}}}\left(\rho_{k}v_{k}\right)^{\left(k-j\right)}\Rightarrow\\
+\Rightarrow\rho_{j}v_{j}=\frac{A_{j}}{A_{k}}\left(\rho_{k}v_{k}\right)^{\left(k-j\right)}
+\end{multline*}
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\[
+A_{j}=\left(-1\right)^{j}\prod_{0}^{j-1}\varepsilon_{i}\qquad A_{k}=\left(-1\right)^{k}\prod_{0}^{k-1}\varepsilon_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varepsilon_{i}=\lambda_{k}+i\tau^{\prime}+\frac{i\left(i-1\right)}{2}\sigma^{\prime\prime}
+\]
+
+\end_inset
+
+Puesto que 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ es una constante,
+\begin_inset Formula 
+\[
+\left(\rho_{k}v_{k}\right)^{\left(k-j\right)}=v_{k}\rho_{k}^{\left(k-j\right)}
+\]
+
+\end_inset
+
+Por otra parte, si escribimos el polinomio 
+\begin_inset Formula $y_{k}\left(\mu\right)$
+\end_inset
+
+ en su forma habitual:
+\begin_inset Formula 
+\[
+y_{k}=a_{k}\mu^{k}+b_{k}\mu^{k-1}+c_{k}\mu^{k-2}+\cdots
+\]
+
+\end_inset
+
+tenemos:
+\begin_inset Formula 
+\[
+v_{k}=\frac{d^{k}y_{k}}{d\mu^{k}}=a_{k}\left(k\left(k-1\right)\left(k-2\right)\cdots1\right)=a_{k}k!
+\]
+
+\end_inset
+
+Como además, 
+\begin_inset Formula 
+\[
+\rho_{k}=\sigma^{k}\rho
+\]
+
+\end_inset
+
+obtenemos finalmente la fórmula de Rodrigues
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Fórmula de Rodrigues
+\end_layout
+
+\end_inset
+
+ para la derivada de orden 
+\begin_inset Formula $j$
+\end_inset
+
+ del polinomio 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+v_{j}=y_{k}^{\left(j\right)}=\frac{A_{j}}{A_{k}}\frac{a_{k}k!}{\sigma^{j}\rho}\frac{d^{k-j}}{d\mu^{k-j}}\left(\sigma^{k}\rho\right)\label{II-16 Fórmula de Rodrigues}
+\end{equation}
+
+\end_inset
+
+Como 
+\begin_inset Formula $A_{j}$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{k}$
+\end_inset
+
+ dependen de 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+, los escribiremos de la siguiente manera:
+\begin_inset Formula 
+\[
+A_{j}=A_{jk}\quad;\quad A_{k}=A_{kk}\quad;\quad\text{con }A_{0k}=\lambda_{k}
+\]
+
+\end_inset
+
+Llamando también 
+\begin_inset Formula $B_{k}^{\prime}$
+\end_inset
+
+ a la constante
+\begin_inset Formula 
+\[
+B_{k}^{\prime}=\frac{a_{k}k!}{A_{kk}}
+\]
+
+\end_inset
+
+ la fórmula de Rodrigues queda en su forma usual:
+\begin_inset Formula 
+\begin{equation}
+\frac{d^{j}y_{k}}{d\mu^{j}}=\frac{A_{jk}B_{k}^{\prime}}{\sigma^{j}\rho}\frac{d^{k-j}}{d\mu^{k-j}}\left(\sigma^{k}\rho\right)\label{II-17 eq:10 Fórmula de Rodrigues (forma habitual)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $j=0$
+\end_inset
+
+ obtenemos el polinomio 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+y_{k}=\frac{B_{k}}{\rho}\frac{d^{k}}{d\mu^{k}}\left(\sigma^{k}\rho\right)\label{II-17 eq:11 (y_k  para j=0)}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $B_{k}=B_{k}^{\prime}A_{0k}=B_{k}^{\prime}\lambda_{k}$
+\end_inset
+
+ es una constante.
+\end_layout
+
+\begin_layout Standard
+Los polinomios 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+, soluciones particulares de la ecuación hipergeométrica se denominan 
+\emph on
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\emph off
+Polinomios hipergeométricos 
+\begin_inset Formula $y_{k}\left(\mu\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+polinomios hipergeométricos
+\emph default
+.
+ Existe una infinidad de polinomios 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(k=0,1,2,\ldots\right)$
+\end_inset
+
+ que son soluciones de dicha ecuación para los diferentes valores 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ del parámetro 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, dados por la ecuación:
+\begin_inset Formula 
+\[
+\lambda_{k}=-k\tau^{\prime}-\frac{k\left(k-1\right)}{2}\sigma^{\prime\prime}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ortogonalidad de los polinomios hipergeométricos respecto a la función peso
+ 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-3 Ortogonalidad-de-los polinomios hipergeométricos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vamos a estudiar ahora en qué condiciones los polinomios 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ son ortogonales respecto a la función de peso 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+.
+ Hacemos esto porque, si así fuera, cualquier función 
+\begin_inset Formula $y\left(\mu\right)$
+\end_inset
+
+ continua y acotada en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+ podría ser desarrollada como combinación lineal de dichos polinomios:
+\begin_inset Formula 
+\[
+y\left(\mu\right)=\sum_{0}^{\infty}c_{k}y_{k}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Theorem*
+Si una función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ verifica la siguiente condición en los extremos del intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left.\rho\rho\mu^{k}\right|_{\mu=-1,1}=0\quad\left(k=0,1,2,\ldots\right)
+\]
+
+\end_inset
+
+los polinomios 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ son ortogonales en dicho intervalo, respecto al peso 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+.
+ Es decir:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y_{i}y_{j}\rho d\mu=0\quad\text{para }i\neq j\quad\left(\lambda_{i}\neq\lambda_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Veamos primeramente que es posible elegir la función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ de tal manera que verifique las condiciones exigidas en los extremos del
+ intervalo.
+\end_layout
+
+\begin_layout Proof
+Hemos elegido la función 
+\begin_inset Formula $\rho\left(\mu\right)>0$
+\end_inset
+
+ en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+, por lo que el producto 
+\begin_inset Formula $\sigma\rho$
+\end_inset
+
+ ha de terner, al menos, un máximo en dicho intervalo, puesto que se anula
+ en los extremos.
+ (Si sólo tuviera un mínimo sería porque 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ es negativo en todo el intervalo.
+ Bastaría cambiar de signo a toda la ecuación hipergeométrica para que el
+ polinomio que multiplica a 
+\begin_inset Formula $y^{\prime\prime}$
+\end_inset
+
+ fuera siempre positivo).
+ Por lo tanto, la derivada primera del producto 
+\begin_inset Formula $\sigma\rho$
+\end_inset
+
+ ha de anularse para un determinado valor 
+\begin_inset Formula $\mu_{M}$
+\end_inset
+
+ de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ en el interior del intervalo:
+\begin_inset Formula 
+\[
+\left(\sigma\rho\right)_{\mu=\mu_{M}}^{\prime}=0
+\]
+
+\end_inset
+
+Ahora bien, de la ecuación diferencial definitoria de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ obtenemos
+\begin_inset Formula 
+\[
+\left(\sigma\rho\right)_{\mu=\mu_{M}}^{\prime}=\tau\left(\mu_{M}\right)\rho\left(\mu_{M}\right)
+\]
+
+\end_inset
+
+Por lo tanto, como 
+\begin_inset Formula $\rho\left(\mu_{M}\right)\neq0$
+\end_inset
+
+, el polinomio 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+ ha de poseer al menos un cero en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+.
+ Para que se trate de un máximo, la derivada segunda ha de ser negativa:
+\begin_inset Formula 
+\[
+\left(\sigma\rho\right)_{\mu=\mu_{M}}^{\prime\prime}=\left(\tau^{\prime}\rho+\tau\rho^{\prime}\right)_{\mu=\mu_{M}}=\tau^{\prime}\rho\left(\mu_{M}\right)<0
+\]
+
+\end_inset
+
+ Como 
+\begin_inset Formula $\rho\left(\mu_{M}\right)$
+\end_inset
+
+ es mayor que cero, la derivada primera de 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+, que es una constante, ha de ser negativa.
+\end_layout
+
+\begin_layout Proof
+Estas dos condiciones son, precisamente, las que utilizamos para elegir
+ entre los posibles polinomios 
+\begin_inset Formula $\chi\left(\mu\right)$
+\end_inset
+
+ el que nos definía el polinomio 
+\begin_inset Formula $\tau\left(\mu\right)$
+\end_inset
+
+.
+ Por lo tanto, en nuestro caso se verifican las condiciones exigidas a la
+ función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ para que se cumpla el teorema de ortogonalidad.
+\end_layout
+
+\begin_layout Proof
+Calculemos ahora la integral:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y_{i}y_{j}\rho d\mu
+\]
+
+\end_inset
+
+ Para ello consideramos las ecuaciones:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\sigma\rho y_{i}^{\prime}\right)^{\prime}+\lambda_{i}\rho y_{i} & = & 0\\
+\left(\sigma\rho y_{j}^{\prime}\right)^{\prime}+\lambda_{j}\rho y_{j} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+Multipliquemos la primera por 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+, la segunda por 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ y restemos la una de la otra:
+\begin_inset Formula 
+\[
+\left(\lambda_{i}-\lambda_{j}\right)\rho y_{i}y_{j}=y_{i}\left(\sigma\rho y_{j}^{\prime}\right)-y_{j}\left(\sigma\rho y_{i}^{\prime}\right)^{\prime}
+\]
+
+\end_inset
+
+Integrando obtenemos
+\begin_inset Formula 
+\[
+\left(\lambda_{i}-\lambda_{j}\right)\int_{-1}^{1}y_{i}y_{j}\rho d\mu=\int_{-1}^{1}\left[y_{i}\left(\sigma\rho y_{j}^{\prime}\right)^{\prime}-y_{j}\left(\sigma\rho y_{i}^{\prime}\right)^{\prime}\right]d\mu
+\]
+
+\end_inset
+
+ Desarrollemos el integrando de la segunda integral:
+\begin_inset Formula 
+\begin{multline*}
+y_{i}\left(\sigma\rho y_{j}^{\prime}\right)^{\prime}-y_{j}\left(\sigma\rho y_{i}^{\prime}\right)^{\prime}=\\
+=y_{i}\left(\sigma^{\prime}\rho y_{j}^{\prime}+\sigma\rho^{\prime}y_{j}^{\prime}+\sigma\rho y_{j}^{\prime\prime}\right)-y_{j}\left(\sigma^{\prime}\rho y_{i}^{\prime}+\sigma\rho^{\prime}y_{i}^{\prime}+\sigma\rho y_{i}^{\prime\prime}\right)=\\
+=\left(\sigma^{\prime}\rho+\sigma\rho^{\prime}\right)\left(y_{i}y_{j}^{\prime}-y_{j}y_{i}^{\prime}\right)+\sigma\rho\left(y_{i}y_{j}^{\prime\prime}-y_{j}y_{i}^{\prime\prime}\right)
+\end{multline*}
+
+\end_inset
+
+ Pero el segundo paréntesis de las derivadas de 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ es la derivada del primero (wronskiano):
+\begin_inset Formula 
+\[
+\left(y_{i}y_{j}^{\prime}-y_{j}y_{i}^{\prime}\right)^{\prime}=y_{i}^{\prime}y_{j}^{\prime}+y_{i}y_{j}^{\prime\prime}-y_{i}^{\prime}y_{j}^{\prime}-y_{j}y_{i}^{\prime\prime}
+\]
+
+\end_inset
+
+ Consecuentemente, el integrando de la segunda integral puede escribirse
+ como sigue:
+\begin_inset Formula 
+\[
+y_{i}\left(\sigma\rho y_{j}^{\prime}\right)^{\prime}-y_{j}\left(\sigma\rho y_{i}^{\prime}\right)^{\prime}=\frac{d}{d\mu}\left[\sigma\rho\left(y_{i}y_{j}^{\prime}-y_{j}y_{i}^{\prime}\right)\right]
+\]
+
+\end_inset
+
+ Por lo tanto:
+\begin_inset Formula 
+\[
+\left(\lambda_{i}-\lambda_{j}\right)\int_{-1}^{1}y_{i}y_{j}\rho d\mu=\left[\sigma\rho\left(y_{i}y_{j}^{\prime}-y_{j}y_{i}^{\prime}\right)\right]_{\mu=-1}^{\mu=1}
+\]
+
+\end_inset
+
+Como tanto 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ como 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ y sus derivadas son polinomios en 
+\begin_inset Formula $\mu$
+\end_inset
+
+, el segundo miembro de la igualdad se anula para los extremos del intervalo,
+ debido a la condición impuesta a la función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+.
+ Por lo cual
+\begin_inset Formula 
+\[
+\left(\lambda_{i}-\lambda_{j}\right)\int_{-1}^{1}y_{i}y_{j}\rho d\mu=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+Si 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ es distinto a 
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ los polinomios 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ son ortogonales respecto al peso 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
