@@ -1746,7 +1746,7 @@ Busquemos ahora la relación que deben guardar las funciones
 \begin_inset Formula $\rho\left(\mu\right)$
 \end_inset
 
- y 
+mat
 \begin_inset Formula $\rho_{i}\left(\mu\right)$
 \end_inset
 
@@ -1918,9 +1918,9 @@ Como
 
 , los escribiremos de la siguiente manera:
 \begin_inset Formula 
-\[
-A_{j}=A_{jk}\quad;\quad A_{k}=A_{kk}\quad;\quad\text{con }A_{0k}=\lambda_{k}
-\]
+\begin{equation}
+A_{j}=A_{jk}\quad;\quad A_{k}=A_{kk}\quad;\quad\text{con }A_{0k}=\lambda_{k}\label{II-17 eq:A_j y A_k en funcion de lambda_k}
+\end{equation}
 
 \end_inset
 
@@ -2808,6 +2808,233 @@ Como veremos más adelante, el parámetro
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Section
+Cálculo del cuadrado de la norma de 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-5 Cálculo del cuadrado de la norma de y_{k}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El cuadrado 
+\begin_inset Formula $d_{k}^{2}$
+\end_inset
+
+ de la norma de 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+, respecto al peso 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+, se define de la siguiente manera:
+\begin_inset Formula 
+\[
+d_{k}^{2}=\int_{-1}^{1}y_{k}^{2}\,\rho\, d\mu
+\]
+
+\end_inset
+
+Aplicando la fórmulade Rodrigues tenemos:
+\begin_inset Formula 
+\[
+y_{k}=\frac{B_{k}}{\rho}\frac{d^{k}}{d\mu^{k}}\left(\sigma^{k}\rho\right)=\frac{B_{k}}{\rho}\left(\sigma^{k}\rho\right)^{\left(k\right)}
+\]
+
+\end_inset
+
+donde el símbolo 
+\begin_inset Formula $\left(k\right)$
+\end_inset
+
+ significa la derivada 
+\begin_inset Formula $k-sima$
+\end_inset
+
+.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+d_{k}^{2}=\int_{-1}^{1}y_{k}\frac{B_{k}}{\rho}\left(\sigma^{k}\rho\right)^{\left(k\right)}\rho d\mu=B_{k}\int_{-1}^{1}y_{k}\left(\sigma^{k}\rho\right)^{\left(k\right)}d\mu
+\]
+
+\end_inset
+
+ Integrando por partes, tenemos:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y_{k}\left(\sigma^{k}\rho\right)^{\left(k\right)}d\mu=\left[\left(\sigma^{k}\rho\right)^{\left(k-1\right)}y_{k}\right]_{-1}^{1}-\int_{-1}^{1}y_{k}^{\prime}\left(\sigma^{k}\rho\right)^{\left(k-1\right)}d\mu
+\]
+
+\end_inset
+
+ Ahora bien, las derivadas de orden 
+\begin_inset Formula $j$
+\end_inset
+
+, para 
+\begin_inset Formula $j<k$
+\end_inset
+
+, de 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ son también polinomios hipergeométricos, cuya fórmula es:
+\begin_inset Formula 
+\[
+v_{j}=\frac{d^{j}y_{k}}{d\mu^{j}}=\frac{A_{jk}B_{k}^{\prime}}{\sigma^{j}\rho}\left(\sigma^{k}\rho\right)^{\left(k-j\right)}
+\]
+
+\end_inset
+
+De esta fórmula se deduce:
+\begin_inset Formula 
+\[
+\left(\sigma^{k}\rho\right)^{\left(k-j\right)}=\frac{1}{A_{jk}B_{k}^{\prime}}\sigma^{j}\rho v_{j}
+\]
+
+\end_inset
+
+ En el caso de 
+\begin_inset Formula $j=1$
+\end_inset
+
+, tenemos
+\begin_inset Formula 
+\[
+\left(\sigma^{k}\rho\right)^{\left(k-1\right)}=\frac{1}{A_{1k}B_{k}^{\prime}}\sigma\rho v_{1}
+\]
+
+\end_inset
+
+ Utilizando este resultado, obtenemos:
+\begin_inset Formula 
+\[
+\left[\left(\sigma^{k}\rho\right)^{\left(k-1\right)}y_{k}\right]_{-1}^{1}=\frac{1}{A_{1k}B_{k}^{\prime}}\left[\sigma\rho v_{1}v_{k}\right]_{-1}^{1}
+\]
+
+\end_inset
+
+Como tanto 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ como 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ son polinomios en 
+\begin_inset Formula $\mu$
+\end_inset
+
+, la función encerrada en el corchete que se anula en los extremos del intervalo
+ 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+, debido a las condiciones impuestas a la función 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+.
+ Nos queda, pues:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y_{k}\left(\sigma^{k}\rho\right)^{\left(k\right)}=-\int_{-1}^{1}y_{k}^{\prime}\left(\sigma^{k}\rho\right)^{\left(k-1\right)}d\mu=-\int_{-1}^{1}v_{1}\left(\sigma^{k}\rho\right)^{\left(k-1\right)}d\mu
+\]
+
+\end_inset
+
+ Repitiendo el proceso de integración 
+\begin_inset Formula $k$
+\end_inset
+
+ veces, obtenemos:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y_{k}\left(\sigma^{k}\rho\right)^{\left(k\right)}d\mu=\left(-1\right)^{k}v_{k}\int_{-1}^{1}\sigma^{k}\rho d\mu
+\]
+
+\end_inset
+
+Por lo tanto:
+\end_layout
+
+\begin_layout Standard
+Como, por otra parte, como vimos en las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-16 Fórmula de Rodrigues"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-17 eq:A_j y A_k en funcion de lambda_k"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+v_{k}=a_{k}k!=B_{k}^{\prime}A_{kk}=\frac{B_{k}}{\lambda_{k}}A_{kk}\quad;\quad A_{kk}=\left(-1\right)^{k}\prod_{0}^{k-1}\varepsilon_{i}
+\]
+
+\end_inset
+
+queda finalmente:
+\begin_inset Formula 
+\[
+d_{k}^{2}=\frac{B_{k}^{2}}{\lambda_{k}}\left(\prod_{0}^{k-1}\varepsilon_{i}\right)\int_{1}^{1}\sigma^{k}\rho d\mu
+\]
+
+\end_inset
+
+ donde 
+\begin_inset Formula $\varepsilon_{i}$
+\end_inset
+
+ tiene por expresión:
+\begin_inset Formula 
+\[
+\varepsilon_{i}=\lambda_{k}+i\tau^{\prime}+\frac{i\left(i-1\right)}{2}\sigma^{\prime\prime}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ortogonalidad de las funciones 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-6 Ortogonalidad-de-las funciones Theta_l,m"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
