@@ -819,7 +819,14 @@ Para
 
 \end_inset
 
- verifica las dos condiciones.
+ verifica las dos condiciones
+\begin_inset CommandInset label
+LatexCommand label
+name "II-07 verifica las dos condiciones"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3031,6 +3038,457 @@ name "sec:II-6 Ortogonalidad-de-las funciones Theta_l,m"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Hemos visto que las funciones:
+\begin_inset Formula 
+\[
+\Theta_{l,m}=g\left(\mu\right)y_{l,m}\qquad l=k+m
+\]
+
+\end_inset
+
+son soluciones de la ecuación diferencial que verifica 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+.
+ Por estar la función de transformación 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+ acotada en el intervalo 
+\begin_inset Formula $\left(-1,1\right)$
+\end_inset
+
+, las funciones 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+ son las únicas soluciones acotadas de nuestra ecuación diferencial.
+ Veamos en qué se traduce la ortogonalidad de los polinomios 
+\begin_inset Formula $y_{l-m}\equiv y_{k}$
+\end_inset
+
+ respecto al peso 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ en relación con las funciones 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+.
+ Para ello calculemos la integral:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\Theta_{l,m}\Theta_{l^{\prime},m}d\mu
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $l=k+m$
+\end_inset
+
+ y 
+\begin_inset Formula $l^{\prime}=k^{\prime}+m$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\Theta_{l,m}\Theta_{l^{\prime},m}d\mu=\int_{-1}^{1}g\, y_{l-m}y_{l^{\prime}-m}d\mu
+\]
+
+\end_inset
+
+En nuestro caso particular, las funciones 
+\begin_inset Formula $g\left(\mu\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\rho\left(\mu\right)$
+\end_inset
+
+ tienen por expresión:
+\begin_inset Formula 
+\[
+g\left(\mu\right)=\left(1-\mu\right)^{m/2}\quad;\quad\rho\left(\mu\right)=\left(1-\mu\right)^{m}\quad\Rightarrow g^{2}=\rho
+\]
+
+\end_inset
+
+Por lo tanto
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\Theta_{l,m}\Theta_{l^{\prime},m}d\mu=\int_{-1}^{1}y_{l-m}y_{l^{\prime}-m}\rho d\mu
+\]
+
+\end_inset
+
+ 
+\emph on
+Debido a la ortogonalidad de los polinomios hipergeométricos respecto al
+ peso 
+\begin_inset Formula $\rho$
+\end_inset
+
+, las funciones 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+ resultan ortogonales respecto al peso unidad
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Es conveniente elegir las funciones 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+ de manera que estén normalizadas.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\Theta_{l,m}^{2}d\mu=1
+\]
+
+\end_inset
+
+Como por otra parte, tenemos:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\Theta_{l,m}^{2}d\mu=\int_{-1}^{1}y_{l-m}^{2}d\mu
+\]
+
+\end_inset
+
+ tenemos que ajustar las constantes multiplicativas del polinomio hipergeométric
+o de manera que el cuadrado de su norma sea la unidad:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}y_{l-m}^{2}\rho d\mu=\int_{-1}^{1}y_{k}^{2}\rho d\mu=\frac{B_{k}^{2}}{\lambda_{k}}\prod_{0}^{k-1}\varepsilon_{i}\int_{-1}^{1}\sigma^{k}\rho d\mu=1
+\]
+
+\end_inset
+
+Esta ecuación nos permite determinar, en cada caso, el coeficiente 
+\begin_inset Formula $B_{k}^{2}/\lambda_{k}\equiv B_{l-m}^{2}/\lambda_{l-m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En nuestro caso:
+\begin_inset Formula 
+\[
+\int_{-1}^{1}\sigma^{k}\rho d\mu=\int_{-1}^{1}\sigma^{l-m}\rho d\mu=\int_{-1}^{1}\left(1-\mu^{2}\right)^{l-m}\left(1-\mu^{2}\right)^{m}d\mu=\int_{-1}^{1}\left(1-\mu^{2}\right)^{l}d\mu
+\]
+
+\end_inset
+
+ Haciendo el cambio de variable 
+\begin_inset Formula $\mu=\cos\theta$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\int_{-1}^{1}\left(1-\mu^{2}\right)^{l}d\mu=\int_{\pi}^{0}\left(\sin^{2}\theta\right)^{l}\left(-\sin\theta\right)d\theta=\int_{0}^{\pi}\left(\sin\theta\right)^{2l+1}d\theta=\\
+=\int_{0}^{\pi}\left(1-\cos^{2}\theta\right)\left(\sin\theta\right)^{2l-1}d\theta=\int_{0}^{\pi}\left(\sin\theta\right)^{2l-1}d\theta-\\
+-\int_{0}^{\pi}\cos\theta\left(\sin\theta\right)^{2l-1}d\left(\sin\theta\right)
+\end{multline*}
+
+\end_inset
+
+Ahora bien:
+\begin_inset Formula 
+\[
+\int_{0}^{\pi}\cos\theta\left(\sin\theta\right)^{2l-1}d\left(\sin\theta\right)=\left[\frac{1}{2l}\left(\sin\theta\right)^{2l}\cos\theta\right]_{0}^{\pi}+\frac{1}{2l}\int_{0}^{\pi}\left(\sin\theta\right)^{2l+1}d\theta
+\]
+
+\end_inset
+
+La cantidad entre corchetes se anula en los extremos del intervalo, con
+ lo que llamando 
+\begin_inset Formula $I_{j}$
+\end_inset
+
+ a la integral:
+\begin_inset Formula 
+\[
+I_{j}=\int_{0}^{\pi}\left(\sin\theta\right)^{j}d\theta
+\]
+
+\end_inset
+
+obtenemos la siguiente relación, poniendo 
+\begin_inset Formula $j=2l+1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I_{2l+1}=I_{2l-1}-\frac{1}{2l}I_{2l+1}\Rightarrow I_{2l+1}=\frac{2l}{2l+1}I_{2l-1}
+\]
+
+\end_inset
+
+o bien:
+\begin_inset Formula 
+\[
+I_{j}=\frac{j-1}{j}I_{j-2}\qquad j\text{ impar}
+\]
+
+\end_inset
+
+Aplicando esta relación de recurrencia desde 
+\begin_inset Formula $j=2l+1$
+\end_inset
+
+ hasta el valor de 
+\begin_inset Formula $l=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+I_{j}=\left(\frac{j-1}{j}\right)\left(\frac{j-3}{j-2}\right)\left(\frac{j-5}{j-4}\right)\cdots\left(\frac{j-\left(j-2\right)}{j-\left(j-3\right)}\right)I_{j-\left(j-1\right)}
+\]
+
+\end_inset
+
+Multiplicando arriba y abajo por el numerador queda:
+\begin_inset Formula 
+\[
+I_{j}=\frac{\left[\left(j-1\right)\left(j-3\right)\left(j-5\right)\cdots\left(j-\left(j-2\right)\right)\right]^{2}}{j!}\int_{0}^{\pi}\sin\theta d\theta
+\]
+
+\end_inset
+
+Pero para 
+\begin_inset Formula $j=2l+1$
+\end_inset
+
+ se verifica:
+\begin_inset Formula 
+\[
+\left(j-1\right)\left(j-3\right)\left(j-5\right)\cdots\left(j-\left(j-2\right)\right)=\left(2l\right)\left(2l-2\right)\left(2l-4\right)\cdots2=2^{l}\, l!
+\]
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+I_{2l+1}=2\frac{\left(2^{l}l!\right)^{2}}{\left(2l+1\right)!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculemos ahora el producto de los coeficientes 
+\begin_inset Formula $\varepsilon_{1}$
+\end_inset
+
+.
+ En nuestro caso:
+\begin_inset Formula 
+\[
+\varepsilon_{i}=\lambda_{k}+i\tau^{\prime}+\frac{i\left(i-1\right)}{2}\sigma^{\prime\prime}\qquad i=0,1,2,\ldots,k-1
+\]
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\[
+\lambda_{k}=-k\tau^{\prime}-\frac{k\left(k-1\right)}{2}\sigma^{\prime\prime}\qquad;\quad\tau^{\prime}=-2\left(m+1\right)\quad\sigma^{\prime\prime}=-2
+\]
+
+\end_inset
+
+Sustituyendo y haciendo operaciones:
+\begin_inset Formula 
+\begin{multline*}
+\varepsilon_{i}=2\left(m+1\right)k+k\left(k-1\right)-2\left(m+1\right)i-i\left(i-1\right)=\\
+=2\left(m+1\right)\left(k-i\right)+\left(k+i\right)\left(k-i\right)-\left(k-i\right)=\\
+=\left(k-i\right)\left(k+2m+1+i\right)
+\end{multline*}
+
+\end_inset
+
+Recordando que 
+\begin_inset Formula $k=l-m$
+\end_inset
+
+, queda:
+\begin_inset Formula 
+\[
+\varepsilon_{i}=\left[\left(l-m\right)-i\right]\left[\left(l+m+1\right)+i\right]\qquad i=0,1,2,\ldots,l-m-1
+\]
+
+\end_inset
+
+Desarrollemos el productorio de 
+\begin_inset Formula $\varepsilon_{i}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\prod_{0}^{l-m-1}\varepsilon_{i}=\prod_{0}^{l-m-1}\left[\left(l-m\right)-i\right]\prod_{0}^{l-m-1}\left[\left(l+m+1\right)+i\right]
+\]
+
+\end_inset
+
+Ahora bien:
+\begin_inset Formula 
+\begin{multline*}
+\prod_{0}^{l-m-1}\left[\left(l-m\right)-i\right]=\left(l-m\right)\left(\left(l-m\right)-1\right)\left(\left(l-m\right)-2\right)\cdots\\
+\cdots\underbrace{\left(\left(l-m\right)-\left(l-m-1\right)\right)}_{=1}=\left(l-m\right)!
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\prod_{0}^{l-m-1}\left[\left(l+m+1\right)+i\right]=\left(l+m+1\right)\left(\left(l+m+1\right)+1\right)\left(\left(l+m+1\right)+2\right)\cdots\\
+\cdots\underbrace{\left(\left(l+m+1\right)+\left(l-m-1\right)\right)}_{=2l}
+\end{multline*}
+
+\end_inset
+
+Multiplicando y dividiendo esta última expresión por 
+\begin_inset Formula $\left(l+m\right)!$
+\end_inset
+
+, obtenemos:
+\begin_inset Formula 
+\[
+\prod_{0}^{l-m-1}\left[\left(l+m+1\right)+i\right]=\frac{\left(2l\right)!}{\left(l+m\right)!}
+\]
+
+\end_inset
+
+con lo que el productorio de 
+\begin_inset Formula $\varepsilon_{1}$
+\end_inset
+
+ resulta ser:
+\begin_inset Formula 
+\[
+\prod_{0}^{l-m-1}\varepsilon_{i}=\frac{\left(l-m\right)!}{\left(l+m\right)!}\left(2l\right)!
+\]
+
+\end_inset
+
+Utilizando estos resultados obtenemos el coeficiente 
+\begin_inset Formula $B_{k}^{2}/\lambda_{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{B_{k}^{2}}{\lambda_{k}}\frac{\left(l-m\right)!}{\left(l+m\right)!}\left(2l\right)!\,2\frac{\left(2^{l}l!\right)^{2}}{\left(2l+1\right)!}=1 & \Rightarrow\\
+\Rightarrow\frac{B_{k}^{2}}{\lambda_{k}}=\frac{1}{\left(2^{l}l!\right)^{2}}\frac{2l+1}{2}\frac{\left(l+m\right)!}{\left(l-m\right)!} & \Rightarrow\\
+\Rightarrow\left(\frac{B_{k}^{2}}{\lambda_{k}}\right)^{1/2}=\frac{1}{2^{l}l!}\sqrt{\frac{2l+1}{2}\frac{\left(l+m\right)!}{\left(l-m\right)!}}
+\end{eqnarray*}
+
+\end_inset
+
+Tradicionalmente se toma para la raíz el signo dado por 
+\begin_inset Formula $\left(-1\right)^{l-m}$
+\end_inset
+
+, por lo que la función 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+ normalizada resulta ser:
+\begin_inset Formula 
+\[
+\Theta_{l,m}=\frac{\left(-1\right)^{l-m}}{2^{l}l!}\sqrt{\frac{2l+1}{2}\frac{\left(l+m\right)!}{\left(l-m\right)!}}\left(1-\mu^{2}\right)^{-m/2}\frac{d^{l-m}}{d\mu^{l-m}}\left(1-\mu^{2}\right)^{l}\quad\begin{array}{c}
+l=0,1,2,\ldots\\
+m=0,1,2,\ldots,l
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la página 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "II-07 verifica las dos condiciones"
+
+\end_inset
+
+ hemos visto que el resultado obtenido para 
+\begin_inset Formula $m\geq0$
+\end_inset
+
+ es válido también para 
+\begin_inset Formula $m<0$
+\end_inset
+
+ si en su lugar ponemos 
+\begin_inset Formula $\left|m\right|$
+\end_inset
+
+.
+ Con el fin de aligerar la escritura, escribiremos 
+\begin_inset Formula $\left|m\right|=m$
+\end_inset
+
+.
+ En estas condiciones la fórmula que nos proporciona la función 
+\begin_inset Formula $\Theta_{l,m}$
+\end_inset
+
+ es la siguiente:
+\begin_inset Formula 
+\[
+\Theta_{l,m}=\frac{\left(-1\right)^{l-m}}{2^{l}l!}\sqrt{\frac{2l+1}{2}\frac{\left(l+m\right)!}{\left(l-m\right)!}}\left(1-\mu^{2}\right)^{-m/2}\frac{d^{l-m}}{d\mu^{l-m}}\left(1-\mu^{2}\right)^{l}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+l & = & 0,1,2,\ldots\\
+m\leq l & \iff & -l\leq m\leq l
+\end{eqnarray*}
+
+\end_inset
+
+ Finalmente, entre las funciones 
+\begin_inset Formula $\Theta\left(\mu\right)$
+\end_inset
+
+ se cumple la siguiente relación de recurrencia, que aquí damos sin demostración
+:
+\begin_inset Formula 
+\[
+\mu\Theta_{l,m}=\left(\frac{\left(l+1\right)^{2}-m^{2}}{4\left(l+1\right)^{2}-1}\right)^{1/2}\Theta_{l+1,m}+\left(\frac{l^{2}-m^{2}}{4l^{2}-1}\right)^{1/2}\Theta_{l-1,m}
+\]
+
+\end_inset
+
+Esta relación se utiliza para deducir las reglas de selección de las transicione
+s entre niveles electrónicos del átomo.
 \end_layout
 
 \begin_layout Standard
