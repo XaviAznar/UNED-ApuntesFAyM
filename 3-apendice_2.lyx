@@ -2983,6 +2983,14 @@ Como tanto
 \end_inset
 
 Por lo tanto:
+\begin_inset Formula 
+\begin{equation}
+d_{k}^{2}=\left(-1\right)^{k}v_{k}B_{k}\int_{-1}^{1}\sigma^{k}\rho\, d\mu\label{II-26 Cálculo de la norma}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4505,9 +4513,9 @@ Por lo tanto, la ecuación hipergeométrica que verifican los polinomios
  Conservando esta variable, la ecuación anterior nos sugiere otra de la
  forma:
 \begin_inset Formula 
-\[
-\zeta\left(L_{i}^{\alpha}\right)^{\prime\prime}+\left(\alpha+1-\zeta\right)\left(L_{k}^{\alpha}\right)^{\prime}+iL_{k}^{\alpha}=0\quad;\quad i=0,1,2,\ldots
-\]
+\begin{equation}
+\zeta\left(L_{i}^{\alpha}\right)^{\prime\prime}+\left(\alpha+1-\zeta\right)\left(L_{k}^{\alpha}\right)^{\prime}+iL_{k}^{\alpha}=0\quad;\quad i=0,1,2,\ldots\label{II-41 Definicion de los polinomios L_i}
+\end{equation}
 
 \end_inset
 
@@ -4631,8 +4639,1647 @@ g\left(r\right)=r^{l}\exp\left(-\frac{Z}{an}r\right)
  Por lo tanto:
 \begin_inset Formula 
 \[
-R_{k}\left(r\right)=g\left(r\right)y_{k}\left(r\right)=
+R_{k}\left(r\right)=g\left(r\right)y_{k}\left(r\right)=r^{l}\exp\left(-\frac{Z}{an}r\right)y_{k}
 \]
+
+\end_inset
+
+Podemos expresarlo en función de la variable 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ y de los números cuánticos 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $l$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+R_{k}\left(r\right)=R_{n,l}\left(r\right)=B_{n,l}\zeta^{l}e^{-\zeta/2}L_{n-l-1}^{2l+1}\left(\zeta\right)
+\]
+
+\end_inset
+
+donde ahora 
+\begin_inset Formula $B_{n,l}$
+\end_inset
+
+ es una nueva constante que determinaremos por la condición de normalización
+ de la función 
+\begin_inset Formula $R_{n,l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Naturalmente, para cada valor de la energía 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ obtenemos una función 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+ que se expresa a través de un polinomio de Laguerre de distinto grado 
+\begin_inset Formula $\left(n-l-1\right)$
+\end_inset
+
+ y de distinta variable radial 
+\begin_inset Formula $\zeta=2Z/an$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Ortogonalidad de la función radial 
+\begin_inset Formula $R\left(r\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-8 Ortogonalidad-de-la función radial R(r)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lo que nos interesa es la ortogonalidad de las funciones de onda 
+\begin_inset Formula $\psi_{n,l,m}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\psi_{n,l,m}=R_{n,l}\Theta_{l,m}\Phi_{m}
+\]
+
+\end_inset
+
+ Ahora bien, las funciones 
+\begin_inset Formula $\psi$
+\end_inset
+
+ de distinto número cuántico 
+\begin_inset Formula $m$
+\end_inset
+
+ son ortogonales, debido a la ortogonalidad de las funciones 
+\begin_inset Formula $\Phi_{m}\left(\varphi\right)$
+\end_inset
+
+ respecto al peso unidad; las de distinto número 
+\begin_inset Formula $l$
+\end_inset
+
+ lo son también debido a la ortogonalidad de las funciones 
+\begin_inset Formula $\Theta_{l,m}\left(\theta\right)$
+\end_inset
+
+ respecto al peso 
+\begin_inset Formula $\left(\sin\theta\right)$
+\end_inset
+
+; nos interesa ahora estudiar respecto a qué peso son ortogonales las funciones
+ 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+ para distinto número 
+\begin_inset Formula $n$
+\end_inset
+
+ pero idéntico 
+\begin_inset Formula $l$
+\end_inset
+
+, ya que si el número cuántico 
+\begin_inset Formula $l$
+\end_inset
+
+ es distinto, la ortogonalidad de las funciones de onda ya está asegurada.
+ Para dicho estudio acudemos a la ecuación diferencial que debe verificar
+ la función radial.
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $R_{n,l}$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{n^{\prime},l}$
+\end_inset
+
+ funciones que verifican la ecuación diferencial:
+\begin_inset Formula 
+\[
+\sigma R^{\prime\prime}+\eta R^{\prime}+\frac{\omega}{\sigma}R=0
+\]
+
+\end_inset
+
+con:
+\begin_inset Formula 
+\begin{eqnarray*}
+\sigma & = & r\\
+\eta & = & 2\\
+\omega & = & 2\gamma r^{2}+2\beta r-l\left(l+1\right)
+\end{eqnarray*}
+
+\end_inset
+
+Sustituyendo y multiplicando por 
+\begin_inset Formula $r$
+\end_inset
+
+ obtenemos:
+\begin_inset Formula 
+\[
+r^{2}R^{\prime\prime}+2rR^{\prime}+\left(2\gamma r^{2}+2\beta r-l\left(l+1\right)\right)R=0
+\]
+
+\end_inset
+
+Recordando las expresiones de 
+\begin_inset Formula $\beta$
+\end_inset
+
+ y 
+\begin_inset Formula $\gamma$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\beta & = & \frac{Z}{a}\\
+\gamma & = & -\frac{Z^{2}}{a^{2}n^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+vemos que, si bien 
+\begin_inset Formula $\beta$
+\end_inset
+
+ es independiente del número cuántico 
+\begin_inset Formula $n$
+\end_inset
+
+, el parámetro 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ no lo es.
+ Teniendo en cuenta esto y particularizando para las funciones radiales
+ 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{n^{\prime},l}\left(r\right)$
+\end_inset
+
+ obtenemos las dos siguientes ecuaciones diferenciales:
+\begin_inset Formula 
+\begin{eqnarray*}
+r^{2}R_{n,l}^{\prime\prime}+2rR_{n,l}^{\prime}+\left(2\gamma_{n}r^{2}+2\beta r-l\left(l+1\right)\right)R_{n,l} & = & 0\\
+r^{2}R_{n^{\prime},l}^{\prime\prime}+2rR_{n^{\prime},l}^{\prime}+\left(2\gamma_{n^{\prime}}r^{2}+2\beta r-l\left(l+1\right)\right)R_{n^{\prime},l} & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ Multiplicando la primera ecuación por 
+\begin_inset Formula $R_{n^{\prime},l}$
+\end_inset
+
+ y la segunda por 
+\begin_inset Formula $R_{n,l}$
+\end_inset
+
+ y restando la una de la otra, obtenemos:
+\begin_inset Formula 
+\[
+r^{2}\left(R_{n,l}^{\prime\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime\prime}R_{n,l}\right)+2r\left(R_{n,l}^{\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime}R_{n,l}\right)=2\frac{Z^{2}}{a^{2}}\left(\frac{1}{n^{2}}-\frac{1}{n^{\prime2}}\right)R_{n,l}R_{n^{\prime},l}r^{2}
+\]
+
+\end_inset
+
+Ahora bien:
+\begin_inset Formula 
+\[
+\left(R_{n,l}^{\prime\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime\prime}R_{n,l}\right)=\frac{d}{dr}\left(R_{n,l}^{\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime}R_{n,l}\right)
+\]
+
+\end_inset
+
+ por lo que podemos escribir:
+\begin_inset Formula 
+\[
+\frac{d}{dr}\left[r^{2}\left(R_{n,l}^{\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime}R_{n,l}\right)\right]=2\frac{Z^{2}}{a^{2}}\left(\frac{1}{n^{2}}-\frac{1}{n^{\prime2}}\right)R_{n,l}R_{n^{\prime},l}r^{2}
+\]
+
+\end_inset
+
+Integrando ambos miembros de la igualdad entre los límites 
+\begin_inset Formula $0$
+\end_inset
+
+ e 
+\begin_inset Formula $\infty$
+\end_inset
+
+, queda:
+\begin_inset Formula 
+\[
+2\frac{Z^{2}}{a^{2}}\left(\frac{1}{n^{2}}-\frac{1}{n^{\prime2}}\right)\int_{0}^{\infty}R_{n,l}\, R_{n^{\prime},l}\, r^{2}\, dr=\left[r^{2}\left(R_{n,l}^{\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime}R_{n,l}\right)\right]_{0}^{\infty}
+\]
+
+\end_inset
+
+Pero las funciones radiales y sus derivadas tienden a cero de manera exponencial
+ cuando 
+\begin_inset Formula $r$
+\end_inset
+
+ tiende a infinito:
+\begin_inset Formula 
+\[
+\lim_{r\to\infty}R_{n,l}=\lim r^{l}\exp\left(-\frac{Z}{an}r\right)y_{n,l}=0
+\]
+
+\end_inset
+
+por ser 
+\begin_inset Formula $y_{n,l}$
+\end_inset
+
+ un polinomio en 
+\begin_inset Formula $r$
+\end_inset
+
+ de grado 
+\begin_inset Formula $\left(n-l-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{r\to\infty}R_{n,l}^{\prime}=\lim_{r\to\infty}\exp\left(-\frac{Z}{na}r\right)\left[r^{l-1}y_{n,l}\left(l-\frac{Z}{an}r\right)+r^{l}y_{n,l}^{\prime}\right]=0
+\]
+
+\end_inset
+
+puesto que son polinomios todas las funciones encerradas entre paréntesis.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, cuando 
+\begin_inset Formula $r\to0$
+\end_inset
+
+, tenemos:
+\begin_inset Formula 
+\[
+\lim_{r\to0}R_{n,l}=\lim_{r\to0}r^{l}y_{n,l}
+\]
+
+\end_inset
+
+ que tiende a un valor finito (o se anula para 
+\begin_inset Formula $l=0$
+\end_inset
+
+) por tratarse de un polinomio en 
+\begin_inset Formula $r$
+\end_inset
+
+ de grado 
+\begin_inset Formula $(n-1)$
+\end_inset
+
+.
+ Lo mismo sucede con su derivada.
+\end_layout
+
+\begin_layout Standard
+Por consiguiente, la expresión
+\begin_inset Formula 
+\[
+r^{2}\left(R_{n,l}^{\prime}R_{n^{\prime},l}-R_{n^{\prime},l}^{\prime}R_{n,l}\right)
+\]
+
+\end_inset
+
+ se anula en los dos extremos del intervalo de integración.
+ Consecuentemente, obtenemos la condición de ortogonalidad de las funciones
+ radiales:
+\begin_inset Formula 
+\[
+2\frac{Z^{2}}{a^{2}}\left(\frac{1}{n^{2}}-\frac{1}{n^{\prime2}}\right)\int_{0}^{\infty}R_{n,l}R_{n^{\prime},l}r^{2}dr=0
+\]
+
+\end_inset
+
+
+\emph on
+Las funciones radiales son ortogonales respecto a la función peso 
+\begin_inset Formula $r^{2}$
+\end_inset
+
+ si sus números cuánticos principales son distintos
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Recordando la expresión de la energía 
+\begin_inset Formula $E$
+\end_inset
+
+, podemos poner:
+\begin_inset Formula 
+\[
+\left(E_{n}-E_{n^{\prime}}\right)\int_{0}^{\infty}R_{n,l}R_{n^{\prime},l}r^{2}dr=0
+\]
+
+\end_inset
+
+de donde se deduce que la función radial asegura la ortogonalidad de las
+ funciones de onda correspondientes a los diferentes niveles energéticos.
+ Esta ortogonalidad de las funciones 
+\begin_inset Formula $\psi_{n,l,m}\left(r,\theta,\varphi\right)$
+\end_inset
+
+ tiene como función de peso la función 
+\begin_inset Formula $r^{2}\sin\theta$
+\end_inset
+
+, por lo que podemos escribir las siguientes relaciones de ortogonalidad
+ entre ellas:
+\begin_inset Formula 
+\[
+\int_{\tau}\psi_{n,l,m}^{*}\psi_{n^{\prime},l^{\prime},m^{\prime}}r^{2}\sin\theta\, dr\, d\theta\, d\varphi=\int_{\tau}\psi_{n,l,m}^{*}\psi_{n^{\prime},l^{\prime},m^{\prime}}\, d\tau=0\iff\begin{array}{c}
+n\neq n^{\prime}\\
+l\neq l\prime\\
+m\neq m^{\prime}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Normalización de la función radial
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-9 Normalización de la función radial"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La normalización de la función de onda exigía que la función radial verificase
+ la relación
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\left|R_{n,l}\right|^{2}r^{2}dr=1
+\]
+
+\end_inset
+
+Esto se consigue ajustando la constante 
+\begin_inset Formula $B_{n,l}$
+\end_inset
+
+que interviene en la expresión de 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+ en función de los polinomios de Laguerre:
+\begin_inset Formula 
+\[
+R_{n,l}\left(r\right)=B_{n,l}\zeta^{l}e^{-\zeta/2}L_{k}^{\alpha}\left(\zeta\right)\quad\begin{array}{c}
+\zeta=2\frac{Z}{an}r\\
+\alpha=2l+1\\
+k=n-l-1
+\end{array}
+\]
+
+\end_inset
+
+Sustituyendo en la integral que normaliza 
+\begin_inset Formula $R_{n,l}$
+\end_inset
+
+ tenemos
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\left|R_{n,l}\right|^{2}r^{2}dr=B_{n,l}^{2}\int_{0}^{\infty}\left|L_{k}^{\alpha}\left(\zeta\right)\right|^{2}\zeta^{2l}e^{-\zeta}r^{2}dr
+\]
+
+\end_inset
+
+Poniendo 
+\begin_inset Formula $r$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\zeta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r^{2}=\left(\frac{a}{2}\frac{n}{Z}\right)^{2}\zeta^{2}\quad dr=\frac{a}{2}\frac{n}{Z}\, d\zeta
+\]
+
+\end_inset
+
+ y recordando que la función 
+\begin_inset Formula $\rho_{k}$
+\end_inset
+
+ tiene por expresión:
+\begin_inset Formula 
+\[
+\rho_{k}=\zeta^{\alpha}e^{-\zeta}
+\]
+
+\end_inset
+
+obtenemos la siguiente expresión para la normalización de 
+\begin_inset Formula $R_{n,l}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+B_{n,l}^{2}\left(\frac{a}{2}\frac{n}{Z}\right)^{3}\int_{0}^{\infty}\left|L_{k}^{\alpha}\left(\zeta\right)\right|^{2}\rho_{k}\,\zeta\, d\zeta=1
+\]
+
+\end_inset
+
+Como es natural, esta integral es distinta de cero puesto que el integrando
+ es positivo en todo el intervalo de integración.
+ Para calcularla vamos a utilizar algunas propiedades de los polinomios
+ ortogonales clásicos, soluciones de ecuaciones hipergeométricas.
+ Dicha integral podemos ponerla bajo otra forma:
+\begin_inset Formula 
+\[
+B_{n,l}^{2}\int_{0}^{\infty}L_{l}^{\alpha}\left(\zeta\right)\left(\zeta\, L_{k}^{\alpha}\left(\zeta\right)\right)\rho_{k}d\zeta=1
+\]
+
+\end_inset
+
+en donde el integrando consiste en un polinomio hipergeométrico de grado
+ 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+, multiplicado por otro polinomio no hipergeométrico, de grado 
+\begin_inset Formula $k+1$
+\end_inset
+
+, 
+\begin_inset Formula $\zeta L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ y por la función de peso 
+\begin_inset Formula $\rho_{k}$
+\end_inset
+
+ correspondiente a los polinomios 
+\begin_inset Formula $L_{i}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ que hemos definido en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-41 Definicion de los polinomios L_i"
+
+\end_inset
+
+ de la página 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "II-41 Definicion de los polinomios L_i"
+
+\end_inset
+
+.
+ Vamos a demostrar a continuacion que un polinomio cualquiera de grado 
+\begin_inset Formula $j$
+\end_inset
+
+ puede ser expresado como combinación lineal de polinomios ortogonales de
+ grado igual o inferior a 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ En estas condiciones, desarrollaríamos el polinomio 
+\begin_inset Formula $\zeta\, L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ como combinación de los polinomios ortogonales 
+\begin_inset Formula $L_{i}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ y la integral resultaría más fácil de calcular.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $q_{j}\left(\zeta\right)$
+\end_inset
+
+ un polinomio de grado 
+\begin_inset Formula $j$
+\end_inset
+
+ y desmotremos que existen coeficientes 
+\begin_inset Formula $C_{i,j}$
+\end_inset
+
+ de la expresión:
+\begin_inset Formula 
+\[
+q_{j}\left(\zeta\right)=\sum_{i=0}^{j}C_{i,j}L_{i}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+y que, al menos, el coeficiente 
+\begin_inset Formula $C_{i,j}$
+\end_inset
+
+ del polinomio de mayor grado es distinto de cero.
+\end_layout
+
+\begin_layout Standard
+Si el grado 
+\begin_inset Formula $j$
+\end_inset
+
+ del polinomio a desarrollar es igual a cero, la demostración es inmediata,
+ pues al tratarse de una constante, siempre la podemos poner proporcional
+ a otra, el polinomio ortogonal de grado cero.
+ En nuestro caso:
+\begin_inset Formula 
+\[
+q_{0}=C_{0,0}L_{0}^{\alpha}=C_{0,0}\frac{1}{0!}\zeta^{-\alpha}e^{\zeta}\frac{d^{0}}{d\zeta^{0}}\left(\zeta^{\alpha}e^{-\zeta}\right)=C_{0,0}
+\]
+
+\end_inset
+
+Si el grado 
+\begin_inset Formula $j$
+\end_inset
+
+ es mayor que cero, vamos a proceder por recurrencia.
+ Supongamos que el desarrollo es posible para todo polinomio de grado inferior
+ a 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Elijamos la constante 
+\begin_inset Formula $C_{j,j}$
+\end_inset
+
+ del desarrollo de 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ de manera que el polinomio:
+\begin_inset Formula 
+\[
+q_{j}\left(\zeta\right)-C_{j,j}L_{j}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+ sea de grado inferior a 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Esto siempre es posible.
+ En efecto; sean los polinoios 
+\begin_inset Formula $q_{j}\left(\zeta\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{j}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ en forma explícita los siguientes
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+De nuevo, utilizamos 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+, etc porque no tenemos equivalente para las letras caligráficas en minúscula
+ que se utilizan en el texto original de los apuntes del profesor.
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+q_{j}\left(\zeta\right) & = & a_{j}\zeta^{j}+b_{j}\zeta^{j-1}+\cdots\\
+L_{j}^{\alpha}\left(\zeta\right) & = & \mathcal{A}_{j}\zeta^{j}+\mathcal{B}_{j}r^{j-1}+\cdots
+\end{eqnarray*}
+
+\end_inset
+
+Si escogemos 
+\begin_inset Formula $C_{j,j}$
+\end_inset
+
+ de manera que se cumpla la relación:
+\begin_inset Formula 
+\[
+a_{j}=C_{j,j}\mathcal{A}_{j}
+\]
+
+\end_inset
+
+ lo cual es siempre posible, puesto que 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{A}_{j}$
+\end_inset
+
+ son ambos, forzosamente, distintos de cero, el polinomio diferencia es
+ de grado igual o inferior a 
+\begin_inset Formula $\left(j-1\right)$
+\end_inset
+
+.
+ Llamémosle 
+\begin_inset Formula $q_{j-1}\left(\zeta\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+q_{j-1}\left(\zeta\right)=q_{j}\left(\zeta\right)-C_{j,j}L_{j}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+Puesto que 
+\begin_inset Formula $q_{j-1}\left(\zeta\right)$
+\end_inset
+
+ es de grado inferior a 
+\begin_inset Formula $j$
+\end_inset
+
+, puede desarrollarse como una combinación lineal de polinomios ortogonales
+ de grado inferior al suyo:
+\begin_inset Formula 
+\[
+q_{j-1}\left(\zeta\right)=\sum_{i=0}^{j-1}C_{i,j-1}L_{i}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+Por consiguiente el desarrollo de 
+\begin_inset Formula $q_{j}\left(\zeta\right)$
+\end_inset
+
+ siempre es posible:
+\begin_inset Formula 
+\[
+q_{j}\left(\zeta\right)=C_{j,j}L_{j}^{\alpha}\left(\zeta\right)+\sum_{i=0}^{j-1}C_{i,j-1}L_{i}^{\alpha}\left(\zeta\right)=\sum_{i=0}^{j}C_{i,j}L_{i}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+Los coeficientes 
+\begin_inset Formula $C_{i,j}$
+\end_inset
+
+ del desarrollo se calculan aprovechando la ortogonalidad de los polinomios
+ 
+\begin_inset Formula $L_{i}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+.
+ Multiplicando ambos miembros de la igualdad por 
+\begin_inset Formula $\left(L_{i}^{\alpha}\left(\zeta\right)\rho_{k}\right)$
+\end_inset
+
+ e integrando en el intervalo 
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+ tenemos:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}q_{j}\left(\zeta\right)L_{i}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta=C_{i,j}\int_{0}^{\infty}\left|L_{i}^{\alpha}\left(\zeta\right)\right|^{2}\rho_{k}d\zeta=C_{i,j}d_{i}^{2}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $d_{i}^{2}$
+\end_inset
+
+ es el cuadrado de la norma de 
+\begin_inset Formula $L_{i}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ respecto a 
+\begin_inset Formula $\rho_{k}$
+\end_inset
+
+.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+C_{i,j}=\frac{1}{d_{i}^{2}}\int_{0}^{\infty}q_{j}\left(\zeta\right)L_{i}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta
+\]
+
+\end_inset
+
+ Volvamos ahora a nuestro problema de calcular la integral:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)\left(\zeta L_{k}^{\alpha}\left(\zeta\right)\right)\rho_{k}d\zeta
+\]
+
+\end_inset
+
+ y desarrollemos el polinomio 
+\begin_inset Formula $\zeta L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+, de grado 
+\begin_inset Formula $k+1$
+\end_inset
+
+, en función de los polinomios ortogonales 
+\begin_inset Formula $L_{i}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ para 
+\begin_inset Formula $i=0,1,2,\ldots,k+1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\zeta\, L_{k}^{\alpha}\left(\zeta\right)=\sum_{i=0}^{k+1}C_{i,k+1}L_{i}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+donde los coeficientes del desarrollo serán:
+\begin_inset Formula 
+\[
+C_{i,k+1}=\frac{1}{d_{i}^{2}}\int_{0}^{\infty}\zeta\, L_{k}^{\alpha}\left(\zeta\right)L_{i}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta=\frac{1}{d_{i}^{2}}\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)\left(\zeta\, L_{i}^{\alpha}\left(\zeta\right)\right)\rho_{k}d\zeta
+\]
+
+\end_inset
+
+A su vez, el polinomio 
+\begin_inset Formula $\zeta L_{i}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+, de grado 
+\begin_inset Formula $i+1$
+\end_inset
+
+, en su forma explícita, tiene por expresión:
+\begin_inset Formula 
+\[
+\zeta L_{i}^{\alpha}\left(\zeta\right)=\mathcal{A}_{i+1}\zeta^{i+1}+\mathcal{B}_{i+1}\zeta+\cdots
+\]
+
+\end_inset
+
+por lo que la integral se descompone en la siguiente suma de integrales:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta L_{i}^{\alpha}\right)\rho_{k}d\zeta=\mathcal{A}_{i+1}\int_{0}^{\infty}L_{k}^{\alpha}\zeta^{i+1}\rho_{k}d\zeta+\mathcal{B}_{i+1}\int_{0}^{\infty}L_{k}^{\alpha}\zeta^{i}\rho_{k}d\zeta+\cdots
+\]
+
+\end_inset
+
+Pero el monomio 
+\begin_inset Formula $\zeta^{p}$
+\end_inset
+
+ puede a su vez expresarse como combinación lineal de polinomios 
+\begin_inset Formula $L_{j}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ para 
+\begin_inset Formula $j=0,1,2,\ldots,p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\zeta^{p}=\sum_{j=0}^{p}C_{j,p}^{\prime}L_{j}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)\zeta^{p}\rho_{k}d\zeta=\sum_{j=0}^{p}C_{j,p}^{\prime}\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)L_{j}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta
+\]
+
+\end_inset
+
+y, en virtud de la ortogonalidad de los polinomios 
+\begin_inset Formula $L_{j}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ respecto al peso 
+\begin_inset Formula $\rho_{k}$
+\end_inset
+
+, estas integrales se anulan para todo 
+\begin_inset Formula $p<k$
+\end_inset
+
+.
+ Por consiguiente, en el desarrollo del polinomio 
+\begin_inset Formula $\zeta L_{i}^{\alpha}$
+\end_inset
+
+ serán cero todos los coeficientes 
+\begin_inset Formula $C_{i,k}$
+\end_inset
+
+ para los que se verifique la siguiente relación de índices:
+\begin_inset Formula 
+\[
+i+1<k
+\]
+
+\end_inset
+
+Quedan, pues, sólo tres coeficientes en el desarrollo:
+\begin_inset Formula 
+\[
+C_{k+1,k}\quad;\quad C_{k,k}\quad;\quad C_{k-1,k}
+\]
+
+\end_inset
+
+a los que llamaremos, para simplificar la escritura, 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ y 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ respectivamente.
+ El polinomio en cuestión puede escribirse como:
+\begin_inset Formula 
+\begin{equation}
+\zeta L_{k}^{\alpha}\left(\zeta\right)=a_{k}L_{k+1}^{\alpha}\left(\zeta\right)+b_{k}L_{k}^{\alpha}\left(\zeta\right)+c_{k}L_{k-1}^{\alpha}\left(\zeta\right)\label{II-50 Relacion de recurrerencia de tres polinomios consecutivos}
+\end{equation}
+
+\end_inset
+
+
+\emph on
+Entre tres polinomios ortogonales de grados consecutivos siempre existe
+ una relación de recurrencia como la presente
+\emph default
+.
+ Es decir, si conocemos dos polinomios ortogonales de grados consecutivos,
+ podemos construir el que les sigue.
+\end_layout
+
+\begin_layout Standard
+Vamos ahora a calcular, de manera general, los coeficientes d ela relación
+ de recurrencia.
+ Sus expresiones son las siguientes:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{k} & = & C_{k+1,k}=\frac{1}{d_{k+1}^{2}}\int_{0}^{\infty}\zeta\, L_{k}^{\alpha}\left(\zeta\right)L_{k+1}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta\\
+b_{k} & = & C_{k,k}=\frac{1}{d_{k}^{2}}\int_{0}^{\infty}\zeta\, L_{k}^{\alpha}\left(\zeta\right)L_{k}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta\\
+c_{k} & = & C_{k-1,k}=\frac{1}{d_{k-1}^{2}}\int_{0}^{\infty}\zeta\, L_{k}^{\alpha}\left(\zeta\right)L_{k-1}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta
+\end{eqnarray*}
+
+\end_inset
+
+Para llevar a cabo su cálculo, fijémonos en que el polinomio ortogonal 
+\begin_inset Formula $L_{k-1}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+, de grado 
+\begin_inset Formula $k-1$
+\end_inset
+
+, también verifica una relación de recurrencia con el que le sigue y el
+ que le precede:
+\begin_inset Formula 
+\[
+\zeta\, L_{k+1}^{\alpha}\left(\zeta\right)=a_{k-1}L_{k}^{\alpha}\left(\zeta\right)+b_{k-1}L_{k-1}^{\alpha}\left(\zeta\right)+c_{k-1}L_{k-2}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+donde el coeficiente 
+\begin_inset Formula $a_{k-1}$
+\end_inset
+
+ es:
+\begin_inset Formula 
+\[
+a_{k-1}=C_{k,k-1}=\frac{1}{d_{k}^{2}}\int_{0}^{\infty}\zeta\, L_{k-1}^{\alpha}\left(\zeta\right)L_{k}^{\alpha}\left(\zeta\right)\rho_{k}d\zeta
+\]
+
+\end_inset
+
+Comparando esta expresión con la del coeficiente 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ de la relación de recurrencia que verifica 
+\begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ con su precedente y su siguiente, obtenemos:
+\begin_inset Formula 
+\[
+c_{k}=a_{k-1}\frac{d_{k}^{2}}{d_{k-1}^{2}}
+\]
+
+\end_inset
+
+Por otra parte, expresando los polinomios de forma explícita:
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{k}^{\alpha}\left(\zeta\right) & = & \mathcal{A}_{k}\zeta^{k}+\mathcal{B}_{k}\zeta^{k-1}+\cdots\\
+L_{k+1}^{\alpha}\left(\zeta\right) & = & \mathcal{A}_{k+1}\zeta^{k+1}+\mathcal{B}_{k+1}\zeta^{k}+\cdots\\
+L_{k-1}^{\alpha}\left(\zeta\right) & = & \mathcal{A}_{k-1}\zeta^{k-1}+\mathcal{B}_{k-1}\zeta^{k-2}+\cdots
+\end{eqnarray*}
+
+\end_inset
+
+la relación de recurrencia puede escribirse como sigue:
+\begin_inset Formula 
+\begin{eqnarray*}
+\zeta L_{k}^{\alpha}\left(\zeta\right) & = & \mathcal{A}_{k}\zeta^{k+1}+\mathcal{B}_{k}\zeta^{k}+\cdots=\\
+ & = & a_{k}\mathcal{A}_{k+1}\zeta^{k+1}+a_{k}\mathcal{B}_{k+1}\zeta^{k}+\cdots\\
+ & \cdots+ & b_{k}\mathcal{A}_{k}\zeta^{k}+b_{k}\mathcal{B}_{k}\zeta^{k-1}+\cdots\\
+ & \cdots+ & c_{k}\mathcal{A}_{k-1}\zeta^{k-1}+c_{k}\mathcal{B}_{k-1}\zeta^{k-2}+\cdots
+\end{eqnarray*}
+
+\end_inset
+
+Identificando los coeficientes de los monomios de grados 
+\begin_inset Formula $k+1$
+\end_inset
+
+ y 
+\begin_inset Formula $k$
+\end_inset
+
+ obtenemos
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{A}_{k} & = & a\mathcal{A}_{k+1}\\
+\mathcal{B}_{k} & = & a_{k}\mathcal{B}_{k+1}+b_{k}\mathcal{A}_{k}
+\end{eqnarray*}
+
+\end_inset
+
+ de donde se deduce:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{k} & = & \frac{\mathcal{A}_{k}}{\mathcal{A}_{k+1}}\\
+b_{k} & = & \frac{\mathcal{B}_{k}}{\mathcal{A}_{k}}-\frac{\mathcal{B}_{k+1}}{\mathcal{A}_{k+1}}
+\end{eqnarray*}
+
+\end_inset
+
+Análogamente, el coeficiente 
+\begin_inset Formula $a_{k-1}$
+\end_inset
+
+ de la relación de recurrencia de 
+\begin_inset Formula $L_{k-1}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ será:
+\begin_inset Formula 
+\[
+a_{k-1}=\frac{\mathcal{A}_{k-1}}{\mathcal{A}_{k}}
+\]
+
+\end_inset
+
+por lo que el coeficiente 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ resulta ser:
+\begin_inset Formula 
+\[
+c_{k}=\frac{\mathcal{A}_{k-1}}{\mathcal{A}_{k}}\frac{d_{k}^{2}}{d_{k-1}^{2}}
+\]
+
+\end_inset
+
+Por lo tanto, si conocemos los coeficientes de los dos monomios de mayor
+ grado de los polinomios ortogonales y sus normas respectivas, podemos calcular
+ los coeficientes 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ y 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ de la relación de recurrencia.
+\end_layout
+
+\begin_layout Standard
+El coeficiente 
+\begin_inset Formula $\mathcal{A}_{k}$
+\end_inset
+
+ del monomio de mayor grado se calcula fácilmente recorriendo a la fórmula
+ de Rodrigues.
+ En nuestro caso:
+\begin_inset Formula 
+\[
+L_{k}^{\alpha}\left(\zeta\right)=\frac{1}{k!}\zeta^{-\alpha}e^{\zeta}\frac{d^{k}}{d\zeta^{k}}\left(\zeta^{\alpha+k}e^{-\zeta}\right)
+\]
+
+\end_inset
+
+ Derivando 
+\begin_inset Formula $k$
+\end_inset
+
+ veces obtenemos:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d^{k-2}}{d\zeta^{k}}\left(\zeta^{\alpha+k}e^{-\zeta}\right) & = & \frac{d^{k-1}}{d\zeta^{k-1}}\left(\left(-1\right)\zeta^{\alpha+k}e^{-\zeta}+\left(\alpha+k\right)\zeta^{\alpha+k-1}e^{-\zeta}+\cdots\right)=\\
+ & = & \frac{d^{k-2}}{d\zeta^{k-2}}\left(\left(-1\right)^{2}\zeta^{\alpha+k}e^{-\zeta}-2\left(\alpha+k\right)\zeta^{\alpha+k-1}e^{-\zeta}+\cdots\right)=\\
+ & = & e^{-\zeta}\left(\left(-1\right)^{k}\zeta^{\alpha+k}+\text{monomios de grado inferior a }\left(\alpha+k\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+L_{k}^{\alpha}\left(\zeta\right)=\left(-1\right)^{k}\frac{1}{k!}\zeta^{k}+\text{monomios de grado inferior a }k
+\]
+
+\end_inset
+
+ Por consiguiente, el coeficiente 
+\begin_inset Formula $\mathcal{A}_{k}$
+\end_inset
+
+ tien por expresión:
+\begin_inset Formula 
+\[
+\mathcal{A}_{k}=\left(-1\right)^{k}\frac{1}{k!}
+\]
+
+\end_inset
+
+Análogamente:
+\begin_inset Formula 
+\[
+\mathcal{A}_{k+1}=\left(-1\right)^{k+1}\frac{1}{\left(k+1\right)!}
+\]
+
+\end_inset
+
+de donde se deduce para 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+ la expresión:
+\begin_inset Formula 
+\[
+a_{k}=-\left(k+1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El cálculo del coeficiente 
+\begin_inset Formula $\mathcal{B}_{k}$
+\end_inset
+
+ se puede realizar por el mismo procedimiento, pero una vez conocido 
+\begin_inset Formula $\mathcal{A}_{k}$
+\end_inset
+
+ resulta más simple llevarlo a cabo utilizando la ecuación diferencial hipergeom
+étrica que verifica 
+\begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\zeta\left(L_{k}^{\alpha}\right)^{\prime\prime}+\left(\alpha+1-\zeta\right)\left(L_{k}^{\alpha}\right)^{\prime}+kL_{k}^{\alpha}=0
+\]
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{k}^{\alpha} & = & \mathcal{A}_{k}\zeta^{k}+\mathcal{B}_{k}\zeta^{k-1}+\cdots\\
+\left(L_{k}^{\alpha}\right)^{\prime} & = & k\mathcal{A}_{k}\zeta^{k-1}+\left(k-1\right)\mathcal{B}_{k}\zeta^{k-2}+\cdots\\
+\left(L_{k}^{\alpha}\right)^{\prime\prime} & = & k\left(k-1\right)\mathcal{A}_{k}\zeta^{k-2}+\left(k-1\right)\left(k-2\right)\mathcal{B}_{k}\zeta^{k-3}+\cdots
+\end{eqnarray*}
+
+\end_inset
+
+Identificando los ecoeficientes de los términos del mismo grado en 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ en la ecuación diferencial obtenemos:
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{Grado }k & : & k\mathcal{A}_{k}-k\mathcal{A}_{k}=0\quad(\text{Identidad})\\
+\text{Grado }\left(k-1\right) & : & k\mathcal{B}_{k}+\left(\alpha+1\right)k\mathcal{A}_{k}-\left(k-1\right)\mathcal{B}_{k}+k\left(k+1\right)\mathcal{A}_{k}=0
+\end{eqnarray*}
+
+\end_inset
+
+De donde se deduce:
+\begin_inset Formula 
+\[
+\mathcal{B}_{k}=-k\left(\alpha+k\right)\mathcal{A}_{k}
+\]
+
+\end_inset
+
+Análogamente:
+\begin_inset Formula 
+\[
+\mathcal{B}_{k+1}=-\left(k+1\right)\left(\alpha+k+1\right)\mathcal{A}_{k+1}
+\]
+
+\end_inset
+
+Por lo tanto, el coeficiente 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ tiene por expresión:
+\begin_inset Formula 
+\[
+b_{k}=\left(k+1\right)\left(\alpha+k+1\right)-k\left(\alpha+k\right)=2k+\alpha+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para calcular 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ necesitamos determinar el cuadrado de la norma de los polinomios hipergeométric
+os 
+\begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+.
+ Obtuvimos, de manera general, el correspondiente a un polinomio 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "II-26 Cálculo de la norma"
+
+\end_inset
+
+ en la página 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "II-26 Cálculo de la norma"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+d_{k}^{2}=\left(-1\right)^{k}v_{k}B_{k}\int_{a}^{b}\sigma^{k}\rho\, d\mu
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ es la derivada de orden 
+\begin_inset Formula $k$
+\end_inset
+
+ del polinomio 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mu$
+\end_inset
+
+ y 
+\begin_inset Formula $B_{k}$
+\end_inset
+
+, el coeificiente de la fórmula de Rodrigues, que para los polinomios 
+\begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+ tiene por expresión:
+\begin_inset Formula 
+\begin{eqnarray*}
+v_{k} & = & \mathcal{A}_{k}k!=\left(-1\right)^{k}\frac{1}{k!}k!=\left(-1\right)^{k}\\
+B_{k} & = & \frac{1}{k!}
+\end{eqnarray*}
+
+\end_inset
+
+En nuestro caso, el cuadrado de la norma se calcula con facilidad, puesto
+ que:
+\begin_inset Formula 
+\[
+\int_{a}^{b}\sigma^{k}\rho\, d\mu=\int_{0}^{\infty}\zeta^{k+\alpha}e^{-\zeta}\, d\zeta
+\]
+
+\end_inset
+
+ y según la fórmula de la 
+\strikeout on
+página 25 del capítulo 1
+\strikeout default
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+He sido incapaz de encontrar la fórmula a la que se hace referencia.
+\end_layout
+
+\end_inset
+
+, tenemos:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\zeta^{k+\alpha}e^{-\zeta}\, d\zeta=\frac{\left(-1\right)^{k+\alpha}}{\left(-1\right)^{k+\alpha}}\left(k+\alpha\right)!
+\]
+
+\end_inset
+
+Por consiguiente:
+\begin_inset Formula 
+\[
+d_{k}^{2}=\left(-1\right)^{k}\left(-1\right)^{k}\frac{1}{k!}\left(k+\alpha\right)!=\frac{\left(k+\alpha\right)!}{k!}
+\]
+
+\end_inset
+
+Análogamente:
+\begin_inset Formula 
+\[
+d_{k-1}^{2}=\frac{\left(k-1+\alpha\right)!}{\left(k-1\right)!}
+\]
+
+\end_inset
+
+por lo que la constante 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ resulta ser:
+\begin_inset Formula 
+\[
+c_{k}=-k\frac{\left(k+\alpha\right)!\left(k-1\right)!}{k!\left(k-1+\alpha\right)!}=-\left(k+\alpha\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resumiendo: el polinomio 
+\begin_inset Formula $\left(\zeta\, L_{k}^{\alpha}\left(\zeta\right)\right)$
+\end_inset
+
+ puede expresarse como:
+\begin_inset Formula 
+\[
+\zeta\, L_{k}^{\alpha}\left(\zeta\right)=-\left(k+1\right)L_{k+1}^{\alpha}\left(\zeta\right)+\left(2k+\alpha+1\right)L_{k}^{\alpha}\left(\zeta\right)-\left(k+\alpha\right)L_{k-1}^{\alpha}\left(\zeta\right)
+\]
+
+\end_inset
+
+Ahora nos encontramos en condiciones de calcular la integral:
+\begin_inset Formula 
+\begin{multline*}
+\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)\left(\zeta\, L_{k}^{\alpha}\left(\zeta\right)\right)\rho_{k}d\zeta=-\left(k+1\right)\int_{0}^{\infty}L_{k}^{\alpha}L_{k+1}^{\alpha}\rho_{k}d\zeta+\\
++\left(2k+\alpha+1\right)\int_{0}^{\infty}L_{k}^{\alpha}L_{k}^{\alpha}\rho_{k}d\zeta-\left(k+\alpha\right)\int_{0}^{\infty}L_{k}^{\alpha}L_{k-1}^{\alpha}\rho_{k}d\zeta
+\end{multline*}
+
+\end_inset
+
+La primera y la última de las integrales se anula, debido a la ortogonalidad
+ de los polinomios 
+\begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
+\end_inset
+
+, quedando:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)\left(\zeta\, L_{k}^{\alpha}\left(\zeta\right)\right)\rho_{k}d\zeta=\left(2k+\alpha+1\right)d_{k}^{2}=\left(2k+\alpha+1\right)\frac{\left(k+\alpha\right)!}{k!}
+\]
+
+\end_inset
+
+Por consiguiente, la constante 
+\begin_inset Formula $B_{n,l}$
+\end_inset
+
+ de la función radial normalizada:
+\begin_inset Formula 
+\begin{multline*}
+B_{n,l}^{2}=\left[\int_{0}^{\infty}L_{k}^{\alpha}\left(\zeta\right)\left(\zeta\, L_{k}^{\alpha}\left(\zeta\right)\right)\rho_{k}d\zeta\right]^{-1}\left(2\frac{Z}{an}\right)=\\
+\left(2\frac{Z}{an}\right)^{3}\frac{k!}{\left(k+\alpha\right)!\left(2k+\alpha+1\right)}
+\end{multline*}
+
+\end_inset
+
+Expresándolo en función de los números cuánticos 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $l$
+\end_inset
+
+, obtenemos:
+\begin_inset Formula 
+\begin{eqnarray*}
+k! & = & \left(n-l-1\right)!=\\
+2k+\alpha+1 & = & 2n-2l-2+2l+1+1=2n\\
+\left(k+\alpha\right)! & = & \left(n-l-1+2l+1\right)!=\left(n+l\right)!
+\end{eqnarray*}
+
+\end_inset
+
+Por lo tanto:
+\begin_inset Formula 
+\[
+B_{n,l}^{2}=\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}\left(2\frac{Z}{an}\right)^{3}
+\]
+
+\end_inset
+
+Tomando el signo positivo de la raíz:
+\begin_inset Formula 
+\[
+B_{n,l}=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\left(2\frac{Z}{an}\right)^{3/2}
+\]
+
+\end_inset
+
+Las funciones radiales 
+\begin_inset Formula $R\left(r\right)$
+\end_inset
+
+ normalizadas pueden expresarse, finalmente, de la siguiente manera:
+\begin_inset Formula 
+\[
+R_{n,l}\left(r\right)=B_{n,l}\zeta^{l}e^{-\zeta/2}L_{k}^{\alpha}\left(\zeta\right)\quad\zeta=2\frac{Z}{an}r
+\]
+
+\end_inset
+
+Es decir, 
+\begin_inset Formula 
+\[
+R_{n,l}\left(r\right)=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\left(2\frac{Z}{an}\right)^{\left(2l+3\right)/2}\zeta^{l}\exp\left(-\frac{Z}{an}r\right)L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)
+\]
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\begin{multline*}
+L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)=\frac{1}{\left(n-l-1\right)!}\left(\frac{2}{a}\frac{Z}{n}r\right)^{-\left(2l+1\right)}\exp\left(2\frac{Z}{an}r\right)\times\\
+\times\frac{d^{n-l-1}}{d\left(2\frac{Z}{an}r\right)^{n-l-1}}\left[\left(2\frac{Z}{an}r\right)^{n+l}\exp\left(-2\frac{Z}{an}r\right)\right]
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determinación de las primeras funciones radiales 
+\begin_inset Formula $R_{n,l}\left(r\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:II-10 Determinación-de-las primeras funciones radiales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando la fórmula anterior vamos a calcular las primeras funciones radiales
+ normalizadas.
+\end_layout
+
+\begin_layout Subsection
+Caso en que 
+\begin_inset Formula $n=1$
+\end_inset
+
+, 
+\begin_inset Formula $l=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{0}^{1}\left(2\frac{Z}{a}r\right)=\frac{1}{0!}\left(2\frac{Z}{a}r\right)^{-1}\exp\left(2\frac{Z}{a}r\right)\frac{d^{0}}{d\left(2\frac{Z}{a}r\right)^{0}}\left[\left(2\frac{Z}{a}r\right)^{1}\exp\left(-2\frac{Z}{a}r\right)\right]=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{1,0}\left(r\right)=\sqrt{\frac{0!}{1!\times2}}\left(2\frac{Z}{a}\right)^{3/2}r^{0}\exp\left(-\frac{Z}{a}r\right)=2\left(\frac{Z}{a}\right)^{3/2}\exp\left(-\frac{Z}{a}r\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso en que 
+\begin_inset Formula $n=2$
+\end_inset
+
+, 
+\begin_inset Formula $l=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{1}^{1}\left(\frac{Z}{a}r\right) & = & \frac{1}{1!}\left(\frac{Z}{a}r\right)^{-1}\exp\left(\frac{Z}{a}r\right)\frac{d^{1}}{d\left(\frac{Z}{a}r\right)^{1}}\left[\left(\frac{Z}{a}r\right)^{2}\exp\left(-\frac{Z}{a}r\right)\right]=\\
+ & = & 2\left(1-\frac{Z}{2a}r\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{2,0}\left(r\right) & = & \sqrt{\frac{1!}{2!\times4}}\left(\frac{Z}{a}\right)^{3/2}r^{0}\exp\left(-\frac{Z}{2a}r\right)2\left(1-\frac{Z}{2a}r\right)=\\
+ & = & \frac{1}{\sqrt{2}}\left(\frac{Z}{a}\right)^{3/2}\left(1-\frac{Z}{2a}r\right)\exp\left(-\frac{Z}{2a}r\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso en que 
+\begin_inset Formula $n=2$
+\end_inset
+
+, 
+\begin_inset Formula $l=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{0}^{3}\left(\frac{Z}{a}r\right)=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{2,1}\left(r\right) & = & \sqrt{\frac{0!}{3!\times4}}\left(\frac{Z}{a}\right)^{5/2}r^{1}\exp\left(-\frac{Z}{2a}r\right)=\\
+ & = & \frac{1}{2\sqrt{6}}\left(\frac{Z}{a}\right)^{5/2}r\,\exp\left(-\frac{Z}{2a}r\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso en que 
+\begin_inset Formula $n=3$
+\end_inset
+
+, 
+\begin_inset Formula $l=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{2}^{1}\left(\frac{2}{3}\frac{Z}{a}r\right) & = & \frac{1}{2!}\left(\frac{2}{3}\frac{Z}{a}r\right)^{-1}\exp\left(2\frac{Z}{a}r\right)\frac{d^{2}}{d\left(\frac{2}{3}\frac{Z}{a}r\right)^{3}}\left[\left(\frac{2}{3}\frac{Z}{a}r\right)^{3}\exp\left(-\frac{2}{3}\frac{Z}{a}r\right)\right]=\\
+ & = & \frac{1}{2}\left(6-6\left(\frac{2}{3}\frac{Z}{a}r\right)+\left(\frac{2}{3}\frac{Z}{a}r\right)^{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{3,0}\left(r\right) & = & \sqrt{\frac{2!}{3!\times6}}\left(\frac{2}{3}\right)^{3/2}\left(\frac{Z}{a}\right)^{3/2}\exp\left(-\frac{Z}{3a}r\right)\times\\
+ &  & \times\frac{1}{2}\left[6-6\left(\frac{2}{3}\frac{Z}{a}r\right)+\left(\frac{2}{3}\frac{Z}{a}r\right)^{2}\right]=\\
+ & = & \frac{2}{3\sqrt{3}}\left(\frac{Z}{a}\right)^{3/2}\left(1-\frac{2}{3}\frac{Z}{a}r+\frac{2}{27}\frac{Z^{2}}{a^{2}}r^{2}\right)\exp\left(-\frac{Z}{3a}r\right)
+\end{eqnarray*}
 
 \end_inset
 
