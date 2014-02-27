@@ -68,8 +68,1321 @@ eqs-within-sections
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Title
+Transiciones estimuladas: tratamiento semiclásico
+\end_layout
 
+\begin_layout Standard
+En 1926 Einsteins introdujo el mecanismo de la emisión estimulada para explicar
+ la emisión del cuerpo negro de Planck.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/figura-III-1.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "figura III-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hizo la hipótesis de que en un sistema atómico en presencia de radiación
+ electromagnética, la probabilidad de transición por unidad de tiempo de
+ que se produzca el mecanismo de 
+\series bold
+emisión estimulada
+\series default
+ o el de 
+\series bold
+asbsorción
+\series default
+ es proporcional a la densidad de energía 
+\begin_inset Formula $u\left(\nu\right)$
+\end_inset
+
+ de la radiación, e igual en ambos casos:
+\begin_inset Formula 
+\[
+\text{Probabilidad de transición}:\underbrace{B_{21}\left(\nu\right)}_{\text{Emisión}}=\underbrace{B_{12}\left(\nu\right)}_{\text{Absorción}}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $B_{12}=B_{21}$
+\end_inset
+
+ son constante para cada frecuencia de transición.
+\end_layout
+
+\begin_layout Standard
+Vamos a justificar la existencia de ambas transiciones y la igualdad entre
+ las probabilidades correspondientes.
+ Para ello utilizaremos el tratamiento semiclásico de la interacción dipolar
+ eléctrica, aplicándolo al caso simplificado de un átomo con sólo dos niveles
+ de energía, que supondremos, además, son los niveles más bajos del átomo
+ de Hidrógeno.
+\end_layout
+
+\begin_layout Section
+Átomo no perturbado (libre) 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-1 Átomo-no-perturbado (libre)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea un átomo de dos niveles estacionarios de energía 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ caracterizados por las funciones de onda:
+\begin_inset Formula 
+\begin{eqnarray*}
+\psi_{1} & = & \exp\left(-i\frac{E_{1}}{\hbar}t\right)\phi_{1}\left(x,y,z\right)\\
+\psi_{2} & = & \exp\left(-i\frac{E_{2}}{\hbar}t\right)\phi_{2}\left(x,y,z\right)
+\end{eqnarray*}
+
+\end_inset
+
+ La ecuación de Schrödinger que deben verificar las funciones de onda es:
+\begin_inset Formula 
+\[
+i\hbar\frac{\partial}{\partial t}\psi_{k}=\mathcal{H}_{0}\psi_{k}\qquad k=1,2
+\]
+
+\end_inset
+
+ donde
+\begin_inset Formula 
+\[
+\mathcal{H}_{0}=\frac{p^{2}}{2m}+V\left(r\right)=-\frac{\hbar^{2}}{2m}\left(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}\right)+V\left(r\right)
+\]
+
+\end_inset
+
+ es el hamiltoniano independiente del tiempo.
+\end_layout
+
+\begin_layout Standard
+En dichos estados, la probabilidad de presencia del electrón en el punto
+ 
+\begin_inset Formula $\left(x,y,z\right)$
+\end_inset
+
+ del espacio es independiente del tiempo:
+\begin_inset Formula 
+\[
+\psi_{k}^{*}\psi_{k}=\exp\left(-i\frac{E_{k}}{\hbar}t\right)\phi_{k}^{*}\left(x,y,z\right)\exp\left(-i\frac{E_{k}}{\hbar}t\right)\phi_{k}\left(x,y,z\right)
+\]
+
+\end_inset
+
+ El valor esperado de cualquier observable 
+\begin_inset Formula $M$
+\end_inset
+
+, que no dependa explícitamente del tiempo es estacionario:
+\begin_inset Formula 
+\[
+\left\langle M\right\rangle =\int_{\tau}\psi_{k}^{*}M\psi_{k}d\tau=\int_{\tau}\phi_{k}^{*}M\phi_{k}d\tau
+\]
+
+\end_inset
+
+ En particular, los valores de la energía total del átommo en cada estado
+ son independientes del tiempo.
+ En el estado 
+\begin_inset Formula $\psi_{k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left\langle \mathcal{H}_{0}\right\rangle =\int_{\tau}\phi_{k}^{*}\mathcal{H}_{0}\phi_{k}d\tau=E_{k}\int_{\tau}\phi_{k}^{*}\phi_{k}d\tau=E_{k}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example*
+En el caso del átomo de Hidrógeno:
+\begin_inset Formula 
+\[
+V\left(r\right)=-\frac{q^{2}}{4\pi\varepsilon_{0}}\frac{1}{r}
+\]
+
+\end_inset
+
+y las funciones 
+\begin_inset Formula $\phi_{1}\left(x,y,z\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{2}\left(x,y,z\right)$
+\end_inset
+
+ para los estados 
+\begin_inset Formula $1s$
+\end_inset
+
+ y 
+\begin_inset Formula $2p_{x}$
+\end_inset
+
+ resultan ser, respectivamente, 
+\begin_inset Formula 
+\[
+\phi_{1}=\frac{1}{\sqrt{\pi a^{3}}}e^{-\frac{r}{a}}\qquad\phi_{2}=\frac{1}{4\sqrt{2\pi a^{3}}}\frac{x}{a}e^{-\frac{r}{2a}}
+\]
+
+\end_inset
+
+ donde 
+\begin_inset Formula $a=0.529\,\AA$
+\end_inset
+
+ es el radio de Bohr.
+\end_layout
+
+\begin_deeper
+\begin_layout Remark*
+Por comodidad de escritura y para evitar confusiones, hemos llamado 
+\begin_inset Formula $a$
+\end_inset
+
+ al radio de Bohr, 
+\begin_inset Formula $m$
+\end_inset
+
+ a la masa del electrón y 
+\begin_inset Formula $q$
+\end_inset
+
+ a su carga.
+\end_layout
+
+\end_deeper
+\begin_layout Example*
+Las energías de dichos estados resultan ser:
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{1} & = & \int_{\tau}\phi_{1}^{*}\mathcal{H}_{0}\phi_{1}d\tau=\left(\frac{\hbar^{2}}{2ma^{2}}-\frac{q^{2}}{4\pi\varepsilon_{0}a}\right)\frac{1}{1^{2}}\\
+E_{2} & = & \int_{\tau}\phi_{2}^{*}\mathcal{H}_{0}\phi_{2}d\tau=\left(\frac{\hbar^{2}}{2ma^{2}}-\frac{q^{2}}{4\pi\varepsilon_{0}a}\right)\frac{1}{2^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Átomo perturbado por una onda electromagnética del espectro visible 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-2 Átomo perturbado por una onda electromagnética del espectro visible"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea una onda plana luminosa, de frecuencia angular 
+\begin_inset Formula $\omega$
+\end_inset
+
+, polarizada paralelamente al eje 
+\begin_inset Formula $X$
+\end_inset
+
+, propagándose según el eje 
+\begin_inset Formula $Y$
+\end_inset
+
+ y que alcanza al átomo en el instante 
+\begin_inset Formula $t=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/figura-III-3.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "figura-III-3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como las dimensiones del átomo 
+\begin_inset Formula $\left(\simeq5\,\AA\right)$
+\end_inset
+
+ son muy inferiores a la longitud de onda 
+\begin_inset Formula $\left(\lambda\simeq5000\,\AA\right)$
+\end_inset
+
+ de la luz, podemos considerar que todo él se encuentra en el mismo plano
+ de fase:
+\begin_inset Formula 
+\[
+ky\simeq\frac{2\pi\times5\,\AA}{5000\,\AA}\simeq10^{2}\,\text{radianes}\Rightarrow E_{x}\left(y,t\right)\simeq E_{x}\left(t\right)=E_{0}\cos\left(\omega t+\delta\right)
+\]
+
+\end_inset
+
+Es decir, suponemos que la distancia electrón-protón es muy inferior a la
+ longitud de onda, aunque las integraciones sobre la variable 
+\begin_inset Formula $r$
+\end_inset
+
+ las llevemos a cabo entre cero e infinito.
+ Más adelante comprobaremos que esta aproximación es válida.
+\end_layout
+
+\begin_layout Subsection
+Interacción dipolar eléctrica
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:III-2.1 Interacción-dipolar-eléctrica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el átomo no perturbado, los centros de las distribuciones de cargas positivas
+ y negativas coinciden.
+ Cuando un campo eléctrico 
+\begin_inset Formula $\mathbf{E}\left(t\right)$
+\end_inset
+
+ actúa sobre él, separa dichos centros de cargas, creando un dipolo.
+ Tomando el origen de coordenadas en el núcleo del átomo, el dipolo creado
+ es:
+\begin_inset Formula 
+\[
+\mathbf{p}=q\mathbf{r}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ es el vector de posición del electrón.
+ Si el campo 
+\begin_inset Formula $\mathbf{E}\left(t\right)$
+\end_inset
+
+ es paralelo al eje 
+\begin_inset Formula $x$
+\end_inset
+
+ y llamamos 
+\begin_inset Formula $E_{x}\left(t\right)$
+\end_inset
+
+ a su coordenada sobre el mismo, la energía potencial a que está sometido
+ el electrón será:
+\begin_inset Formula 
+\[
+W\left(t\right)=-\mathbf{p}\cdot\mathbf{E}=-q\, E_{x}\left(t\right)
+\]
+
+\end_inset
+
+Veamos cuál es el orden de magnitud de esta perturbación, en relación con
+ los niveles energéticos del átomo:
+\begin_inset Formula 
+\begin{eqnarray*}
+q & = & 1.602\times10^{-19}\, C\\
+x & \simeq & 5\,\AA
+\end{eqnarray*}
+
+\end_inset
+
+Para un haz láser de He-Ne, de 1 
+\begin_inset Formula $mW$
+\end_inset
+
+ de potencia y 1 
+\begin_inset Formula $mm^{2}$
+\end_inset
+
+ de sercción, tenemos:
+\begin_inset Formula 
+\[
+I=1\frac{mW}{mm^{2}}=\varepsilon_{0}c\frac{E_{0}^{2}}{2}\Rightarrow E_{0}\simeq10^{3}\,\frac{N}{C}
+\]
+
+\end_inset
+
+ en el exterior de la cavidad láser.
+\end_layout
+
+\begin_layout Standard
+En el interior es 100 veces mayor, por lo que tomando para el campo eléctrico
+ el valor de 
+\begin_inset Formula $10^{5}$
+\end_inset
+
+
+\begin_inset Formula $N/C$
+\end_inset
+
+ el valor resultante para 
+\begin_inset Formula $W\left(t\right)$
+\end_inset
+
+ sería del orden de 
+\begin_inset Formula $10^{-24}$
+\end_inset
+
+ 
+\begin_inset Formula $Julios\simeq10^{-5}\, eV$
+\end_inset
+
+, a comparar con los valore de 
+\begin_inset Formula $E_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+, o de su diferencia, que es del orden de 
+\begin_inset Formula $10\, eV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+La energía de interacción dipolar es un millón de veces menor que la energía
+ del átomo no perturbado
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Función de onda 
+\begin_inset Formula $\psi$
+\end_inset
+
+ del átomo perturbado 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:III-2.1 Función de onda del átomo perturbado"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El hamiltoniano correspondiente al átomo perturbado es ahora:
+\begin_inset Formula 
+\[
+\mathcal{H}=\mathcal{H}_{0}+W\left(t\right)
+\]
+
+\end_inset
+
+Como depende del tiempo, la nueva función 
+\begin_inset Formula $\psi$
+\end_inset
+
+ no corresponde a un estado estacionario, sino que evoluciona verificando
+ la ecuación diferencial de Schrödinger:
+\begin_inset Formula 
+\[
+i\hbar\frac{\partial\psi}{\partial t}=\mathcal{H}\psi
+\]
+
+\end_inset
+
+ Si la perturbación no disocial el átomo, éste se encontrará antes de que
+ aquella actúe y después de que cese de actuar, en los estados 
+\begin_inset Formula $\psi_{k}$
+\end_inset
+
+ correspondientes al hamiltoniano no perturbado.
+ Es natura, por lo tanto, que busquemos las soluciones de la ecuación de
+ Schródinger dependiente del tiempo como combinaciones lineales de las funciones
+ de onda de los estados estacionarios, aunque multiplicadas por coeficientes
+ que dependan del tiempo y del estado inicial del átomo:
+\begin_inset Formula 
+\[
+\psi=a_{1}\left(t\right)\psi+a_{2}\left(t\right)\psi_{2}
+\]
+
+\end_inset
+
+ Esto permite que se cumplan las condiciones iniciales del problema, sin
+ más que hacer que 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ verifiquen las condiciones límite:
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{t\to0}\begin{cases}
+a_{1}\left(t\right)=1\\
+a_{2}\left(t\right)=0
+\end{cases} & \leftrightarrow & \text{Estado inicial }\psi_{1}\\
+\lim_{t\to0}\begin{cases}
+a_{1}\left(t\right)=0\\
+a_{2}\left(t\right)=1
+\end{cases} & \leftrightarrow & \text{Estado inicial }\psi_{2}
+\end{eqnarray*}
+
+\end_inset
+
+Por otra parte, la normalización de la función 
+\begin_inset Formula $\psi$
+\end_inset
+
+ conduce a la relación
+\begin_inset Formula 
+\[
+1=\int_{\tau}\psi^{*}\psi d\tau=\left|a_{1}\left(t\right)\right|^{2}+\left|a_{2}\left(t\right)\right|^{2}
+\]
+
+\end_inset
+
+por estar 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ normalizadas.
+\end_layout
+
+\begin_layout Standard
+Si la perturbación cesa en el instante 
+\begin_inset Formula $t$
+\end_inset
+
+, los cuadrados de los coeficientes 
+\begin_inset Formula $a_{1}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}\left(t\right)$
+\end_inset
+
+ en dicho instante representan las probabilidads de encontrar el átomo en
+ los estados 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ respectivamente.
+\end_layout
+
+\begin_layout Standard
+Si en 
+\begin_inset Formula $t=0$
+\end_inset
+
+ el átomo estaba en 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+: entonces 
+\begin_inset Formula $\left|a_{1}\left(t\right)\right|^{2}$
+\end_inset
+
+ es la probabilidad de encontrarlo en el estado 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ al cabo del tiempo 
+\begin_inset Formula $t$
+\end_inset
+
+ (probabilidad de que se produzca la 
+\series bold
+absorción
+\series default
+).
+\end_layout
+
+\begin_layout Standard
+El problema se reduce, por tanto, a encontrar 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ en cada caso particular.
+\end_layout
+
+\begin_layout Section
+Ecuaciones de evolución de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-3 Ecuaciones-de-evolución de a1 y a2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando la ecuación de Schrödinger:
+\begin_inset Formula 
+\begin{multline*}
+i\hbar\frac{\partial}{\partial t}\left(a_{1}\left(t\right)\psi_{1}+a_{2}\left(t\right)\psi_{2}\right)=\left(\mathcal{H}_{0}+W\left(t\right)\right)\left(a_{1}\left(t\right)\psi_{1}+a_{2}\left(t\right)\psi_{2}\right)\Rightarrow\\
+\Rightarrow i\hbar\left(\frac{da_{1}}{dt}\psi_{1}+\frac{da_{2}}{dt}\psi_{2}\right)+a_{1}i\hbar\frac{\partial\psi_{1}}{\partial t}+a_{2}i\hbar\frac{\partial\psi_{2}}{\partial t}=\\
+=a_{1}\mathcal{H}_{0}\psi_{1}+a_{2}\mathcal{H}_{0}\psi_{2}+a_{1}W\left(t\right)\psi_{1}+a_{2}W\left(t\right)\psi_{2}
+\end{multline*}
+
+\end_inset
+
+puesto que 
+\begin_inset Formula $\mathcal{H}_{0}$
+\end_inset
+
+ no actúa sobre funciones temporales.
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ verifican la ecuación de Schrödinger, resulta:
+\begin_inset Formula 
+\[
+i\hbar\left(\frac{da_{1}}{dt}\psi_{1}+\frac{da_{2}}{dt}\psi_{2}\right)=a_{1}W\left(t\right)\psi_{1}+a_{2}W\left(t\right)\psi_{2}
+\]
+
+\end_inset
+
+ Multiplicando a la izquierda por 
+\begin_inset Formula $\psi_{1}^{*}$
+\end_inset
+
+ e integrando en todo el espacio se despeja 
+\begin_inset Formula $\frac{da_{1}}{dt}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+i\hbar\frac{da_{1}}{dt}\underbrace{\int_{\tau}\psi_{1}^{*}\psi_{1}d\tau}_{=1}+i\hbar\frac{da_{2}}{dt}\underbrace{\int_{\tau}\psi_{1}^{*}\psi_{2}d\tau}_{=0}=\\
+=a_{1}\int_{\tau}\psi_{1}^{*}W\left(t\right)\psi_{1}d\tau+a_{2}\int_{\tau}\psi_{1}^{*}W\left(t\right)\psi_{2}d\tau
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cálculo de las integrales de la interacción dipolar 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-4 Cálculo de las integrales de la interacción dipolar"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vamos a calcular a continuación las integrales que intervienen en la determinaci
+ón de los coeficientes 
+\begin_inset Formula $a_{1}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}\left(t\right)$
+\end_inset
+
+ de la función de onda del átomo, perturbado por la interacción dipolar.
+ Para ello tomamos como ejemplo los estados 
+\begin_inset Formula $\left(1s\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(2p_{x}\right)$
+\end_inset
+
+ del átomo de Hidrógeno.
+\end_layout
+
+\begin_layout Subsection
+Término de interacción dipolar entre 
+\begin_inset Formula $\psi_{1}^{*}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\tau}\psi_{1}^{*}W\psi_{1}d\tau=-qE_{x}\left(t\right)\exp\left(i\frac{E_{1}}{\hbar}t\right)\exp\left(-i\frac{E_{1}}{\hbar}t\right)\int_{\tau}\phi_{1}x\phi_{1}d\tau
+\]
+
+\end_inset
+
+donde hemos sacado fuera de la integral todas las funciones que no dependen
+ de las coordenadas.
+ La integral a calcular resulta:
+\begin_inset Formula 
+\[
+\int_{\tau}\phi_{1}x\phi_{1}d\tau=\frac{1}{\pi a^{3}}\int_{0}^{\pi}\int_{0}^{2\pi}\int_{0}^{\infty}e^{-2\frac{r}{a}}x\, r^{2}\sin\theta d\theta d\varphi dr
+\]
+
+\end_inset
+
+Como 
+\begin_inset Formula $x=r\sin\theta\cos\varphi$
+\end_inset
+
+, en el cálculo de la integral:
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}\cos\varphi d\varphi=0
+\]
+
+\end_inset
+
+por lo que finalmente:
+\begin_inset Formula 
+\[
+\int_{\tau}\phi_{1}x\phi_{1}d\tau=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este resultado es válido siempre que las funciones aparezcan a derecha e
+ izquierda de 
+\begin_inset Formula $W$
+\end_inset
+
+ en la integral tengan la misma paridad en sus funciones 
+\begin_inset Formula $\sin\varphi$
+\end_inset
+
+ (o 
+\begin_inset Formula $\cos\varphi$
+\end_inset
+
+), ya que al ser multplicadas por 
+\begin_inset Formula $\cos\varphi$
+\end_inset
+
+n el integrando resulta ser una función impar, cuya integral se anula en
+ el intervalo de integración de un periodo.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+La interacción dipolar 
+\begin_inset Quotes eld
+\end_inset
+
+prohibe
+\begin_inset Quotes erd
+\end_inset
+
+ las transiciones entre estados de la misma paridad
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Término de interacción dipolar entre 
+\begin_inset Formula $\psi_{1}^{*}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau=-E_{x}\left(t\right)\exp\left(i\frac{E_{1}}{\hbar}t\right)\exp\left(-i\frac{E_{2}}{\hbar}t\right)\int_{\tau}\phi_{1}q\, x\phi_{2}d\tau=\\
+=-E_{x}\left(t\right)e^{-i\omega_{21}t}\mu_{12}
+\end{multline*}
+
+\end_inset
+
+donde
+\begin_inset Formula 
+\[
+\omega_{21}=\frac{E_{2}-E_{1}}{\hbar}=2\pi\nu_{21}
+\]
+
+\end_inset
+
+ y donde hemos denominado 
+\begin_inset Formula $\mu_{12}$
+\end_inset
+
+ al 
+\series bold
+momento dipolar de transición
+\series default
+ entre los estados 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\mu_{21}=\int_{\tau}\phi_{1}q\, x\phi_{2}d\tau=\\
+=q\int_{0}^{\pi}\int_{0}^{2\pi}\int_{0}^{\infty}\frac{1}{\sqrt{\pi a^{3}}}\frac{1}{4\sqrt{2\pi a^{3}}}e^{-\frac{r}{a}}x\frac{x}{a}e^{-\frac{r}{2a}}r^{2}\sin\theta d\theta d\varphi dr=\\
+=\frac{q}{4\sqrt{2}\pi a^{4}}\int_{0}^{\pi}\int_{0}^{2\pi}\int_{0}^{\infty}x^{2}e^{-\frac{3r}{2a}}r^{2}\sin\theta d\theta d\varphi dr
+\end{multline*}
+
+\end_inset
+
+Como 
+\begin_inset Formula $x^{2}=r^{2}\sin^{2}\theta\cos^{2}\varphi$
+\end_inset
+
+, resulta:
+\begin_inset Formula 
+\[
+\mu_{12}=\frac{q}{4\sqrt{2}\pi a^{4}}\int_{0}^{\pi}\sin^{3}\theta d\theta\int_{0}^{2\pi}\cos^{2}\varphi d\varphi\int_{0}^{\infty}r^{4}e^{-\frac{3r}{2a}}dr
+\]
+
+\end_inset
+
+Las integrales que intervienen en la expresión de 
+\begin_inset Formula $\mu_{12}$
+\end_inset
+
+ se calculan fácilmente:
+\begin_inset Formula 
+\begin{multline*}
+\int_{0}^{\pi}\sin^{3}\theta d\theta=\int_{0}^{\pi}\sin^{2}\theta\sin\theta d\theta=\int_{0}^{\pi}\left(1-\cos^{2}\theta\right)\sin\theta d\theta=\\
+=\int_{0}^{\pi}\sin\theta d\theta-\int_{0}^{\pi}\cos^{2}\theta\sin\theta d\theta=\left[-\cos\theta\right]_{0}^{\pi}+\int_{0}^{\pi}\cos^{2}\theta d\left(\cos\theta\right)=\\
+=\left[\cos\theta\right]_{\pi}^{0}+\left[\frac{\cos^{3}}{3}\right]_{0}^{\pi}=\frac{4}{3}
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}\cos^{2}\varphi d\varphi=\pi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}r^{4}e^{-\frac{3r}{2a}}dr=\left[\frac{e^{-\frac{3r}{2a}}}{-\frac{3}{2a}}\left(r^{4}+\cdots+\frac{\left(-1\right)^{4}4!}{\left(-\frac{3}{2a}\right)^{4}}\right)\right]_{0}^{\infty}=\frac{2^{8}}{3^{4}}a^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Si en lugar de efectuar esta integración entre 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $\infty$
+\end_inset
+
+ la llevamos a cabo entre 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $5\,\AA$
+\end_inset
+
+, el valor que se obtiene difiere sólo en un uno por mil del anterior.
+\end_layout
+
+\begin_layout Standard
+Por consiguiente, sustituyendo los valores de estas integrales en la expresión
+ de 
+\begin_inset Formula $\mu_{12}$
+\end_inset
+
+ y haciendo operaciones, obtenemos
+\begin_inset Formula 
+\[
+\mu_{12}=0.745\, q\, a
+\]
+
+\end_inset
+
+Utilizando los valores de la carga electrónica y del radio de Bohr, obtenemos
+ para el momento dipolar 
+\begin_inset Formula $\mu_{12}$
+\end_inset
+
+ el valor:
+\begin_inset Formula 
+\[
+\mu_{12}=6.315\times10^{-30}\, C\, m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El 
+\emph on
+término de interacción dipolar
+\emph default
+ 
+\begin_inset Formula $W_{12}$
+\end_inset
+
+ entre los estados 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+W_{12}=\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau
+\]
+
+\end_inset
+
+ resulta ser:
+\begin_inset Formula 
+\[
+W_{12}=-E_{x}\left(t\right)e^{-i\omega_{21}t}\mu_{12}
+\]
+
+\end_inset
+
+ Análogamente se calcula el otro término de interacción dipolar entre estos
+ dos estados:
+\begin_inset Formula 
+\[
+W_{21}=-E_{x}\left(t\right)e^{i\omega_{21}t}\mu_{21}
+\]
+
+\end_inset
+
+ En el caso presenta 
+\begin_inset Formula $\mu_{12}=\mu_{21}$
+\end_inset
+
+ puesto que 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+ son funciones reales.
+\end_layout
+
+\begin_layout Standard
+El hecho de que los momentos dipolares de transición sean distintos de cero
+ tiene una gran importancia, ya que posibilita las transiciones dipolares
+ eléctricas entre los estados (
+\emph on
+reglas de selección
+\emph default
+).
+\end_layout
+
+\begin_layout Section
+Resolución del sistema de ecuaciones diferenciales de los coeficientes 
+\begin_inset Formula $a\left(t\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-5 Resolución-del-sistema de ecuaciones diferenciales de los coeficientes a(t)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalmente, utilizando los resultados anteriores el sistema de ecuaciones
+ diferenciales que tenemos que resolver es:
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{1}}{dt} & = & a_{2}\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau\\
+i\hbar\frac{da_{2}}{dt} & = & a_{1}\int_{\tau}\psi_{2}^{*}W\psi_{1}d\tau
+\end{eqnarray*}
+
+\end_inset
+
+Es decir:
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{1}}{dt} & = & -a_{2}E_{x}\left(t\right)e^{-i\omega_{21}t}\mu_{12}\\
+i\hbar\frac{da_{2}}{dt} & = & -a_{1}E_{x}\left(t\right)e^{-i\omega_{21}t}\mu_{12}
+\end{eqnarray*}
+
+\end_inset
+
+Por otra parte, el campo 
+\begin_inset Formula $E_{x}\left(t\right)$
+\end_inset
+
+ se puede expresar de la siguiente manera:
+\begin_inset Formula 
+\[
+E_{x}\left(t\right)=E_{0}\cos\left(\omega t+\delta\right)=\frac{E_{0}}{2}\left(e^{i\delta}e^{i\omega t}+e^{-i\delta}e^{-i\omega t}\right)
+\]
+
+\end_inset
+
+Por lo que resulta:
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{1}}{dt} & = & -a_{2}\frac{E_{0}\mu_{12}}{2}\left(e^{i\delta}e^{i\left(\omega-\omega_{21}\right)t}+e^{-i\delta}e^{-i\left(\omega-\omega_{21}\right)t}\right)\\
+i\hbar\frac{da_{2}}{dt} & = & -a_{1}\frac{E_{0}\mu_{12}}{2}\left(e^{i\delta}e^{i\left(\omega-\omega_{21}\right)t}+e^{-i\delta}e^{-i\left(\omega-\omega_{21}\right)t}\right)
+\end{eqnarray*}
+
+\end_inset
+
+Para simplificar las ecuaciones diferenciales vamos a hacer la siguiente
+ aproximación.
+ Calculemos las derivadas como cociente de incrementos finitos, es decir:
+\begin_inset Formula 
+\[
+\frac{da_{1}}{dt}\simeq\lim_{\Delta t\to\epsilon}\frac{\Delta a_{1}}{\Delta t}
+\]
+
+\end_inset
+
+donde tomamos 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ mucho menor que el tiempo 
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ que dura la perturbación y en el que está definida la función 
+\begin_inset Formula $a_{1}\left(t\right)$
+\end_inset
+
+, pero mucho mayor que el periodo 
+\begin_inset Formula $T$
+\end_inset
+
+ de la onda perturbadora:
+\begin_inset Formula 
+\[
+T\ll\epsilon\ll t_{p}
+\]
+
+\end_inset
+
+ En el intervalo de tiempo 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ en que calculamos la derivada, las fasses debidas a los términos exponenciales:
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{i\left(\omega-\omega_{21}\right)t} & = & e^{i\left(\frac{2\pi}{T}\right)t}e^{i\omega_{21}t}\\
+e^{-i\left(\omega-\omega_{21}\right)t} & = & e^{-i\left(\frac{2\pi}{T}\right)t}e^{-i\omega_{21}t}
+\end{eqnarray*}
+
+\end_inset
+
+varían muy rápidamente (dan muchas vueltas) puesto que 
+\begin_inset Formula $T\ll\epsilon$
+\end_inset
+
+.
+ Por lo tanto, el promedio temporal de dichas fases será nulo en dicho intervalo
+ de tiempo:
+\begin_inset Formula 
+\[
+\overline{e^{i\left(\omega-\omega_{21}\right)t}}=\overline{e^{-i\left(\omega-\omega_{21}\right)t}}=0\qquad\forall\epsilon\ll T
+\]
+
+\end_inset
+
+ A las fases debidas a los otros dos términos exponenciales:
+\begin_inset Formula 
+\[
+e^{i\left(\omega-\omega_{21}\right)t}\quad\text{y}\quad e^{-i\left(\omega-\omega_{21}\right)t}
+\]
+
+\end_inset
+
+les sucede lo mismo cuando la frecuencia 
+\begin_inset Formula $\omega$
+\end_inset
+
+ de la onda perturbadora es muy diferente de la frecuencia 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+.
+ Pero 
+\emph on
+cuando 
+\begin_inset Formula $\omega$
+\end_inset
+
+ se acerca a 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+ (resonancia)
+\emph default
+, dichas fases varían muy lentamente al hacerse muy pequelo el término 
+\begin_inset Formula $\left(\omega-\omega_{21}\right)t$
+\end_inset
+
+.
+ Por consiguiente, cuando la frecuencia de la onda perturbadora se aproxima
+ a la que corresponden a la diferencia de niveles energéticos, las ecuaciones
+ diferenciales se simplifican:
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{1}}{dt} & \simeq & -a_{2}\frac{E_{0}\mu_{12}}{2}e^{i\delta}e^{i\left(\omega-\omega_{21}\right)t}\\
+i\hbar\frac{da_{2}}{dt} & \simeq & -a_{1}\frac{E_{0}\mu_{12}}{2}e^{-i\delta}e^{-i\left(\omega-\omega_{21}\right)t}
+\end{eqnarray*}
+
+\end_inset
+
+Este sistema de ecuaciones diferenciales ordinarias es válido, como ya hemos
+ indicado, siempre que el tiempo 
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ que dura la perturbación sea muy superior al periodo 
+\begin_inset Formula $T$
+\end_inset
+
+ de la onda perturbadora.
+ Para la luz visible esto quiere decir que la aproximación es aceptable
+ siempre que
+\begin_inset Formula 
+\[
+t_{p}\gg10^{-15}\, s
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Supondremos que 
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ es al menos 
+\begin_inset Formula $10^{3}$
+\end_inset
+
+ veces mayor que el periodo de la onda perturbadora, por lo que limitamos
+ el estudio a perturbaciones cuyo tiempo de actuación sea superior a 
+\begin_inset Formula $10^{-12}$
+\end_inset
+
+ segundos.
+\end_layout
+
+\begin_layout Standard
+Las ecuaciones diferenciales simplificadas se pueden desacoplar derivando
+ respecto al tiempo:
+\begin_inset Formula 
+\begin{multline*}
+i\hbar\frac{d^{2}a_{1}}{dt^{2}}=-\frac{da_{2}}{dt}\frac{E_{0}\mu_{12}}{2}e^{i\delta}e^{i\left(\omega-\omega_{21}\right)t}-\\
+-a_{2}\frac{E_{0}\mu_{12}}{2}e^{i\delta}i\left(\omega-\omega_{21}\right)e^{i\left(\omega-\omega_{21}\right)t}
+\end{multline*}
+
+\end_inset
+
+Pero:
+\begin_inset Formula 
+\[
+-a_{2}\frac{E_{0}\mu_{12}}{2}e^{i\delta}i\left(\omega-\omega_{21}\right)e^{i\left(\omega-\omega_{21}\right)t}=i\hbar\frac{da_{1}}{dt}i\left(\omega-\omega_{21}\right)
+\]
+
+\end_inset
+
+por lo que:
+\begin_inset Formula 
+\[
+i\hbar=\frac{d^{2}a_{1}}{dt^{2}}=-\frac{da_{2}}{dt}\frac{E_{0}\mu_{12}}{2}e^{i\delta}e^{i\left(\omega-\omega_{21}\right)t}-\hbar\frac{da_{1}}{dt}\left(\omega-\omega_{21}\right)
+\]
+
+\end_inset
+
+Utilizando ahora la segunda ecuación diferencial desacoplamos, finalmente,
+ las variables 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+\frac{da_{2}}{dt}\simeq-\frac{1}{i\hbar}a_{1}\frac{E_{0}\mu_{12}}{2}e^{-i\delta}e^{-i\left(\omega-\omega_{21}\right)t}\Rightarrow\\
+\Rightarrow i\hbar\frac{d^{2}a_{1}}{dt^{2}}=\frac{1}{i\hbar}a_{1}\left(\frac{E_{0}\mu_{12}}{2}\right)^{2}-\hbar\frac{da_{1}}{dt}\left(\omega-\omega_{21}\right)
+\end{multline*}
+
+\end_inset
+
+Reordenando los términos se obtiene:
+\begin_inset Formula 
+\[
+\frac{d^{2}a_{1}}{dt^{2}}-i\left(\omega-\omega_{21}\right)\frac{da_{1}}{dt}+\frac{\left|\gamma\right|^{2}}{4}a_{1}=0
+\]
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\[
+\left|\gamma\right|^{2}=\frac{E_{0}^{2}\mu_{12}^{2}}{\hbar^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+PDF13
 \end_layout
 
 \end_body
