@@ -1382,7 +1382,470 @@ donde:
 \end_layout
 
 \begin_layout Standard
-PDF13
+De manera análoga se obtiene para 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{d^{2}a_{2}}{dt^{2}}+i\left(\omega-\omega_{21}\right)\frac{da_{2}}{dt}+\frac{\left|\gamma\right|^{2}}{4}a_{2}=0
+\]
+
+\end_inset
+
+Cada una de las dos ecuaciones diferenciales lineales ordinarias de segundo
+ orden se integran recurriendo al polinomio característico.
+\end_layout
+
+\begin_layout Subsection
+Determinación de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El polinomio característico es, en este caso:
+\begin_inset Formula 
+\[
+R^{2}-i\left(\omega-\omega_{21}\right)R+\frac{\left|\gamma\right|^{2}}{4}=0
+\]
+
+\end_inset
+
+Sus raíces son, por lo tanto:
+\begin_inset Formula 
+\begin{eqnarray*}
+R & = & \frac{i\left(\omega-\omega_{21}\right)}{2}\pm\frac{1}{2}\sqrt{i^{2}\left(\omega-\omega_{21}\right)^{2}-\left|\gamma\right|^{2}}=\\
+ & = & \frac{i\left(\omega-\omega_{21}\right)}{2}\pm\frac{1}{2}\sqrt{i^{2}\left(\omega-\omega_{21}\right)^{2}+i^{2}\left|\gamma\right|^{2}}=\\
+ & = & \frac{i\left(\omega-\omega_{21}\right)}{2}\pm\frac{1}{2}i\sqrt{\left(\omega-\omega_{21}\right)^{2}+\left|\gamma\right|^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+ Veamos qué valores pueden alcanzar 
+\begin_inset Formula $\left|\gamma\right|^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\left(\omega-\omega_{21}\right)^{2}$
+\end_inset
+
+ en el dominio de la luz visible.
+\end_layout
+
+\begin_layout Standard
+Supongamos que el campo eléctrico es del orden de 
+\begin_inset Formula $10^{5}\, N\, C^{-1}$
+\end_inset
+
+ (campo eléctrico reinante en el interior de un láser de 
+\begin_inset Formula $He-Ne$
+\end_inset
+
+).
+ En estas condiciones, utilizando los resultados de la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:III-4 Cálculo de las integrales de la interacción dipolar"
+
+\end_inset
+
+, tenemos:
+\begin_inset Formula 
+\[
+\left|\gamma\right|^{2}=\frac{E_{0}^{2}\mu_{12}^{2}}{\hbar^{2}}\simeq\frac{\left(10^{5}\right)^{2}N^{2}C^{-2}\times\left(6.315\right)^{2}\times10^{-60}C^{2}m^{2}}{\left(1.0545\right)^{2}\times10^{-68}J^{2}s^{2}}\simeq3.6\times10^{19}s^{-2}
+\]
+
+\end_inset
+
+ Por otra parte, para 
+\begin_inset Formula $\lambda\simeq500\, nm$
+\end_inset
+
+ la frecuencia angular 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+ es del orden de 
+\begin_inset Formula $6\times10^{14}s^{-1}$
+\end_inset
+
+.
+ Si suponemos que la diferencia 
+\begin_inset Formula $\left(\omega-\omega_{21}\right)$
+\end_inset
+
+ es una milésima parte del valor de 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+, resulta:
+\begin_inset Formula 
+\[
+\left(\omega-\omega_{21}\right)\simeq10^{11}s^{-1}\Rightarrow\left(\omega-\omega_{21}\right)^{2}\simeq10^{22}s^{-2}\gg\left|\gamma\right|^{2}
+\]
+
+\end_inset
+
+Por lo tanto, en el radicando podemos despreciar 
+\begin_inset Formula $\left|\gamma\right|^{2}$
+\end_inset
+
+ frente al término 
+\begin_inset Formula $\left(\omega-\omega_{21}\right)^{2}$
+\end_inset
+
+, con lo que las raíces del polinomio característico resultan ser:
+\begin_inset Formula 
+\[
+R=\left\{ \begin{array}{c}
+i\left(\omega-\omega_{21}\right)\\
+0
+\end{array}\left(\text{siempre que }\left|\omega-\omega_{21}\right|>10^{-3}\omega_{21}\right)\right.
+\]
+
+\end_inset
+
+La solución buscada para 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ será, por consiguiente:
+\begin_inset Formula 
+\[
+a_{1}\left(t\right)=A_{1}e^{i\left(\omega-\omega_{21}\right)t}+B_{1}
+\]
+
+\end_inset
+
+ donde 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ son constantes de integración que se determinan con las condiciones iniciales
+ que han de cumplir 
+\begin_inset Formula $a_{1}\left(t\right)$
+\end_inset
+
+ y su derivada primera.
+\end_layout
+
+\begin_layout Subsection
+Determinación de 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+De manera análoga se obtiene la solución para 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a_{2}\left(t\right)=A_{2}e^{-i\left(\omega-\omega_{21}\right)t}+B_{2}
+\]
+
+\end_inset
+
+ Recordamos que estas dos soluciones son válidas siempre que el tiempo 
+\begin_inset Formula $t_{p}$
+\end_inset
+
+ que dura la perturbación sea superior a 
+\begin_inset Formula $10^{-12}s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Condiciones iniciales: Igualdad entre las probabilidades de transición 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-6 Condiciones iniciales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vamos a determinar a continuación las constantes 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ que intervienen en la solución general de 
+\begin_inset Formula $a_{1}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}\left(t\right)$
+\end_inset
+
+, acudiendo a las condiciones iniciales que han de verificarse en cada caso.
+\end_layout
+
+\begin_layout Subsection
+Primer caso: Emisión inducida (Determinación de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+En el instante inicial el átomo se encuentra en el estado 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+t=0;\psi\left(0\right)=\psi_{2}\Rightarrow\left\{ \begin{array}{c}
+a_{1}\left(0\right)=0\\
+a_{2}\left(0\right)=1
+\end{array}\right\} \Rightarrow A_{1}+B_{1}=0\Rightarrow A_{1}=-B_{1}
+\]
+
+\end_inset
+
+Ahora bien, de la expresión de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ se deduce:
+\begin_inset Formula 
+\[
+\left(\frac{da_{1}}{dt}\right)_{t=0}=i\left(\omega-\omega_{21}\right)A_{1}
+\]
+
+\end_inset
+
+ Por otra parte, la expresión de las derivadas 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ en el origen de los tiempo se obtiene también, de manera directa, a partir
+ de las ecuaciones diferenciales, puesto que ha de suponerse que, en el
+ límite, éstas también se verifican cuando 
+\begin_inset Formula $t$
+\end_inset
+
+ tiende a cero:
+\begin_inset Formula 
+\[
+i\hbar\left(\frac{da_{1}}{dt}\right)_{t=0}=-a_{2}\left(0\right)\frac{E_{0}\mu_{12}}{2}e^{i\delta}\Rightarrow\left(\frac{da_{1}}{dt}\right)_{t=0}=ia_{2}\left(0\right)\frac{\gamma}{2}e^{i\delta}
+\]
+
+\end_inset
+
+y, análogamente:
+\begin_inset Formula 
+\[
+\left(\frac{da_{2}}{dt}\right)_{t=0}=ia_{1}\left(0\right)\frac{\gamma}{2}e^{-i\delta}
+\]
+
+\end_inset
+
+ Teniendo en cuenta estas consideraciones, obtenemos:
+\begin_inset Formula 
+\[
+A_{1}=\frac{\gamma e^{i\delta}}{2\left(\omega-\omega_{21}\right)}=-B_{1}\Rightarrow a_{1}=\frac{\gamma}{2}\frac{e^{i\delta}}{\left(\omega-\omega_{21}\right)}\left(e^{i\left(\omega-\omega_{21}\right)t}-1\right)
+\]
+
+\end_inset
+
+ que, multiplicando por el factor:
+\begin_inset Formula 
+\[
+\exp\left(i\left(\omega-\omega_{21}\right)\frac{t}{2}\right)\exp\left(-i\left(\omega-\omega_{21}\right)\frac{t}{2}\right)=1
+\]
+
+\end_inset
+
+ puede escribirse de la siguiente manera:
+\begin_inset Formula 
+\[
+a_{1}=i\frac{\gamma}{2}e^{i\delta}e^{i\frac{\left(\omega-\omega_{21}\right)t}{2}}\frac{\sin\left(\omega-\omega_{21}\right)\frac{t}{2}}{\frac{1}{2}\left(\omega-\omega_{21}\right)}
+\]
+
+\end_inset
+
+La probabilidad 
+\begin_inset Formula $P_{21}\left(\omega,t\right)$
+\end_inset
+
+ de encontrar el átomo en el estado 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ al cabo del tiempo 
+\begin_inset Formula $t$
+\end_inset
+
+ será:
+\begin_inset Formula 
+\[
+P_{21}\left(\omega,t\right)=\left|a_{1}\left(t\right)\right|^{2}=\frac{\gamma^{2}}{4}\left(\frac{\sin\left(\omega-\omega_{21}\right)\frac{t}{2}}{\frac{1}{2}\left(\omega-\omega_{21}\right)}\right)^{2}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Segundo caso: Absorción (Determinación de 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+El átomo se encuentra inicialmente en el estado 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+t=0;\psi\left(0\right)=\psi_{1}\Rightarrow\left\{ \begin{array}{c}
+a_{1}\left(0\right)=1\\
+a_{2}\left(0\right)=0
+\end{array}\right.
+\]
+
+\end_inset
+
+Procediendo de manera análoga, se obtiene:
+\begin_inset Formula 
+\[
+a_{2}=-i\frac{\gamma^{*}}{2}e^{-i\delta}e^{-i\left(\omega-\omega_{21}\right)\frac{t}{2}}\frac{\sin\left(\omega-\omega_{21}\right)\frac{t}{2}}{\frac{1}{2}\left(\omega-\omega_{21}\right)}
+\]
+
+\end_inset
+
+de donde se deduce:
+\begin_inset Formula 
+\begin{eqnarray*}
+P_{12}\left(\omega,t\right) & = & P_{21}\left(\omega,t\right)\\
+\text{Absorción} &  & \text{Emisión}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+\emph on
+La probabilidad de emisión inducida es igual a la de absorción.
+\end_layout
+
+\begin_layout Section
+Método general de integración para pequeñas perturbaciones 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-7 Método general de integración para pequeñas perturbaciones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la teoria de perturbaciones existen un método más general para resolver
+ las ecuaciones en 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ que, por su importancia, vamos a utilizar como ejemplo en este caso.
+\end_layout
+
+\begin_layout Standard
+Las energías correspondientes al hamiltoniano 
+\begin_inset Formula $W\left(t\right)$
+\end_inset
+
+ de la perturbación son muy pequeñas comparadas con las correspondientes
+ al hamiltoniano 
+\begin_inset Formula $\mathcal{H}_{0}$
+\end_inset
+
+ del átomo no perturbado.
+ Podemos, por tanto, expresar 
+\begin_inset Formula $W\left(t\right)$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+W\left(t\right)=\rho\tilde{W}\left(t\right)
+\]
+
+\end_inset
+
+ donde 
+\begin_inset Formula $\tilde{W}\left(t\right)$
+\end_inset
+
+ es un hamiltoniano cuyos valores de la energía son del orden de los correspondi
+entes 
+\begin_inset Formula $\mathcal{H}_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $\rho$
+\end_inset
+
+ es un parámetro positivo, mucho menor que la unidad.
+ En nuestro caso 
+\begin_inset Formula $\rho$
+\end_inset
+
+ es del orden de 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+PAG 17
 \end_layout
 
 \end_body
