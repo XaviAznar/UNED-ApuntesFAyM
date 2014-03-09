@@ -1315,6 +1315,14 @@ Supondremos que
 \end_inset
 
  segundos.
+\begin_inset Formula 
+\begin{equation}
+t_{p}\sim10^{-12}\, s\Rightarrow t_{p}\gg10^{-15}\, s\quad\left(10^{3}\, veces\, mayor\right)\label{eq:III-05 Aproximacion t_perturbacion aprox 10^(-12)s}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1455,9 +1463,9 @@ reference "sec:III-4 Cálculo de las integrales de la interacción dipolar"
 
 , tenemos:
 \begin_inset Formula 
-\[
-\left|\gamma\right|^{2}=\frac{E_{0}^{2}\mu_{12}^{2}}{\hbar^{2}}\simeq\frac{\left(10^{5}\right)^{2}N^{2}C^{-2}\times\left(6.315\right)^{2}\times10^{-60}C^{2}m^{2}}{\left(1.0545\right)^{2}\times10^{-68}J^{2}s^{2}}\simeq3.6\times10^{19}s^{-2}
-\]
+\begin{equation}
+\left|\gamma\right|^{2}=\frac{E_{0}^{2}\mu_{12}^{2}}{\hbar^{2}}\simeq\frac{\left(10^{5}\right)^{2}N^{2}C^{-2}\times\left(6.315\right)^{2}\times10^{-60}C^{2}m^{2}}{\left(1.0545\right)^{2}\times10^{-68}J^{2}s^{2}}\simeq3.6\times10^{19}s^{-2}\label{eq:III-p14 Orden de magnitud de gamma^2}
+\end{equation}
 
 \end_inset
 
@@ -1845,7 +1853,1039 @@ entes
 \end_layout
 
 \begin_layout Standard
-PAG 17
+La magnitud de la perturbación depende, como es natural, del parámetro 
+\begin_inset Formula $\rho$
+\end_inset
+
+, por lo que los coeficientes 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ serán funciones no solamente del tiempo, sino también de dicho parámetro:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{1} & \equiv & a_{1}\left(t,\rho\right)\\
+a_{2} & \equiv & a_{2}\left(t,\rho\right)
+\end{eqnarray*}
+
+\end_inset
+
+ Puesto que 
+\begin_inset Formula $\rho\ll1$
+\end_inset
+
+, podemos desarrollar 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ en serie de potencias de 
+\begin_inset Formula $\rho$
+\end_inset
+
+, para 
+\begin_inset Formula $\rho\to\infty$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{1}\left(t,\rho\right) & = & a_{1}^{0}\left(t\right)+a_{1}^{1}\left(\rho\right)+a_{1}^{2}\left(t\right)+\rho^{2}+\cdots\\
+a_{2}\left(t,\rho\right) & = & a_{2}^{0}\left(t\right)+a_{2}^{1}\left(\rho\right)+a_{2}^{2}\left(t\right)+\rho^{2}+\cdots
+\end{eqnarray*}
+
+\end_inset
+
+donde los superíndices indican el orden de la derivada respecto 
+\begin_inset Formula $\rho$
+\end_inset
+
+, y ésta está tomada en 
+\begin_inset Formula $\rho=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{1}^{1}\left(t\right) & = & \left(\frac{\partial a_{1}^{1}}{\partial\rho^{1}}\right)_{\rho=0}\\
+a_{2}^{1}\left(t\right) & = & \left(\frac{\partial a_{2}^{1}}{\partial\rho^{1}}\right)_{\rho=0}
+\end{eqnarray*}
+
+\end_inset
+
+El sistema de ecuaciones diferenciales que tenemos que resolver es:
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{1}}{dt} & = & a_{2}\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau=a_{2}\int_{\tau}\psi_{1}^{*}\rho\tilde{W}\psi_{2}d\tau=a_{2}\rho\tilde{W}_{12}\\
+i\hbar\frac{da_{2}}{dt} & = & a_{1}\int_{\tau}\psi_{2}^{*}W\psi_{1}d\tau=a_{1}\int_{\tau}\psi_{2}^{*}\rho\tilde{W}\psi_{1}d\tau=a_{1}\rho\tilde{W}_{21}
+\end{eqnarray*}
+
+\end_inset
+
+donde:
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{W}_{12} & = & \int_{\tau}\psi_{1}^{*}\tilde{W}\psi_{2}d\tau\\
+\tilde{W}_{21} & = & \int_{\tau}\psi_{2}^{*}\tilde{W}\psi_{1}d\tau
+\end{eqnarray*}
+
+\end_inset
+
+Sustituyendo los desarrollos en serie de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ en las ecuaciones diferenciales tenemos:
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\left[\frac{da_{1}^{0}\left(t\right)}{dt}+\rho\frac{da_{1}^{1}\left(t\right)}{dt}+\rho^{2}\frac{da_{1}^{2}\left(t\right)}{dt}+\cdots\right] & = & \left[a_{2}^{0}\left(t\right)+a_{2}^{1}\left(t\right)\rho+\cdots\right]\rho\tilde{W}_{12}\\
+i\hbar\left[\frac{da_{2}^{0}\left(t\right)}{dt}+\rho\frac{da_{2}^{1}\left(t\right)}{dt}+\rho^{2}\frac{da_{2}^{2}\left(t\right)}{dt}+\cdots\right] & = & \left[a_{1}^{0}\left(t\right)+a_{1}^{1}\left(t\right)\rho+\cdots\right]\rho\tilde{W}_{21}
+\end{eqnarray*}
+
+\end_inset
+
+Como este sistema de ecuaciones debe verificarse cualquiera que sea el valor
+ del parámetro 
+\begin_inset Formula $\rho$
+\end_inset
+
+, los coeficientes de las potencias de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ del mismo grado, a uno y otro lado de la igualdad, han de ser idénticos.
+ Identificando dichos coeficientes tenemos el siguiente sistema de ecuaciones
+ diferenciales:
+\end_layout
+
+\begin_layout Description
+De
+\begin_inset space ~
+\end_inset
+
+la
+\begin_inset space ~
+\end_inset
+
+primera
+\begin_inset space ~
+\end_inset
+
+ecuación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{1}^{0}\left(t\right)}{dt} & = & 0\\
+i\hbar\frac{da_{1}^{1}\left(t\right)}{dt} & = & a_{2}^{0}\left(t\right)\tilde{W}_{12}\\
+i\hbar\frac{da_{1}^{2}\left(t\right)}{dt} & = & a_{2}^{1}\left(t\right)\tilde{W}_{12}\\
+ & \vdots
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+De
+\begin_inset space ~
+\end_inset
+
+la
+\begin_inset space ~
+\end_inset
+
+segunda
+\begin_inset space ~
+\end_inset
+
+ecuación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+i\hbar\frac{da_{2}^{0}\left(t\right)}{dt} & = & 0\\
+i\hbar\frac{da_{2}^{1}\left(t\right)}{dt} & = & a_{1}^{0}\left(t\right)\tilde{W}_{21}\\
+i\hbar\frac{da_{2}^{2}\left(t\right)}{dt} & = & a_{1}^{1}\left(t\right)\tilde{W}_{21}\\
+ & \vdots
+\end{eqnarray*}
+
+\end_inset
+
+Integrando estas ecuaciones entre 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $t$
+\end_inset
+
+ (intervalo de tiempo durante el cual está actuando la perturbación), obtenemos:
+\end_layout
+
+\begin_layout Description
+De
+\begin_inset space ~
+\end_inset
+
+la
+\begin_inset space ~
+\end_inset
+
+primera
+\begin_inset space ~
+\end_inset
+
+ecuación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{1}^{0}\left(t\right) & = & a_{10}\qquad constante\\
+a_{1}^{1}\left(t\right) & = & \frac{1}{i\hbar}a_{20}\int_{0}^{t}\tilde{W}_{12}dt\\
+a_{1}^{2}\left(t\right) & = & \frac{1}{i\hbar}\int_{0}^{t}a_{2}^{1}\left(t\right)\tilde{W}_{12}dt\\
+ & \vdots
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+De
+\begin_inset space ~
+\end_inset
+
+la
+\begin_inset space ~
+\end_inset
+
+segunda
+\begin_inset space ~
+\end_inset
+
+ecuación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{2}^{0}\left(t\right) & = & a_{20}\qquad constante\\
+a_{2}^{1}\left(t\right) & = & \frac{1}{i\hbar}a_{10}\int_{0}^{t}\tilde{W}_{21}dt\\
+a_{2}^{2}\left(t\right) & = & \frac{1}{i\hbar}\int_{0}^{t}a_{1}^{1}\left(t\right)\tilde{W}_{21}dt\\
+ & \vdots
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El problema de la determinación de los coeficientes 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ queda, por lo tanto, resuelto si conocemos las constantes 
+\begin_inset Formula $a_{10}$
+\end_inset
+
+y 
+\begin_inset Formula $a_{20}$
+\end_inset
+
+, puesto que de ellas obtenemos, por integración 
+\begin_inset Formula $a_{2}^{1}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1}^{1}\left(t\right)$
+\end_inset
+
+, respectivamente.
+ A partir de éstas, obtenemos 
+\begin_inset Formula $a_{1}^{2}\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}^{2}\left(t\right)$
+\end_inset
+
+, etc.
+ De esta manera conoceremos los coeficientes de las sucesivas potencias
+ de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ que intervienen en el desarrollo en serie de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+.
+ Como 
+\begin_inset Formula $\rho$
+\end_inset
+
+ es menor que la unidad, podemos limitar el desarrollo a la potencia 
+\begin_inset Formula $n-sima$
+\end_inset
+
+, y diremos que hemos resuelto el problema en 
+\emph on
+la aproximación de orden 
+\begin_inset Formula $n$
+\end_inset
+
+ de la perturbación
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Aproximación de orden cero
+\end_layout
+
+\begin_layout Standard
+En este caso:
+\begin_inset Formula 
+\[
+n=0\Rightarrow\begin{cases}
+a_{1}\left(t,\rho\right)=a_{10}\rho^{0}=a_{10} & constante\\
+a_{2}\left(t,\rho\right)=a_{20}\rho^{0}=a_{20} & constante
+\end{cases}
+\]
+
+\end_inset
+
+Si en el instante inicial el átomo se encuentra en el estado 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+, resulta
+\begin_inset Formula 
+\[
+\psi\left(t=0\right)=a_{10}\psi_{1}+a_{20}\psi_{2}=\psi_{1}\Rightarrow\left\{ \begin{array}{c}
+a_{10}=1\\
+a_{20}=0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\emph on
+El átomo permanece en el estado 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+.
+ 
+\series bold
+No se produce transición
+\series default
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Aproximación de primer orden
+\end_layout
+
+\begin_layout Standard
+En este caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+, por lo que los desarrollos de 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ serán:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{1}\left(t\right) & = & a_{10}+\rho a_{1}^{1}\left(t\right)=a_{10}+\frac{1}{i\hbar}a_{20}\int_{0}^{t}\rho\tilde{W}_{12}dt\\
+a_{2}\left(t\right) & = & a_{20}+\rho a_{2}^{1}\left(t\right)=a_{20}+\frac{1}{i\hbar}a_{10}\int_{0}^{t}\rho\tilde{W}_{21}dt
+\end{eqnarray*}
+
+\end_inset
+
+donde los términos en potencias de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ superiores a 
+\begin_inset Formula $n=1$
+\end_inset
+
+ han sido despreciados (en nuestro caso 
+\begin_inset Formula $\rho^{2}$
+\end_inset
+
+ es un millón de veces menor que 
+\begin_inset Formula $\rho$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Procedemos ahora al cálculo de las integrales involucradas:
+\begin_inset Formula 
+\[
+\int_{0}^{t}\rho\tilde{W}_{12}dt=\int_{0}^{t}\left(\int_{\tau}\psi_{1}^{*}\rho\tilde{W}\psi_{2}d\tau\right)dt
+\]
+
+\end_inset
+
+Pero como 
+\begin_inset Formula $\rho\tilde{W}=W$
+\end_inset
+
+, tenemos
+\begin_inset Formula 
+\[
+\int_{0}^{t}\rho\tilde{W}_{12}dt=\int_{0}^{t}\left(\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau\right)dt
+\]
+
+\end_inset
+
+ Hemos visto en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:III-4 Cálculo de las integrales de la interacción dipolar"
+
+\end_inset
+
+ que
+\begin_inset Formula 
+\[
+\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau=-\frac{E_{0}\mu_{12}}{2}\left(e^{i\delta}e^{i\left(\omega-\omega_{21}\right)t}+e^{-i\delta}e^{-i\left(\omega-\omega_{21}\right)t}\right)
+\]
+
+\end_inset
+
+Integrando entre 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $t$
+\end_inset
+
+ esta expresión tenemos:
+\begin_inset Formula 
+\begin{multline*}
+\int_{0}^{t}\left(\int_{\tau}\psi_{1}^{*}W\psi_{2}d\tau\right)dt=-\frac{E_{0}\mu_{12}}{2}\left[\frac{e^{i\delta}}{i\left(\omega-\omega_{21}\right)}\left(e^{i\left(\omega-\omega_{21}\right)t}-1\right)\right.-\\
+\left.-\frac{e^{-i\delta}}{i\left(\omega+\omega_{21}\right)}\left(e^{-i\left(\omega-\omega_{21}\right)t}-1\right)\right]
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aproximación en la resonancia 
+\begin_inset Formula $\omega\to\omega_{21}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando 
+\begin_inset Formula $\omega$
+\end_inset
+
+ se acerca a la frecuencia de resonancia 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+, el segundo miembro del paréntesis cuadrado se hace despreciable frente
+ al primero, puesto que
+\begin_inset Formula 
+\[
+\left|\frac{1}{\omega-\omega_{21}}\right|\gg\frac{1}{\omega+\omega_{21}}
+\]
+
+\end_inset
+
+Consecuentemente, obtenemos para 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+a_{1}\left(t\right)=a_{10}-\frac{1}{i\hbar}a_{20}\frac{E_{0}\mu_{12}}{2}\frac{e^{i\delta}}{i\left(\omega-\omega_{21}\right)}\left(e^{i\left(\omega-\omega_{21}\right)t}-1\right)
+\]
+
+\end_inset
+
+Multiplicando por el factor
+\begin_inset Formula 
+\[
+e^{i\left(\omega-\omega_{21}\right)\frac{t}{2}}e^{-i\left(\omega-\omega_{21}\right)\frac{t}{2}}=1
+\]
+
+\end_inset
+
+los dos mimbros de la ecuación queda:
+\begin_inset Formula 
+\[
+a_{1}\left(t\right)=a_{10}+i\frac{\gamma}{2}a_{20}e^{i\delta}\frac{\sin\left(\frac{\omega-\omega_{21}}{2}t\right)}{\frac{\left(\omega-\omega_{21}\right)}{2}}
+\]
+
+\end_inset
+
+De manera análoga se obtiene:
+\begin_inset Formula 
+\[
+a_{2}\left(t\right)=a_{20}-i\frac{\gamma}{2}a_{10}e^{-i\delta}\frac{\sin\left(\frac{\omega-\omega_{21}}{2}t\right)}{\frac{\left(\omega-\omega_{21}\right)}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando las condiciones iniciales para el 
+\series bold
+emisión
+\series default
+\emph on
+ 
+\emph default
+y para la 
+\series bold
+absorción
+\series default
+ encontramos el mismo resultado que por el primer método de integración.
+\end_layout
+
+\begin_layout Section
+Duración de las transiciones 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-08 Duración de las transiciones (pag21)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya hemos indicado el tiempo mínimo que debe durar la perturbación para que
+ sea válida la aproximación dipolar (ver sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:III-5 Resolución-del-sistema de ecuaciones diferenciales de los coeficientes a(t)"
+
+\end_inset
+
+, en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:III-05 Aproximacion t_perturbacion aprox 10^(-12)s"
+
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+t_{p}\gg10^{-12}\, s
+\]
+
+\end_inset
+
+Vemos ahora de qué manera limita dicha duración la probabilidad de la transición.
+\end_layout
+
+\begin_layout Standard
+La curva 
+\begin_inset Formula $P_{12}\left(\omega,t\right)$
+\end_inset
+
+ tiene la forma que muestra la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:III-22 Curva P_21"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/figura-III-p22.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Curva 
+\begin_inset Formula $P_{21}\left(\omega,t\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:III-22 Curva P_21"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando 
+\begin_inset Formula $\omega\to\omega_{21}$
+\end_inset
+
+ se obtiene el máximo de probabilidad de transición:
+\begin_inset Formula 
+\[
+P_{21}\left(\omega\to\omega_{21},t\right)=\frac{\left|\gamma\right|^{2}}{4}\left[\frac{\frac{\left(\omega-\omega_{21}\right)}{2}t}{\frac{\left(\omega-\omega_{21}\right)}{2}}\right]^{2}=\frac{\left|\gamma\right|^{2}}{4}t^{2}
+\]
+
+\end_inset
+
+ Si la perturbación tuviese una duración ilimitada, la probabilidad de transició
+n crecería indefinidamente, lo cual es absurdo.
+ Esta teoría sólo es aplicable siempre que 
+\begin_inset Formula $P_{21}\left(\omega,t\right)<1$
+\end_inset
+
+.
+ En la práctica 
+\begin_inset Formula $P_{21}\left(\omega,t\right)\ll1$
+\end_inset
+
+, por lo que
+\begin_inset Formula 
+\[
+\frac{\left|\gamma\right|}{2}t\ll1\Rightarrow t\ll\frac{2}{\left|\gamma\right|}
+\]
+
+\end_inset
+
+ Pero 
+\begin_inset Formula $\left|\gamma\right|\simeq6\times10^{9}\, s^{-1}$
+\end_inset
+
+ (ver la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:III-5 Resolución-del-sistema de ecuaciones diferenciales de los coeficientes a(t)"
+
+\end_inset
+
+, en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:III-p14 Orden de magnitud de gamma^2"
+
+\end_inset
+
+), por lo que 
+\begin_inset Formula $t$
+\end_inset
+
+ debe ser mucho menor que 
+\begin_inset Formula $10^{-9}\, s$
+\end_inset
+
+.
+ Por lo tanto, para que esta teoría sea válida, el tiempo en que está actuando
+ sobre el átomo la onda luminosa debería estar comprendido entre estos dos
+ límites:
+\begin_inset Formula 
+\[
+10^{-12}\, s<t_{p}<10^{-9}\, s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Durante este intervalo de tiempo, en que está evolucionando la función de
+ onda del átomo, éste está absorbiendo o emitiendo energía luminosa.
+ El tren de ondas que genera durante la emisión tendrá una longitud 
+\begin_inset Formula $L=ct_{p}$
+\end_inset
+
+, donde 
+\begin_inset Formula $c$
+\end_inset
+
+ es la velocidad de la luz en el vacío.
+ Por lo tanto, para intervalos de tiempo del orden de 
+\begin_inset Formula $10^{-11}$
+\end_inset
+
+, 
+\begin_inset Formula $10^{-10}\, s$
+\end_inset
+
+ , se obtendrían trenes de onda cuya longitu 
+\begin_inset Formula $L$
+\end_inset
+
+ estaría comprendida entre el milímetro y el centímetro.
+ De este mismo es la longitud de coherencia que se obtiene, por métodos
+ interferenciales, para las emisiones atómicas.
+\end_layout
+
+\begin_layout Section
+Anchura de la banda de frecuencias capaces de inducir transiciones 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-9 Anchura de la banda de frecuencias capaces de inducir transiciones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la curva 
+\begin_inset Formula $P_{21}\left(\omega,t\right)$
+\end_inset
+
+ se ve que todas las frecuencias son capaces de inducir la transición 
+\begin_inset Formula $\psi_{2}\to\psi_{1}$
+\end_inset
+
+, pero sólo son eficaces las comprendidas entre la frecuencia central 
+\begin_inset Formula $\omega=\omega_{21}$
+\end_inset
+
+ y los dos primeros ceros de la función 
+\begin_inset Formula $P_{21}\left(\omega,t\right)$
+\end_inset
+
+, a la izquierda y derecha de 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+.
+ Si llamamos 
+\begin_inset Formula $2\Delta\omega$
+\end_inset
+
+ a la diferencia de frecuencia entre éstos, tenemos:
+\begin_inset Formula 
+\[
+\text{mínimos }\left\{ \begin{array}{c}
+\omega=\omega_{21}+\Delta\omega\\
+\omega=\omega_{21}-\Delta\omega
+\end{array}\right\} \Rightarrow\sin\left(\frac{\Delta\omega}{2}t\right)=0\Rightarrow\frac{\Delta\omega}{2}t=\pi\Rightarrow\Delta\nu=\frac{1}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuanto mayor sea 
+\begin_inset Formula $t$
+\end_inset
+
+, más estrecho se hace el rango de frecuencias eficaces para producir la
+ transición.
+ Para 
+\begin_inset Formula $t\simeq10^{-10}\, s$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta\omega\simeq10^{10}\, s^{-1}$
+\end_inset
+
+, a comparar con la frecuencia 
+\begin_inset Formula $\nu_{21}$
+\end_inset
+
+ del espectro visible 
+\begin_inset Formula $\simeq10^{14}\, s^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Determinación del coeficiente 
+\begin_inset Formula $B_{21}$
+\end_inset
+
+ de Einstein 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:III-10 Determinación del coeficiente B 21 de Einstein"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{21}u\left(\nu_{21}\right)=B_{21}u\left(\omega_{21}\right)$
+\end_inset
+
+= 
+\emph on
+Probabilidad por unidad de tiempo de que 
+\series bold
+toda
+\series default
+ la radiación induzca la transción 
+\begin_inset Formula $\psi_{2}\to\psi_{1}$
+\end_inset
+
+
+\emph default
+.
+ Por lo tanto:
+\begin_inset Formula 
+\[
+B_{21}u\left(\nu_{21}\right)=\frac{d}{dt}\int_{0}^{\infty}P_{21}\left(\omega,t\right)d\omega=\frac{d}{dt}\int_{0}^{\infty}\left|\gamma\right|^{2}\frac{\sin^{2}\left(\frac{\omega-\omega_{21}}{2}t\right)}{\left(\omega-\omega_{21}\right)^{2}}d\omega
+\]
+
+\end_inset
+
+Pero:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\gamma\right|^{2} & = & \frac{E_{0}^{2}\left(\omega\right)\left|\mu_{12}^{2}\right|}{\hbar^{2}}\\
+u\left(\omega\right) & = & \frac{1}{2}\varepsilon_{0}E_{0}^{2}\left(\omega\right)
+\end{eqnarray*}
+
+\end_inset
+
+ y como el rango de frecuencias que pueden inducir la transición de manera
+ eficaz es estrecho, podemos suponer que:
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{0}^{2}\left(\omega\right)\simeq E_{0}^{2}\left(\omega_{21}\right) & \Rightarrow & u\left(\omega\right)\simeq u\left(\omega_{21}\right)\\
+\left|\gamma\left(\omega\right)\right|^{2} & \simeq & \left|\gamma\left(\omega_{21}\right)\right|^{2}
+\end{eqnarray*}
+
+\end_inset
+
+Haciendo intervenir la densidad de energía en la integral tenemos:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}P_{21}\left(\omega,t\right)d\omega=2\frac{\left|\mu_{12}\right|^{2}}{\varepsilon_{0}\hbar^{2}}u\left(\omega_{21}\right)\int_{0}^{\infty}\frac{\sin^{2}\left(\frac{\omega-\omega_{21}}{2}t\right)}{\left(\omega-\omega_{21}\right)^{2}}d\omega
+\]
+
+\end_inset
+
+ya que 
+\begin_inset Formula $\omega_{21}$
+\end_inset
+
+ es muy grande, comparada con el intervalo 
+\begin_inset Formula $\Delta\omega$
+\end_inset
+
+ de eficacia de las frecuencias angulares 
+\begin_inset Formula $\omega$
+\end_inset
+
+ que pueden inducir la transición.
+ Pero 
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{\sin^{2}\left(\frac{t}{2}\alpha\right)}{\alpha^{2}}d\alpha=\frac{t}{2}\frac{\pi}{2}
+\]
+
+\end_inset
+
+por lo que resulta:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}P_{21}\left(\omega,t\right)d\omega\simeq2\frac{\left|\mu_{12}\right|^{2}}{\varepsilon_{0}\hbar^{2}}u\left(\omega_{21}\right)\frac{\pi t}{2}
+\]
+
+\end_inset
+
+obteniéndose:
+\begin_inset Formula 
+\[
+B_{21}=\frac{\pi\left|\mu_{12}\right|^{2}}{\varepsilon_{0}\hbar^{2}}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+En el caso que nos ocupa hemos supuesto una onda linealmente polarizada
+ según el eje 
+\begin_inset Formula $x$
+\end_inset
+
+ y avanzando en el sentido positivo del eje 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ En el cálculo de Einstein se considera la contribución de todas las posibles
+ ondas planas.
+ Es decir, tres polarizaciones distintaas según los ejes 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ y 
+\begin_inset Formula $z$
+\end_inset
+
+ y dos sentidos de avance distintos.
+ Por esta razón hay que dividir por seies el coeficiente 
+\begin_inset Formula $B_{21}$
+\end_inset
+
+ calculado, para que corresponda al que interviene en la teoría de Einstein:
+\begin_inset Formula 
+\[
+B_{21}=\frac{\pi\left|\mu_{12}\right|^{2}}{6\varepsilon_{0}\hbar^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Resumen
+\end_layout
+
+\begin_layout Standard
+Hemos justificado la existencia de 
+\series bold
+emisiones inducidas
+\series default
+ y 
+\series bold
+absorciones
+\series default
+ (inducidas) en presencia de radiación electromagnética y hemos demostrado
+ la igualdad de sus probabilidades de transición, como preconizaba Einstein
+ en 1916.
+\end_layout
+
+\begin_layout Standard
+Por otra parte hemos visto que dichas probabilidades de transición dependen
+ del cuadrado del momento dipolar que liga los dos estados, lo que conduce
+ al establecimiento de las reglas de selección de las transiciones atómicas
+ inducidas por la radiación luminosa.
+\end_layout
+
+\begin_layout Standard
+La existencia de las emisiones espontáneas es más difícil de justificar,
+ ya que para ello se necesita recurrir a la cuantificiación del campo electromag
+nético.
+ Sin embargo, se demuestra que la probabilidad 
+\begin_inset Formula $f_{ki}$
+\end_inset
+
+ (fuerza de oscilador) de que se produzca espontáneamente una transición
+ dipolar eléctrica del estado 
+\begin_inset Formula $\psi_{i}$
+\end_inset
+
+ (de energía superior) al estado 
+\begin_inset Formula $\psi_{k}$
+\end_inset
+
+ (de energía inferior), es también proporcional al cuadrado del momento
+ dipolar 
+\begin_inset Formula $D_{ki}$
+\end_inset
+
+ de transición.
+ Además, esta probabilidad es tanto mayor cuanto mayor es la diferencia
+ de energía entre los estados (los átomos tienden a relajarse hacia el estado
+ de más baja energía):
+\begin_inset Formula 
+\[
+f_{ki}=K\left(E_{i}-E_{k}\right)D_{ki}^{2}
+\]
+
+\end_inset
+
+ donde 
+\begin_inset Formula $K$
+\end_inset
+
+ es una constante.
+ Esta fórmula, de Mulliken y Rieke, permite determinar las intensidades
+ relativas de las líneas espectrales y establecer las reglas de selección
+ para las emisiones espontáneas, que resultan ser las mismas que para las
+ emisiones inducidas.
 \end_layout
 
 \end_body
