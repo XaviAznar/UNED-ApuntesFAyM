@@ -194,7 +194,7 @@ En coordenadas esféricas, el operador laplaciano:
 
 \end_inset
 
- tiene la siguiente expresión: (ver Apéndice I REF##):
+ tiene la siguiente expresión:
 \end_layout
 
 \begin_layout Standard
@@ -858,8 +858,14 @@ La ecuación
 
 \end_inset
 
-puede escribirse como una ecuación hipergeométrica (Ver Apéndice II, ##REF)
- haciendo el siguiente cambio de variable:
+puede escribirse como una ecuación hipergeométrica (Ver Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:II-1 Ecuación diferencial de tipo hipergeométrico"
+
+\end_inset
+
+) haciendo el siguiente cambio de variable:
 \begin_inset Formula 
 \begin{eqnarray*}
 \cos\theta=\mu & \Rightarrow & \sin\theta=\sqrt{1-\mu^{2}}\\
@@ -885,8 +891,15 @@ Y la ecuación diferencial se transforma en:
 \end_inset
 
 Esta ecuación es muy conocida en la teoría de ecuaciones diferenciales (ver
- Apéndice II ##REF) y no tiene soluciones finitas más que cuando se verifican
- las siguientes condiciones entre los parámetros 
+ Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:II-1 Ecuación diferencial de tipo hipergeométrico"
+
+\end_inset
+
+) y no tiene soluciones finitas más que cuando se verifican las siguientes
+ condiciones entre los parámetros 
 \begin_inset Formula $C$
 \end_inset
 
@@ -914,7 +927,14 @@ Estas soluciones finitas
 \begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
 \end_inset
 
- se escriben (ver Apéndice II ##REF):
+ se escriben (ver Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+):
 \begin_inset Formula 
 \[
 \Theta_{l,m}\left(\mu\right)=\frac{\left(-1\right)^{l-m}}{2^{l}\, l!}\left(\frac{2l+1}{2}\frac{\left(l+m\right)!}{\left(l-m\right)!}\right)^{1/2}\left(1-\mu^{2}\right)^{-m/2}\frac{d^{l-m}}{d\mu^{l-m}}\left(1-\mu^{2}\right)^{l}
@@ -1377,7 +1397,14 @@ a=\frac{\hbar^{2}}{Km_{e}e^{2}}\label{eq:1.18 p10 constante a}
 \end_inset
 
 Esta ecuación ha sido objeto de numerosos estudios matemáticos (ver Apéndice
- II ##REF) y sus soluciones finitas y normalizadas son de la forma:
+ II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+) y sus soluciones finitas y normalizadas son de la forma:
 \begin_inset Formula 
 \[
 R_{n,l}\left(r\right)=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\left(\frac{2}{n}\frac{Z}{a}\right)^{l+\frac{3}{2}}r^{l}\exp\left(-\frac{Z}{an}r\right)L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)
@@ -2341,8 +2368,15 @@ donde hemos hecho el cambio de variable
 \end_inset
 
 .
- En el Apéndice II (##REF) se demuestra que la última integral es igual
- a la unidad, porque hemos escogido los polinomios 
+ En el Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+ se demuestra que la última integral es igual a la unidad, porque hemos
+ escogido los polinomios 
 \begin_inset Formula $\Theta_{l,m}\left(\mu\right)$
 \end_inset
 
@@ -4970,9 +5004,15 @@ status collapsed
 
 \begin_layout Plain Layout
 Con objeto de desarrollar algunos de los conceptos que intervienen en este
- Apartado, estudiamos en el Apéndice III (##REF) la interacción entre una
- onda electromagnética luminosa y un átomo sencillo, constituído por dos
- niveles energéticos solamente.
+ Apartado, estudiamos en el Apéndice III, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+ la interacción entre una onda electromagnética luminosa y un átomo sencillo,
+ constituído por dos niveles energéticos solamente.
  En dicho estudio se justifica, en el marco de la aproximación semiclásica,
  la existencia de las transiciones inducidas (emisión y absorción) que tanta
  importancia han tenido en el desarrollo de la Ciencia.
@@ -5037,7 +5077,14 @@ E_{n}=-\frac{1}{n^{2}}\frac{Z^{2}e^{4}m_{e}}{2\left(4\pi\epsilon_{0}\right)^{2}\
 \end_inset
 
 En estas condiciones puede intereaccionar una onda electromagnética (ver
- Apéndice III ##REF) de frecuencia 
+ Apéndice III, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice III- Transiciones estimuladas"
+
+\end_inset
+
+) de frecuencia 
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -5434,8 +5481,14 @@ Calculemos ahora la integral en
 
 \end_inset
 
-Ahora bien, en el Apéndice II (##ref) se indica la siguiente relación de
- recurrencia entre las funciones 
+Ahora bien, en el Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+ se indica la siguiente relación de recurrencia entre las funciones 
 \begin_inset Formula $\Theta\left(\mu\right)$
 \end_inset
 
@@ -5471,8 +5524,15 @@ Puesto que las funciones
 \begin_inset Formula $\Theta\left(\mu\right)$
 \end_inset
 
- son ortogonales (ver Apéndice II, ##REF), la integral será distinta de
- cero sólo cuando se verifique una de las siguientes relaciones:
+ son ortogonales (ver Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+), la integral será distinta de cero sólo cuando se verifique una de las
+ siguientes relaciones:
 \begin_inset Formula 
 \[
 \left\{ \begin{array}{c}
@@ -7067,10 +7127,17 @@ reference "sec:1.1 Resolución de la ecuación de Schrödinger para el átomo de
 
 \end_inset
 
- y en el Apéndice II (##REF); los niveles de energía del átomo perturbado
- serán también distintos de los anteriormente obtenidos para el átomo no
- perturbado, pero, en primera aproximación, se pueden obtener sin más que
- sumas a estos últimos la energía 
+ y en el Apéndice II, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Apéndice-II"
+
+\end_inset
+
+; los niveles de energía del átomo perturbado serán también distintos de
+ los anteriormente obtenidos para el átomo no perturbado, pero, en primera
+ aproximación, se pueden obtener sin más que sumas a estos últimos la energía
+ 
 \begin_inset Formula $E_{M}$
 \end_inset
 
