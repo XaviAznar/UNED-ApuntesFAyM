@@ -70,6 +70,13 @@ eqs-within-sections
 
 \begin_layout Title
 Transiciones estimuladas: tratamiento semiclásico
+\begin_inset CommandInset label
+LatexCommand label
+name "Apéndice III- Transiciones estimuladas"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
