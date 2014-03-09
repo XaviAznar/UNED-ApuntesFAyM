@@ -72,6 +72,10 @@ eqs-within-sections
 Apuntes de Física Atómica y Molecular
 \end_layout
 
+\begin_layout Author
+(Transcritos a LyX por Xavier Aznar)
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
