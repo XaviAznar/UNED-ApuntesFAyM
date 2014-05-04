@@ -4290,7 +4290,7 @@ donde la función
 
 \end_inset
 
-de donde se decude:
+de donde se deduce:
 \begin_inset Formula 
 \[
 \log\rho=\int\frac{\tau}{\sigma}dr-\log\sigma
@@ -4423,7 +4423,7 @@ La función
 \begin_inset Formula $y_{k}\left(\zeta\right)$
 \end_inset
 
- es, salvao un factor de proporcionalidad, un polinomio 
+ es, salvo un factor de proporcionalidad, un polinomio 
 \begin_inset Formula $L_{k}^{\alpha}\left(\zeta\right)$
 \end_inset
 
