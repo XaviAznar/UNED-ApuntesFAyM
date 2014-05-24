@@ -648,7 +648,22 @@ La solución general de dicha ecuación es, por lo tanto:
 \end_layout
 
 \begin_layout Standard
-Aplicando la primera condición de unicidad, obtenemos
+Aplicando la primera condición de unicidad 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+La demostración del profesor de que 
+\begin_inset Formula $m$
+\end_inset
+
+ debe ser un número entero es incorrecta.
+ 
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \Phi\left(0\right)=\Phi\left(2\pi\right)\Rightarrow A+B=Ae^{i2\pi m}+Be^{-i2\pi m}
@@ -656,15 +671,13 @@ Aplicando la primera condición de unicidad, obtenemos
 
 \end_inset
 
-Multiplicando por 
-\begin_inset Formula $e^{i\pi m}$
-\end_inset
-
- los dos miembros de la última ecuación, resulta;
+que puede convertise en 
 \begin_inset Formula 
-\[
-Ae^{i\pi m}+Be^{i\pi m}=A^{-i\pi m}+Be^{-i\pi m}\Rightarrow A\sin\left(m\pi\right)=-B\sin\left(m\pi\right)
-\]
+\begin{eqnarray}
+A\left(1-e^{2\pi mi}\right) & = & -B\left(1-e^{-2\pi mi}\right)\nonumber \\
+Ae^{\pi mi}\left(e^{-\pi mi}-e^{\pi mi}\right) & = & -Be^{-\pi mi}\left(e^{\pi mi}-e^{-\pi mi}\right)\nonumber \\
+Ae^{2\pi mi}\sin\left(\pi m\right) & = & B\sin\left(\pi m\right)\label{eq:condicion de unicidad (k>0), resultado 2}
+\end{eqnarray}
 
 \end_inset
 
@@ -672,7 +685,7 @@ Ae^{i\pi m}+Be^{i\pi m}=A^{-i\pi m}+Be^{-i\pi m}\Rightarrow A\sin\left(m\pi\righ
 \end_layout
 
 \begin_layout Standard
-Aplicando la segunda condición de unicidad:
+Por otro lado, de la segunda condición de unicidad:
 \begin_inset Formula 
 \begin{eqnarray*}
 \Phi\left(\pi\right)=\Phi\left(-\pi\right)\Rightarrow Ae^{im\pi}+Be^{-im\pi} & = & Ae^{-im\pi}+Be^{im\pi}\Rightarrow\\
@@ -681,70 +694,37 @@ Aplicando la segunda condición de unicidad:
 
 \end_inset
 
+Por lo que tenemos que sólo se verifica si 
+\begin_inset Formula 
+\[
+e^{2\pi mi}=1
+\]
+
+\end_inset
+
+Utilizando la relación de Euler
+\begin_inset Formula 
+\[
+e^{2\pi mi}=\cos\left(2\pi m\right)+i\sin\left(2\pi m\right)=1\iff m=0,\pm1,\pm2,\ldots\quad\Rightarrow m\in\mathbb{Z}
+\]
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-Por lo tanto, se ha de complir simultáneamente la relación:
 \begin_inset Formula 
 \[
-A\sin\left(m\pi\right)=\pm B\sin\left(m\pi\right)
+\boxed{m\text{ es un número entero}}
 \]
 
 \end_inset
 
-Esto quiere decir que ambos miembros de la igualdad han de ser nulos.
+
 \end_layout
 
-\begin_layout Standard
-Supongamos, primeramente, que 
-\begin_inset Formula $\sin\left(mx\right)\neq0$
-\end_inset
-
-, es decir, el número real 
-\begin_inset Formula $m$
-\end_inset
-
- no es entero.
- En estas condiciones obtnemos:
-\begin_inset Formula 
-\[
-A=B=0\quad\text{(solución trivial)}
-\]
-
-\end_inset
-
-Supongamos, por el contrario, que 
-\begin_inset Formula $A$
-\end_inset
-
- o 
-\begin_inset Formula $B$
-\end_inset
-
- son distintos de cero, es decir que existe una solución distinta de la
- trivial.
- Esto quiere decir, forzosamente, que se ha de anular 
-\begin_inset Formula $\sin\left(m\pi\right)$
-\end_inset
-
-.
- Por lo tanto:
-\begin_inset Formula 
-\[
-\sin\left(m\pi\right)=0\Rightarrow m=0,\pm1,\pm2,\ldots
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\boxed{\text{m es un número entero}}
-\]
-
-\end_inset
-
+\begin_layout Remark*
 
 \emph on
 La condición de unicidad impuesta a la función de onda conduce a la conclusión
