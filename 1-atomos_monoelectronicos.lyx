@@ -1387,7 +1387,7 @@ reference "Apéndice-II"
 ) y sus soluciones finitas y normalizadas son de la forma:
 \begin_inset Formula 
 \[
-R_{n,l}\left(r\right)=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\left(\frac{2}{n}\frac{Z}{a}\right)^{l+\frac{3}{2}}r^{l}\exp\left(-\frac{Z}{an}r\right)L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)
+R_{n,l}\left(r\right)=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\left(2\frac{Z}{an}\right)^{l+\frac{3}{2}}r^{l}\exp\left(-\frac{Z}{an}r\right)L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)
 \]
 
 \end_inset
@@ -1395,7 +1395,7 @@ R_{n,l}\left(r\right)=\sqrt{\frac{\left(n-l-1\right)!}{\left(n+l\right)!\,2n}}\l
 donde 
 \begin_inset Formula 
 \begin{multline*}
-L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)=\frac{1}{\left(n-l-1\right)!}\left(\frac{2}{a}\frac{Z}{n}r\right)^{-\left(2l+1\right)}\exp\left(2\frac{Z}{an}r\right)\times\\
+L_{n-l-1}^{2l+1}\left(2\frac{Z}{an}r\right)=\frac{1}{\left(n-l-1\right)!}\left(2\frac{Z}{an}r\right)^{-\left(2l+1\right)}\exp\left(2\frac{Z}{an}r\right)\times\\
 \times\frac{d^{n-l-1}}{d\left(2\frac{Z}{an}r\right)^{n-l-1}}\left(\left(2\frac{Z}{an}r\right)^{n+l}\exp\left(-2\frac{Z}{an}r\right)\right)
 \end{multline*}
 
