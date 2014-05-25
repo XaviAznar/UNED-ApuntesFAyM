@@ -370,7 +370,7 @@ El primer miembro de esta ecuación no depende más que de
  es, por lo tanto
 \begin_inset Formula 
 \[
--\frac{1}{\Phi\sin^{2}\theta}\frac{d^{2}\Phi}{d\varphi^{2}}=k
+-\frac{1}{\Phi}\frac{d^{2}\Phi}{d\varphi^{2}}=k
 \]
 
 \end_inset
